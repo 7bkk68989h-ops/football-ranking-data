@@ -1,0 +1,1855 @@
+{
+ "source": "Sample data (approximate), to be replaced by Wikidata.",
+ "updated": "2026-10-03",
+ "countries": [
+  {
+   "id": "PT",
+   "name": "Portugal",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "ES",
+   "name": "Spain",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "GB",
+   "name": "England",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "IT",
+   "name": "Italy",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "DE",
+   "name": "Germany",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "FR",
+   "name": "France",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "NL",
+   "name": "Netherlands",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "AR",
+   "name": "Argentina",
+   "confederation": "CONMEBOL"
+  },
+  {
+   "id": "BR",
+   "name": "Brazil",
+   "confederation": "CONMEBOL"
+  },
+  {
+   "id": "UY",
+   "name": "Uruguay",
+   "confederation": "CONMEBOL"
+  },
+  {
+   "id": "EG",
+   "name": "Egypt",
+   "confederation": "CAF"
+  }
+ ],
+ "competitions": [
+  {
+   "id": "pt-liga",
+   "name": "Primeira Liga",
+   "level": "domestic",
+   "kind": "league",
+   "country": "PT"
+  },
+  {
+   "id": "pt-taca",
+   "name": "Taça de Portugal",
+   "level": "domestic",
+   "kind": "cup",
+   "country": "PT"
+  },
+  {
+   "id": "pt-supertaca",
+   "name": "Supertaça Cândido de Oliveira",
+   "level": "domestic",
+   "kind": "superCup",
+   "country": "PT"
+  },
+  {
+   "id": "pt-tacaliga",
+   "name": "Taça da Liga",
+   "level": "domestic",
+   "kind": "leagueCup",
+   "country": "PT"
+  },
+  {
+   "id": "es-liga",
+   "name": "LaLiga",
+   "level": "domestic",
+   "kind": "league",
+   "country": "ES"
+  },
+  {
+   "id": "es-copa",
+   "name": "Copa del Rey",
+   "level": "domestic",
+   "kind": "cup",
+   "country": "ES"
+  },
+  {
+   "id": "es-super",
+   "name": "Supercopa de España",
+   "level": "domestic",
+   "kind": "superCup",
+   "country": "ES"
+  },
+  {
+   "id": "gb-liga",
+   "name": "English First Division / Premier League",
+   "level": "domestic",
+   "kind": "league",
+   "country": "GB"
+  },
+  {
+   "id": "gb-fa",
+   "name": "FA Cup",
+   "level": "domestic",
+   "kind": "cup",
+   "country": "GB"
+  },
+  {
+   "id": "gb-lc",
+   "name": "EFL Cup",
+   "level": "domestic",
+   "kind": "leagueCup",
+   "country": "GB"
+  },
+  {
+   "id": "it-liga",
+   "name": "Serie A",
+   "level": "domestic",
+   "kind": "league",
+   "country": "IT"
+  },
+  {
+   "id": "it-coppa",
+   "name": "Coppa Italia",
+   "level": "domestic",
+   "kind": "cup",
+   "country": "IT"
+  },
+  {
+   "id": "de-liga",
+   "name": "German Championship / Bundesliga",
+   "level": "domestic",
+   "kind": "league",
+   "country": "DE"
+  },
+  {
+   "id": "de-pokal",
+   "name": "DFB-Pokal",
+   "level": "domestic",
+   "kind": "cup",
+   "country": "DE"
+  },
+  {
+   "id": "fr-liga",
+   "name": "French Championship / Ligue 1",
+   "level": "domestic",
+   "kind": "league",
+   "country": "FR"
+  },
+  {
+   "id": "fr-coupe",
+   "name": "Coupe de France",
+   "level": "domestic",
+   "kind": "cup",
+   "country": "FR"
+  },
+  {
+   "id": "nl-liga",
+   "name": "Eredivisie",
+   "level": "domestic",
+   "kind": "league",
+   "country": "NL"
+  },
+  {
+   "id": "nl-knvb",
+   "name": "KNVB Beker",
+   "level": "domestic",
+   "kind": "cup",
+   "country": "NL"
+  },
+  {
+   "id": "ar-liga",
+   "name": "Argentine Primera División",
+   "level": "domestic",
+   "kind": "league",
+   "country": "AR"
+  },
+  {
+   "id": "br-liga",
+   "name": "Campeonato Brasileiro",
+   "level": "domestic",
+   "kind": "league",
+   "country": "BR"
+  },
+  {
+   "id": "br-copa",
+   "name": "Copa do Brasil",
+   "level": "domestic",
+   "kind": "cup",
+   "country": "BR"
+  },
+  {
+   "id": "uy-liga",
+   "name": "Uruguayan Primera División",
+   "level": "domestic",
+   "kind": "league",
+   "country": "UY"
+  },
+  {
+   "id": "eg-liga",
+   "name": "Egyptian Premier League",
+   "level": "domestic",
+   "kind": "league",
+   "country": "EG"
+  },
+  {
+   "id": "uefa-cl",
+   "name": "European Cup / Champions League",
+   "level": "continental",
+   "kind": "continentalMain",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "uefa-el",
+   "name": "UEFA Cup / Europa League",
+   "level": "continental",
+   "kind": "continentalSecondary",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "uefa-cwc",
+   "name": "Cup Winners' Cup",
+   "level": "continental",
+   "kind": "continentalSecondary",
+   "confederation": "UEFA",
+   "defunct": true
+  },
+  {
+   "id": "uefa-ecl",
+   "name": "Conference League",
+   "level": "continental",
+   "kind": "continentalTertiary",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "uefa-super",
+   "name": "UEFA Super Cup",
+   "level": "continental",
+   "kind": "continentalSuperCup",
+   "confederation": "UEFA"
+  },
+  {
+   "id": "conmebol-lib",
+   "name": "Copa Libertadores",
+   "level": "continental",
+   "kind": "continentalMain",
+   "confederation": "CONMEBOL"
+  },
+  {
+   "id": "conmebol-sud",
+   "name": "Copa Sudamericana",
+   "level": "continental",
+   "kind": "continentalSecondary",
+   "confederation": "CONMEBOL"
+  },
+  {
+   "id": "caf-cl",
+   "name": "CAF Champions League",
+   "level": "continental",
+   "kind": "continentalMain",
+   "confederation": "CAF"
+  },
+  {
+   "id": "afc-cl",
+   "name": "AFC Champions League",
+   "level": "continental",
+   "kind": "continentalMain",
+   "confederation": "AFC"
+  },
+  {
+   "id": "fifa-ic",
+   "name": "Intercontinental Cup",
+   "level": "world",
+   "kind": "intercontinental",
+   "defunct": true
+  },
+  {
+   "id": "fifa-cwc",
+   "name": "FIFA Club World Cup",
+   "level": "world",
+   "kind": "clubWorldCup"
+  }
+ ],
+ "clubs": [
+  {
+   "id": "benfica",
+   "name": "Sport Lisboa e Benfica",
+   "shortName": "Benfica",
+   "country": "PT",
+   "colors": [
+    "#E30613",
+    "#FFFFFF"
+   ],
+   "founded": 1904,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/hj4kyc1781152436.png",
+   "kit": "plain",
+   "abbreviation": "SLB"
+  },
+  {
+   "id": "porto",
+   "name": "Futebol Clube do Porto",
+   "shortName": "FC Porto",
+   "country": "PT",
+   "colors": [
+    "#003893",
+    "#FFFFFF"
+   ],
+   "founded": 1893,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/xu47rb1628855600.png",
+   "kit": "stripes",
+   "abbreviation": "FCP"
+  },
+  {
+   "id": "sporting",
+   "name": "Sporting Clube de Portugal",
+   "shortName": "Sporting CP",
+   "country": "PT",
+   "colors": [
+    "#008057",
+    "#FFFFFF"
+   ],
+   "founded": 1906,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/5hiuk71783137875.png",
+   "kit": "hoops",
+   "abbreviation": "SCP"
+  },
+  {
+   "id": "braga",
+   "name": "Sporting Clube de Braga",
+   "shortName": "SC Braga",
+   "country": "PT",
+   "colors": [
+    "#D7182A",
+    "#FFFFFF"
+   ],
+   "founded": 1921,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/skbiwo1785775946.png",
+   "kit": "plain",
+   "abbreviation": "SCB"
+  },
+  {
+   "id": "boavista",
+   "name": "Boavista Futebol Clube",
+   "shortName": "Boavista",
+   "country": "PT",
+   "colors": [
+    "#111111",
+    "#FFFFFF"
+   ],
+   "founded": 1903,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/usi98v1628853974.png",
+   "kit": "checks",
+   "abbreviation": "BFC"
+  },
+  {
+   "id": "belenenses",
+   "name": "Clube de Futebol Os Belenenses",
+   "shortName": "Belenenses",
+   "country": "PT",
+   "colors": [
+    "#1C5BA8",
+    "#FFFFFF"
+   ],
+   "founded": 1919,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/7po4e21563652867.png",
+   "kit": "plain",
+   "abbreviation": "CFB"
+  },
+  {
+   "id": "vitoria-sc",
+   "name": "Vitória Sport Clube",
+   "shortName": "Vitória SC",
+   "country": "PT",
+   "colors": [
+    "#FFFFFF",
+    "#111111"
+   ],
+   "founded": 1922,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/af52z61628855707.png",
+   "kit": "plain",
+   "abbreviation": "VSC"
+  },
+  {
+   "id": "real-madrid",
+   "name": "Real Madrid CF",
+   "shortName": "Real Madrid",
+   "country": "ES",
+   "colors": [
+    "#FFFFFF",
+    "#1B2C6B"
+   ],
+   "founded": 1902,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png",
+   "kit": "plain",
+   "abbreviation": "RMA"
+  },
+  {
+   "id": "barcelona",
+   "name": "FC Barcelona",
+   "shortName": "Barcelona",
+   "country": "ES",
+   "colors": [
+    "#A50044",
+    "#004D98"
+   ],
+   "founded": 1899,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
+   "kit": "stripes",
+   "abbreviation": "BAR"
+  },
+  {
+   "id": "atletico",
+   "name": "Club Atlético de Madrid",
+   "shortName": "Atlético Madrid",
+   "country": "ES",
+   "colors": [
+    "#CB3524",
+    "#FFFFFF"
+   ],
+   "founded": 1903,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/0ulh3q1719984315.png",
+   "kit": "stripes",
+   "abbreviation": "ATM"
+  },
+  {
+   "id": "athletic",
+   "name": "Athletic Club",
+   "shortName": "Athletic",
+   "country": "ES",
+   "colors": [
+    "#EE2523",
+    "#FFFFFF"
+   ],
+   "founded": 1898,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
+   "kit": "stripes",
+   "abbreviation": "ATH"
+  },
+  {
+   "id": "valencia",
+   "name": "Valencia CF",
+   "shortName": "Valencia",
+   "country": "ES",
+   "colors": [
+    "#FFFFFF",
+    "#EE7203"
+   ],
+   "founded": 1919,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
+   "kit": "plain",
+   "abbreviation": "VAL"
+  },
+  {
+   "id": "man-utd",
+   "name": "Manchester United FC",
+   "shortName": "Man United",
+   "country": "GB",
+   "colors": [
+    "#DA291C",
+    "#FBE122"
+   ],
+   "founded": 1878,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
+   "kit": "plain",
+   "abbreviation": "MUN"
+  },
+  {
+   "id": "liverpool",
+   "name": "Liverpool FC",
+   "shortName": "Liverpool",
+   "country": "GB",
+   "colors": [
+    "#C8102E",
+    "#00B2A9"
+   ],
+   "founded": 1892,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
+   "kit": "plain",
+   "abbreviation": "LIV"
+  },
+  {
+   "id": "arsenal",
+   "name": "Arsenal FC",
+   "shortName": "Arsenal",
+   "country": "GB",
+   "colors": [
+    "#EF0107",
+    "#FFFFFF"
+   ],
+   "founded": 1886,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
+   "kit": "plain",
+   "abbreviation": "ARS"
+  },
+  {
+   "id": "man-city",
+   "name": "Manchester City FC",
+   "shortName": "Man City",
+   "country": "GB",
+   "colors": [
+    "#6CABDD",
+    "#1C2C5B"
+   ],
+   "founded": 1880,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+   "kit": "plain",
+   "abbreviation": "MCI"
+  },
+  {
+   "id": "chelsea",
+   "name": "Chelsea FC",
+   "shortName": "Chelsea",
+   "country": "GB",
+   "colors": [
+    "#034694",
+    "#FFFFFF"
+   ],
+   "founded": 1905,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/pbf4ul1782638263.png",
+   "kit": "plain",
+   "abbreviation": "CHE"
+  },
+  {
+   "id": "juventus",
+   "name": "Juventus FC",
+   "shortName": "Juventus",
+   "country": "IT",
+   "colors": [
+    "#FFFFFF",
+    "#111111"
+   ],
+   "founded": 1897,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/uxf0gr1742983727.png",
+   "kit": "stripes",
+   "abbreviation": "JUV"
+  },
+  {
+   "id": "inter",
+   "name": "FC Internazionale Milano",
+   "shortName": "Inter",
+   "country": "IT",
+   "colors": [
+    "#0068A8",
+    "#111111"
+   ],
+   "founded": 1908,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
+   "kit": "stripes",
+   "abbreviation": "INT"
+  },
+  {
+   "id": "milan",
+   "name": "AC Milan",
+   "shortName": "Milan",
+   "country": "IT",
+   "colors": [
+    "#FB090B",
+    "#111111"
+   ],
+   "founded": 1899,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
+   "kit": "stripes",
+   "abbreviation": "MIL"
+  },
+  {
+   "id": "bayern",
+   "name": "FC Bayern München",
+   "shortName": "Bayern",
+   "country": "DE",
+   "colors": [
+    "#DC052D",
+    "#0066B2"
+   ],
+   "founded": 1900,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/01ogkh1716960412.png",
+   "kit": "plain",
+   "abbreviation": "BAY"
+  },
+  {
+   "id": "dortmund",
+   "name": "Borussia Dortmund",
+   "shortName": "Dortmund",
+   "country": "DE",
+   "colors": [
+    "#FDE100",
+    "#111111"
+   ],
+   "founded": 1909,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/tqo8ge1716960353.png",
+   "kit": "plain",
+   "abbreviation": "BVB"
+  },
+  {
+   "id": "psg",
+   "name": "Paris Saint-Germain FC",
+   "shortName": "PSG",
+   "country": "FR",
+   "colors": [
+    "#DA291C",
+    "#004170"
+   ],
+   "founded": 1970,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png",
+   "kit": "centerband",
+   "abbreviation": "PSG"
+  },
+  {
+   "id": "marseille",
+   "name": "Olympique de Marseille",
+   "shortName": "Marseille",
+   "country": "FR",
+   "colors": [
+    "#2FAEE0",
+    "#FFFFFF"
+   ],
+   "founded": 1899,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/c6bazh1779212287.png",
+   "kit": "plain",
+   "abbreviation": "OM"
+  },
+  {
+   "id": "ajax",
+   "name": "AFC Ajax",
+   "shortName": "Ajax",
+   "country": "NL",
+   "colors": [
+    "#D2122E",
+    "#FFFFFF"
+   ],
+   "founded": 1900,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/zg9tii1755495289.png",
+   "kit": "centerband",
+   "abbreviation": "AJA"
+  },
+  {
+   "id": "boca",
+   "name": "Club Atlético Boca Juniors",
+   "shortName": "Boca Juniors",
+   "country": "AR",
+   "colors": [
+    "#103F79",
+    "#F3B229"
+   ],
+   "founded": 1905,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/bm7krb1775741582.png",
+   "kit": "band",
+   "abbreviation": "BOC"
+  },
+  {
+   "id": "river",
+   "name": "Club Atlético River Plate",
+   "shortName": "River Plate",
+   "country": "AR",
+   "colors": [
+    "#FFFFFF",
+    "#E30613"
+   ],
+   "founded": 1901,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/03dmi31645539717.png",
+   "kit": "sash",
+   "abbreviation": "RIV"
+  },
+  {
+   "id": "flamengo",
+   "name": "Clube de Regatas do Flamengo",
+   "shortName": "Flamengo",
+   "country": "BR",
+   "colors": [
+    "#C3281E",
+    "#111111"
+   ],
+   "founded": 1895,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/syptwx1473538074.png",
+   "kit": "hoops",
+   "abbreviation": "FLA"
+  },
+  {
+   "id": "palmeiras",
+   "name": "Sociedade Esportiva Palmeiras",
+   "shortName": "Palmeiras",
+   "country": "BR",
+   "colors": [
+    "#006437",
+    "#FFFFFF"
+   ],
+   "founded": 1914,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/vsqwqp1473538105.png",
+   "kit": "plain",
+   "abbreviation": "PAL"
+  },
+  {
+   "id": "penarol",
+   "name": "Club Atlético Peñarol",
+   "shortName": "Peñarol",
+   "country": "UY",
+   "colors": [
+    "#F7D116",
+    "#111111"
+   ],
+   "founded": 1891,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/uuwpux1473541171.png",
+   "kit": "stripes",
+   "abbreviation": "PEN"
+  },
+  {
+   "id": "al-ahly",
+   "name": "Al Ahly SC",
+   "shortName": "Al Ahly",
+   "country": "EG",
+   "colors": [
+    "#E30613",
+    "#FFFFFF"
+   ],
+   "founded": 1907,
+   "crestURL": "https://r2.thesportsdb.com/images/media/team/badge/x8753q1751421890.png",
+   "kit": "plain",
+   "abbreviation": "AHL"
+  }
+ ],
+ "honours": [
+  {
+   "club": "benfica",
+   "competition": "pt-liga",
+   "seasons": [
+    "1935–36",
+    "1936–37",
+    "1937–38",
+    "1941–42",
+    "1942–43",
+    "1944–45",
+    "1949–50",
+    "1954–55",
+    "1956–57",
+    "1959–60",
+    "1960–61",
+    "1962–63",
+    "1963–64",
+    "1964–65",
+    "1966–67",
+    "1967–68",
+    "1968–69",
+    "1970–71",
+    "1971–72",
+    "1972–73",
+    "1974–75",
+    "1975–76",
+    "1976–77",
+    "1980–81",
+    "1982–83",
+    "1983–84",
+    "1986–87",
+    "1988–89",
+    "1990–91",
+    "1993–94",
+    "2004–05",
+    "2009–10",
+    "2013–14",
+    "2014–15",
+    "2015–16",
+    "2016–17",
+    "2018–19",
+    "2022–23"
+   ]
+  },
+  {
+   "club": "benfica",
+   "competition": "pt-taca",
+   "count": 26
+  },
+  {
+   "club": "benfica",
+   "competition": "pt-supertaca",
+   "count": 9
+  },
+  {
+   "club": "benfica",
+   "competition": "pt-tacaliga",
+   "count": 8
+  },
+  {
+   "club": "benfica",
+   "competition": "uefa-cl",
+   "finals": [
+    {
+     "season": "1961",
+     "date": "1961-05-31",
+     "opponent": "Barcelona",
+     "score": "3–2",
+     "venue": "Bern",
+     "opponentCountry": "ES"
+    },
+    {
+     "season": "1962",
+     "date": "1962-05-02",
+     "opponent": "Real Madrid",
+     "score": "5–3",
+     "venue": "Amsterdam",
+     "opponentCountry": "ES"
+    }
+   ]
+  },
+  {
+   "club": "porto",
+   "competition": "pt-liga",
+   "seasons": [
+    "1934–35",
+    "1938–39",
+    "1939–40",
+    "1955–56",
+    "1958–59",
+    "1977–78",
+    "1978–79",
+    "1984–85",
+    "1985–86",
+    "1987–88",
+    "1989–90",
+    "1991–92",
+    "1992–93",
+    "1994–95",
+    "1995–96",
+    "1996–97",
+    "1997–98",
+    "1998–99",
+    "2002–03",
+    "2003–04",
+    "2005–06",
+    "2006–07",
+    "2007–08",
+    "2008–09",
+    "2010–11",
+    "2011–12",
+    "2012–13",
+    "2017–18",
+    "2019–20",
+    "2021–22"
+   ]
+  },
+  {
+   "club": "porto",
+   "competition": "pt-taca",
+   "count": 20
+  },
+  {
+   "club": "porto",
+   "competition": "pt-supertaca",
+   "count": 24
+  },
+  {
+   "club": "porto",
+   "competition": "pt-tacaliga",
+   "count": 1
+  },
+  {
+   "club": "porto",
+   "competition": "uefa-cl",
+   "finals": [
+    {
+     "season": "1987",
+     "date": "1987-05-27",
+     "opponent": "Bayern Munich",
+     "score": "2–1",
+     "venue": "Vienna",
+     "opponentCountry": "DE"
+    },
+    {
+     "season": "2004",
+     "date": "2004-05-26",
+     "opponent": "Monaco",
+     "score": "3–0",
+     "venue": "Gelsenkirchen",
+     "opponentCountry": "MC"
+    }
+   ]
+  },
+  {
+   "club": "porto",
+   "competition": "uefa-el",
+   "finals": [
+    {
+     "season": "2003",
+     "date": "2003-05-21",
+     "opponent": "Celtic",
+     "score": "3–2",
+     "venue": "Seville",
+     "extraTime": true,
+     "opponentCountry": "GB-SCT"
+    },
+    {
+     "season": "2011",
+     "date": "2011-05-18",
+     "opponent": "Braga",
+     "score": "1–0",
+     "venue": "Dublin",
+     "opponentCountry": "PT"
+    }
+   ]
+  },
+  {
+   "club": "porto",
+   "competition": "uefa-super",
+   "finals": [
+    {
+     "season": "1987",
+     "date": "1988-01-13",
+     "opponent": "Ajax",
+     "score": "2–0",
+     "aggregate": true,
+     "opponentCountry": "NL"
+    }
+   ]
+  },
+  {
+   "club": "porto",
+   "competition": "fifa-ic",
+   "finals": [
+    {
+     "season": "1987",
+     "date": "1987-12-13",
+     "opponent": "Peñarol",
+     "score": "2–1",
+     "venue": "Tokyo",
+     "extraTime": true,
+     "opponentCountry": "UY"
+    },
+    {
+     "season": "2004",
+     "date": "2004-12-12",
+     "opponent": "Once Caldas",
+     "score": "0–0",
+     "venue": "Yokohama",
+     "penalties": "8–7",
+     "opponentCountry": "CO"
+    }
+   ]
+  },
+  {
+   "club": "sporting",
+   "competition": "pt-liga",
+   "seasons": [
+    "1940–41",
+    "1943–44",
+    "1946–47",
+    "1947–48",
+    "1948–49",
+    "1950–51",
+    "1951–52",
+    "1952–53",
+    "1953–54",
+    "1957–58",
+    "1961–62",
+    "1965–66",
+    "1969–70",
+    "1973–74",
+    "1979–80",
+    "1981–82",
+    "1999–2000",
+    "2001–02",
+    "2020–21",
+    "2023–24",
+    "2024–25"
+   ]
+  },
+  {
+   "club": "sporting",
+   "competition": "pt-taca",
+   "count": 18
+  },
+  {
+   "club": "sporting",
+   "competition": "pt-supertaca",
+   "count": 9
+  },
+  {
+   "club": "sporting",
+   "competition": "pt-tacaliga",
+   "count": 4
+  },
+  {
+   "club": "sporting",
+   "competition": "uefa-cwc",
+   "finals": [
+    {
+     "season": "1964",
+     "date": "1964-05-15",
+     "opponent": "MTK Budapest",
+     "score": "1–0",
+     "venue": "Antwerp",
+     "replay": true,
+     "opponentCountry": "HU"
+    }
+   ]
+  },
+  {
+   "club": "braga",
+   "competition": "pt-taca",
+   "count": 3
+  },
+  {
+   "club": "braga",
+   "competition": "pt-supertaca",
+   "count": 1
+  },
+  {
+   "club": "braga",
+   "competition": "pt-tacaliga",
+   "count": 3
+  },
+  {
+   "club": "boavista",
+   "competition": "pt-liga",
+   "count": 1
+  },
+  {
+   "club": "boavista",
+   "competition": "pt-taca",
+   "count": 5
+  },
+  {
+   "club": "boavista",
+   "competition": "pt-supertaca",
+   "count": 3
+  },
+  {
+   "club": "belenenses",
+   "competition": "pt-liga",
+   "count": 1
+  },
+  {
+   "club": "belenenses",
+   "competition": "pt-taca",
+   "count": 3
+  },
+  {
+   "club": "vitoria-sc",
+   "competition": "pt-taca",
+   "count": 1
+  },
+  {
+   "club": "vitoria-sc",
+   "competition": "pt-supertaca",
+   "count": 1
+  },
+  {
+   "club": "real-madrid",
+   "competition": "es-liga",
+   "count": 36
+  },
+  {
+   "club": "real-madrid",
+   "competition": "es-copa",
+   "count": 20
+  },
+  {
+   "club": "real-madrid",
+   "competition": "es-super",
+   "count": 13
+  },
+  {
+   "club": "real-madrid",
+   "competition": "uefa-cl",
+   "finals": [
+    {
+     "season": "1956",
+     "date": "1956-06-13",
+     "opponent": "Reims",
+     "score": "4–3",
+     "venue": "Paris",
+     "opponentCountry": "FR"
+    },
+    {
+     "season": "1957",
+     "date": "1957-05-30",
+     "opponent": "Fiorentina",
+     "score": "2–0",
+     "venue": "Madrid",
+     "opponentCountry": "IT"
+    },
+    {
+     "season": "1958",
+     "date": "1958-05-28",
+     "opponent": "Milan",
+     "score": "3–2",
+     "venue": "Brussels",
+     "extraTime": true,
+     "opponentCountry": "IT"
+    },
+    {
+     "season": "1959",
+     "date": "1959-06-03",
+     "opponent": "Reims",
+     "score": "2–0",
+     "venue": "Stuttgart",
+     "opponentCountry": "FR"
+    },
+    {
+     "season": "1960",
+     "date": "1960-05-18",
+     "opponent": "Eintracht Frankfurt",
+     "score": "7–3",
+     "venue": "Glasgow",
+     "opponentCountry": "DE"
+    },
+    {
+     "season": "1966",
+     "date": "1966-05-11",
+     "opponent": "Partizan",
+     "score": "2–1",
+     "venue": "Brussels",
+     "opponentCountry": "RS"
+    },
+    {
+     "season": "1998",
+     "date": "1998-05-20",
+     "opponent": "Juventus",
+     "score": "1–0",
+     "venue": "Amsterdam",
+     "opponentCountry": "IT"
+    },
+    {
+     "season": "2000",
+     "date": "2000-05-24",
+     "opponent": "Valencia",
+     "score": "3–0",
+     "venue": "Saint-Denis",
+     "opponentCountry": "ES"
+    },
+    {
+     "season": "2002",
+     "date": "2002-05-15",
+     "opponent": "Bayer Leverkusen",
+     "score": "2–1",
+     "venue": "Glasgow",
+     "opponentCountry": "DE"
+    },
+    {
+     "season": "2014",
+     "date": "2014-05-24",
+     "opponent": "Atlético Madrid",
+     "score": "4–1",
+     "venue": "Lisbon",
+     "extraTime": true,
+     "opponentCountry": "ES"
+    },
+    {
+     "season": "2016",
+     "date": "2016-05-28",
+     "opponent": "Atlético Madrid",
+     "score": "1–1",
+     "venue": "Milan",
+     "penalties": "5–3",
+     "opponentCountry": "ES"
+    },
+    {
+     "season": "2017",
+     "date": "2017-06-03",
+     "opponent": "Juventus",
+     "score": "4–1",
+     "venue": "Cardiff",
+     "opponentCountry": "IT"
+    },
+    {
+     "season": "2018",
+     "date": "2018-05-26",
+     "opponent": "Liverpool",
+     "score": "3–1",
+     "venue": "Kyiv",
+     "opponentCountry": "GB-ENG"
+    },
+    {
+     "season": "2022",
+     "date": "2022-05-28",
+     "opponent": "Liverpool",
+     "score": "1–0",
+     "venue": "Saint-Denis",
+     "opponentCountry": "GB-ENG"
+    },
+    {
+     "season": "2024",
+     "date": "2024-06-01",
+     "opponent": "Borussia Dortmund",
+     "score": "2–0",
+     "venue": "London",
+     "opponentCountry": "DE"
+    }
+   ]
+  },
+  {
+   "club": "real-madrid",
+   "competition": "uefa-el",
+   "count": 2
+  },
+  {
+   "club": "real-madrid",
+   "competition": "uefa-super",
+   "count": 6
+  },
+  {
+   "club": "real-madrid",
+   "competition": "fifa-ic",
+   "count": 3
+  },
+  {
+   "club": "real-madrid",
+   "competition": "fifa-cwc",
+   "count": 5
+  },
+  {
+   "club": "barcelona",
+   "competition": "es-liga",
+   "count": 28
+  },
+  {
+   "club": "barcelona",
+   "competition": "es-copa",
+   "count": 32
+  },
+  {
+   "club": "barcelona",
+   "competition": "es-super",
+   "count": 15
+  },
+  {
+   "club": "barcelona",
+   "competition": "uefa-cl",
+   "count": 5
+  },
+  {
+   "club": "barcelona",
+   "competition": "uefa-cwc",
+   "count": 4
+  },
+  {
+   "club": "barcelona",
+   "competition": "uefa-super",
+   "count": 5
+  },
+  {
+   "club": "barcelona",
+   "competition": "fifa-cwc",
+   "count": 3
+  },
+  {
+   "club": "atletico",
+   "competition": "es-liga",
+   "count": 11
+  },
+  {
+   "club": "atletico",
+   "competition": "es-copa",
+   "count": 10
+  },
+  {
+   "club": "atletico",
+   "competition": "es-super",
+   "count": 2
+  },
+  {
+   "club": "atletico",
+   "competition": "uefa-el",
+   "count": 3
+  },
+  {
+   "club": "atletico",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "atletico",
+   "competition": "uefa-super",
+   "count": 3
+  },
+  {
+   "club": "atletico",
+   "competition": "fifa-ic",
+   "count": 1
+  },
+  {
+   "club": "athletic",
+   "competition": "es-liga",
+   "count": 8
+  },
+  {
+   "club": "athletic",
+   "competition": "es-copa",
+   "count": 24
+  },
+  {
+   "club": "athletic",
+   "competition": "es-super",
+   "count": 3
+  },
+  {
+   "club": "valencia",
+   "competition": "es-liga",
+   "count": 6
+  },
+  {
+   "club": "valencia",
+   "competition": "es-copa",
+   "count": 8
+  },
+  {
+   "club": "valencia",
+   "competition": "es-super",
+   "count": 1
+  },
+  {
+   "club": "valencia",
+   "competition": "uefa-el",
+   "count": 1
+  },
+  {
+   "club": "valencia",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "valencia",
+   "competition": "uefa-super",
+   "count": 2
+  },
+  {
+   "club": "man-utd",
+   "competition": "gb-liga",
+   "count": 20
+  },
+  {
+   "club": "man-utd",
+   "competition": "gb-fa",
+   "count": 13
+  },
+  {
+   "club": "man-utd",
+   "competition": "gb-lc",
+   "count": 6
+  },
+  {
+   "club": "man-utd",
+   "competition": "uefa-cl",
+   "count": 3
+  },
+  {
+   "club": "man-utd",
+   "competition": "uefa-el",
+   "count": 1
+  },
+  {
+   "club": "man-utd",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "man-utd",
+   "competition": "uefa-super",
+   "count": 1
+  },
+  {
+   "club": "man-utd",
+   "competition": "fifa-ic",
+   "count": 1
+  },
+  {
+   "club": "man-utd",
+   "competition": "fifa-cwc",
+   "count": 1
+  },
+  {
+   "club": "liverpool",
+   "competition": "gb-liga",
+   "count": 20
+  },
+  {
+   "club": "liverpool",
+   "competition": "gb-fa",
+   "count": 8
+  },
+  {
+   "club": "liverpool",
+   "competition": "gb-lc",
+   "count": 10
+  },
+  {
+   "club": "liverpool",
+   "competition": "uefa-cl",
+   "count": 6
+  },
+  {
+   "club": "liverpool",
+   "competition": "uefa-el",
+   "count": 3
+  },
+  {
+   "club": "liverpool",
+   "competition": "uefa-super",
+   "count": 4
+  },
+  {
+   "club": "liverpool",
+   "competition": "fifa-cwc",
+   "count": 1
+  },
+  {
+   "club": "arsenal",
+   "competition": "gb-liga",
+   "count": 13
+  },
+  {
+   "club": "arsenal",
+   "competition": "gb-fa",
+   "count": 14
+  },
+  {
+   "club": "arsenal",
+   "competition": "gb-lc",
+   "count": 2
+  },
+  {
+   "club": "arsenal",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "man-city",
+   "competition": "gb-liga",
+   "count": 10
+  },
+  {
+   "club": "man-city",
+   "competition": "gb-fa",
+   "count": 7
+  },
+  {
+   "club": "man-city",
+   "competition": "gb-lc",
+   "count": 8
+  },
+  {
+   "club": "man-city",
+   "competition": "uefa-cl",
+   "count": 1
+  },
+  {
+   "club": "man-city",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "man-city",
+   "competition": "uefa-super",
+   "count": 1
+  },
+  {
+   "club": "man-city",
+   "competition": "fifa-cwc",
+   "count": 1
+  },
+  {
+   "club": "chelsea",
+   "competition": "gb-liga",
+   "count": 6
+  },
+  {
+   "club": "chelsea",
+   "competition": "gb-fa",
+   "count": 8
+  },
+  {
+   "club": "chelsea",
+   "competition": "gb-lc",
+   "count": 5
+  },
+  {
+   "club": "chelsea",
+   "competition": "uefa-cl",
+   "count": 2
+  },
+  {
+   "club": "chelsea",
+   "competition": "uefa-el",
+   "count": 2
+  },
+  {
+   "club": "chelsea",
+   "competition": "uefa-cwc",
+   "count": 2
+  },
+  {
+   "club": "chelsea",
+   "competition": "uefa-ecl",
+   "count": 1
+  },
+  {
+   "club": "chelsea",
+   "competition": "uefa-super",
+   "count": 2
+  },
+  {
+   "club": "chelsea",
+   "competition": "fifa-cwc",
+   "count": 2
+  },
+  {
+   "club": "juventus",
+   "competition": "it-liga",
+   "count": 36
+  },
+  {
+   "club": "juventus",
+   "competition": "it-coppa",
+   "count": 15
+  },
+  {
+   "club": "juventus",
+   "competition": "uefa-cl",
+   "count": 2
+  },
+  {
+   "club": "juventus",
+   "competition": "uefa-el",
+   "count": 3
+  },
+  {
+   "club": "juventus",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "juventus",
+   "competition": "uefa-super",
+   "count": 2
+  },
+  {
+   "club": "juventus",
+   "competition": "fifa-ic",
+   "count": 2
+  },
+  {
+   "club": "inter",
+   "competition": "it-liga",
+   "count": 20
+  },
+  {
+   "club": "inter",
+   "competition": "it-coppa",
+   "count": 9
+  },
+  {
+   "club": "inter",
+   "competition": "uefa-cl",
+   "count": 3
+  },
+  {
+   "club": "inter",
+   "competition": "uefa-el",
+   "count": 3
+  },
+  {
+   "club": "inter",
+   "competition": "fifa-ic",
+   "count": 2
+  },
+  {
+   "club": "inter",
+   "competition": "fifa-cwc",
+   "count": 1
+  },
+  {
+   "club": "milan",
+   "competition": "it-liga",
+   "count": 19
+  },
+  {
+   "club": "milan",
+   "competition": "it-coppa",
+   "count": 5
+  },
+  {
+   "club": "milan",
+   "competition": "uefa-cl",
+   "count": 7
+  },
+  {
+   "club": "milan",
+   "competition": "uefa-cwc",
+   "count": 2
+  },
+  {
+   "club": "milan",
+   "competition": "uefa-super",
+   "count": 5
+  },
+  {
+   "club": "milan",
+   "competition": "fifa-ic",
+   "count": 3
+  },
+  {
+   "club": "milan",
+   "competition": "fifa-cwc",
+   "count": 1
+  },
+  {
+   "club": "bayern",
+   "competition": "de-liga",
+   "count": 34
+  },
+  {
+   "club": "bayern",
+   "competition": "de-pokal",
+   "count": 20
+  },
+  {
+   "club": "bayern",
+   "competition": "uefa-cl",
+   "count": 6
+  },
+  {
+   "club": "bayern",
+   "competition": "uefa-el",
+   "count": 1
+  },
+  {
+   "club": "bayern",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "bayern",
+   "competition": "uefa-super",
+   "count": 2
+  },
+  {
+   "club": "bayern",
+   "competition": "fifa-ic",
+   "count": 2
+  },
+  {
+   "club": "bayern",
+   "competition": "fifa-cwc",
+   "count": 2
+  },
+  {
+   "club": "dortmund",
+   "competition": "de-liga",
+   "count": 8
+  },
+  {
+   "club": "dortmund",
+   "competition": "de-pokal",
+   "count": 5
+  },
+  {
+   "club": "dortmund",
+   "competition": "uefa-cl",
+   "count": 1
+  },
+  {
+   "club": "dortmund",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "dortmund",
+   "competition": "fifa-ic",
+   "count": 1
+  },
+  {
+   "club": "psg",
+   "competition": "fr-liga",
+   "count": 13
+  },
+  {
+   "club": "psg",
+   "competition": "fr-coupe",
+   "count": 16
+  },
+  {
+   "club": "psg",
+   "competition": "uefa-cl",
+   "count": 1
+  },
+  {
+   "club": "psg",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "marseille",
+   "competition": "fr-liga",
+   "count": 9
+  },
+  {
+   "club": "marseille",
+   "competition": "fr-coupe",
+   "count": 10
+  },
+  {
+   "club": "marseille",
+   "competition": "uefa-cl",
+   "count": 1
+  },
+  {
+   "club": "ajax",
+   "competition": "nl-liga",
+   "count": 36
+  },
+  {
+   "club": "ajax",
+   "competition": "nl-knvb",
+   "count": 20
+  },
+  {
+   "club": "ajax",
+   "competition": "uefa-cl",
+   "count": 4
+  },
+  {
+   "club": "ajax",
+   "competition": "uefa-el",
+   "count": 1
+  },
+  {
+   "club": "ajax",
+   "competition": "uefa-cwc",
+   "count": 1
+  },
+  {
+   "club": "ajax",
+   "competition": "uefa-super",
+   "count": 2
+  },
+  {
+   "club": "ajax",
+   "competition": "fifa-ic",
+   "count": 2
+  },
+  {
+   "club": "boca",
+   "competition": "ar-liga",
+   "count": 35
+  },
+  {
+   "club": "boca",
+   "competition": "conmebol-lib",
+   "count": 6
+  },
+  {
+   "club": "boca",
+   "competition": "conmebol-sud",
+   "count": 2
+  },
+  {
+   "club": "boca",
+   "competition": "fifa-ic",
+   "count": 3
+  },
+  {
+   "club": "river",
+   "competition": "ar-liga",
+   "count": 38
+  },
+  {
+   "club": "river",
+   "competition": "conmebol-lib",
+   "count": 4
+  },
+  {
+   "club": "river",
+   "competition": "conmebol-sud",
+   "count": 1
+  },
+  {
+   "club": "river",
+   "competition": "fifa-ic",
+   "count": 1
+  },
+  {
+   "club": "flamengo",
+   "competition": "br-liga",
+   "count": 8
+  },
+  {
+   "club": "flamengo",
+   "competition": "br-copa",
+   "count": 5
+  },
+  {
+   "club": "flamengo",
+   "competition": "conmebol-lib",
+   "count": 4
+  },
+  {
+   "club": "flamengo",
+   "competition": "fifa-ic",
+   "count": 1
+  },
+  {
+   "club": "palmeiras",
+   "competition": "br-liga",
+   "count": 12
+  },
+  {
+   "club": "palmeiras",
+   "competition": "br-copa",
+   "count": 4
+  },
+  {
+   "club": "palmeiras",
+   "competition": "conmebol-lib",
+   "count": 3
+  },
+  {
+   "club": "penarol",
+   "competition": "uy-liga",
+   "count": 51
+  },
+  {
+   "club": "penarol",
+   "competition": "conmebol-lib",
+   "count": 5
+  },
+  {
+   "club": "penarol",
+   "competition": "fifa-ic",
+   "count": 3
+  },
+  {
+   "club": "al-ahly",
+   "competition": "eg-liga",
+   "count": 45
+  },
+  {
+   "club": "al-ahly",
+   "competition": "caf-cl",
+   "count": 12
+  }
+ ]
+}

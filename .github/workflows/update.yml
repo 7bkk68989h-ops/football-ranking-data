@@ -1,0 +1,58 @@
+# Atualiza os dados da app Football Ranking todas as semanas.
+# Vai buscar os títulos e os treinadores à Wikipédia, junta os dados do Wikidata, a pontuação e as
+# correções, verifica se o resultado faz sentido e só então publica data_bundle.json.
+# Se houver algo estranho não publica: abre um pedido (issue) com o relatório e o GitHub avisa por email.
+name: Atualizar dados
+on:
+  schedule:
+    - cron: "0 5 * * 1"        # segundas-feiras, 05:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["pipeline/**", ".github/workflows/**"]
+permissions:
+  contents: write
+  issues: write
+concurrency: atualizar-dados
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      WP_DELAY: "4"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recolher e converter
+        id: recolha
+        working-directory: pipeline
+        run: |
+          python3 Tools/wikipedia/harvest.py
+          python3 Tools/wikipedia/harvest_managers.py
+          python3 Tools/wikidata/convert.py
+      - name: Verificar
+        id: verificar
+        run: |
+          set +e
+          python3 pipeline/Tools/pipeline/check.py data_bundle.json pipeline/remote/data_bundle.json > relatorio.txt
+          echo "codigo=$?" >> "$GITHUB_OUTPUT"
+          cat relatorio.txt
+      - name: Publicar
+        if: steps.verificar.outputs.codigo == '0'
+        run: |
+          cp pipeline/remote/data_bundle.json data_bundle.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data_bundle.json
+          git commit -F relatorio.txt
+          git push
+      - name: Avisar se algo falhou ou é estranho
+        if: failure() || steps.verificar.outputs.codigo == '2'
+        run: |
+          [ -s relatorio.txt ] || echo "A recolha dos dados falhou antes da verificação. Nada foi publicado. Ver o registo da execução." > relatorio.txt
+          printf '\n\n@%s para validar. Execução: %s/%s/actions/runs/%s\n' "$GITHUB_REPOSITORY_OWNER" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> relatorio.txt
+          gh issue create --title "Dados por validar ($(date -u +%Y-%m-%d))" --body-file relatorio.txt
+          exit 1

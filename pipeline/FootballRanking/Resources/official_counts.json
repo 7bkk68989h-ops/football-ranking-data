@@ -1,0 +1,31 @@
+{
+ "note": "Official trophy counts given by Pedro (3 Oct 2026). They win over the counts in the data, including the Wikidata data.",
+ "competitions": [
+  {"id": "pt-campeonato", "name": "Campeonato de Portugal", "level": "domestic", "kind": "cup", "country": "PT", "defunct": true}
+ ],
+ "counts": [
+  {"club": "porto", "competition": "pt-liga", "count": 31},
+  {"club": "porto", "competition": "pt-taca", "count": 20},
+  {"club": "porto", "competition": "pt-supertaca", "count": 25},
+  {"club": "porto", "competition": "pt-campeonato", "count": 4},
+  {"club": "porto", "competition": "pt-tacaliga", "count": 1},
+  {"club": "porto", "competition": "uefa-cl", "count": 2},
+  {"club": "porto", "competition": "uefa-el", "count": 2},
+  {"club": "porto", "competition": "fifa-ic", "count": 2},
+  {"club": "porto", "competition": "uefa-super", "count": 1},
+
+  {"club": "benfica", "competition": "pt-liga", "count": 38},
+  {"club": "benfica", "competition": "pt-taca", "count": 26},
+  {"club": "benfica", "competition": "pt-supertaca", "count": 10},
+  {"club": "benfica", "competition": "pt-tacaliga", "count": 8},
+  {"club": "benfica", "competition": "pt-campeonato", "count": 3},
+  {"club": "benfica", "competition": "uefa-cl", "count": 2},
+
+  {"club": "sporting", "competition": "pt-liga", "count": 21},
+  {"club": "sporting", "competition": "pt-taca", "count": 18, "seasons": ["1941", "1945", "1946", "1948", "1954", "1963", "1971", "1973", "1974", "1978", "1982", "1995", "2002", "2007", "2008", "2015", "2019", "2025"]},
+  {"club": "sporting", "competition": "pt-supertaca", "count": 9},
+  {"club": "sporting", "competition": "pt-tacaliga", "count": 4},
+  {"club": "sporting", "competition": "pt-campeonato", "count": 4},
+  {"club": "sporting", "competition": "uefa-cwc", "count": 1}
+ ]
+}
