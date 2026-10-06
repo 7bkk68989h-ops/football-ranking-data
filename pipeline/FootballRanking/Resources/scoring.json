@@ -1,7 +1,10 @@
 {
   "name": "Points set per competition",
   "defaultWeight": 1,
-  "kinds": {},
+  "kinds": {
+    "league": 3,
+    "cup": 1
+  },
   "competitions": {
     "fifa-ic": 4,
     "fifa-cwc": 4,

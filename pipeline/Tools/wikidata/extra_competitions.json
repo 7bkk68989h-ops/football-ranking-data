@@ -1,0 +1,602 @@
+{
+ "at-liga": {
+  "name": "Austrian Bundesliga",
+  "country": "AT",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "be-liga": {
+  "name": "Belgian Pro League",
+  "country": "BE",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "dk-liga": {
+  "name": "Danish Superliga",
+  "country": "DK",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "fi-liga": {
+  "name": "Veikkausliiga",
+  "country": "FI",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "sct-liga": {
+  "name": "Scottish Premiership",
+  "country": "GB-SCT",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "ch-liga": {
+  "name": "Swiss Super League",
+  "country": "CH",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "se-liga": {
+  "name": "Allsvenskan",
+  "country": "SE",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "no-liga": {
+  "name": "Eliteserien",
+  "country": "NO",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "cz-liga": {
+  "name": "Czech First League",
+  "country": "CZ",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "tr-liga": {
+  "name": "Süper Lig",
+  "country": "TR",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "gr-liga": {
+  "name": "Super League Greece",
+  "country": "GR",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "ru-liga": {
+  "name": "Russian Premier League",
+  "country": "RU",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "ua-liga": {
+  "name": "Ukrainian Premier League",
+  "country": "UA",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "bg-liga": {
+  "name": "Bulgarian First League",
+  "country": "BG",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "hr-liga": {
+  "name": "Croatian Football League",
+  "country": "HR",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "hu-liga": {
+  "name": "Nemzeti Bajnokság I",
+  "country": "HU",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "pl-liga": {
+  "name": "Ekstraklasa",
+  "country": "PL",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "ro-liga": {
+  "name": "Liga I",
+  "country": "RO",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "sk-liga": {
+  "name": "Slovak First League",
+  "country": "SK",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "si-liga": {
+  "name": "Slovenian PrvaLiga",
+  "country": "SI",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "rs-liga": {
+  "name": "Serbian SuperLiga",
+  "country": "RS",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "ie-liga": {
+  "name": "League of Ireland",
+  "country": "IE",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "il-liga": {
+  "name": "Israeli Premier League",
+  "country": "IL",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "by-liga": {
+  "name": "Belarusian Premier League",
+  "country": "BY",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "is-liga": {
+  "name": "Besta deild",
+  "country": "IS",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "cy-liga": {
+  "name": "Cypriot First Division",
+  "country": "CY",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "ge-liga": {
+  "name": "Erovnuli Liga",
+  "country": "GE",
+  "confederation": "UEFA",
+  "kind": "league"
+ },
+ "be-taca": {
+  "name": "Belgian Cup",
+  "country": "BE",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "mx-liga": {
+  "name": "Liga MX",
+  "country": "MX",
+  "confederation": "CONCACAF",
+  "kind": "league"
+ },
+ "co-liga": {
+  "name": "Categoría Primera A",
+  "country": "CO",
+  "confederation": "CONMEBOL",
+  "kind": "league"
+ },
+ "py-liga": {
+  "name": "Paraguayan Primera División",
+  "country": "PY",
+  "confederation": "CONMEBOL",
+  "kind": "league"
+ },
+ "pe-liga": {
+  "name": "Peruvian Liga 1",
+  "country": "PE",
+  "confederation": "CONMEBOL",
+  "kind": "league"
+ },
+ "cl-liga": {
+  "name": "Chilean Primera División",
+  "country": "CL",
+  "confederation": "CONMEBOL",
+  "kind": "league"
+ },
+ "ec-liga": {
+  "name": "Ecuadorian Serie A",
+  "country": "EC",
+  "confederation": "CONMEBOL",
+  "kind": "league"
+ },
+ "bo-liga": {
+  "name": "Bolivian Primera División",
+  "country": "BO",
+  "confederation": "CONMEBOL",
+  "kind": "league"
+ },
+ "ve-liga": {
+  "name": "Venezuelan Primera División",
+  "country": "VE",
+  "confederation": "CONMEBOL",
+  "kind": "league"
+ },
+ "ma-liga": {
+  "name": "Botola Pro",
+  "country": "MA",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "cm-liga": {
+  "name": "Elite One",
+  "country": "CM",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "dz-liga": {
+  "name": "Algerian Ligue 1",
+  "country": "DZ",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "za-liga": {
+  "name": "South African Premiership",
+  "country": "ZA",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "tn-liga": {
+  "name": "Tunisian Ligue 1",
+  "country": "TN",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "ng-liga": {
+  "name": "Nigeria Premier League",
+  "country": "NG",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "ci-liga": {
+  "name": "Ivorian Ligue 1",
+  "country": "CI",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "gh-liga": {
+  "name": "Ghana Premier League",
+  "country": "GH",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "ao-liga": {
+  "name": "Girabola",
+  "country": "AO",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "jp-liga": {
+  "name": "J1 League",
+  "country": "JP",
+  "confederation": "AFC",
+  "kind": "league"
+ },
+ "cn-liga": {
+  "name": "Chinese Super League",
+  "country": "CN",
+  "confederation": "AFC",
+  "kind": "league"
+ },
+ "kr-liga": {
+  "name": "K League 1",
+  "country": "KR",
+  "confederation": "AFC",
+  "kind": "league"
+ },
+ "au-liga": {
+  "name": "A-League",
+  "country": "AU",
+  "confederation": "AFC",
+  "kind": "league"
+ },
+ "ir-liga": {
+  "name": "Persian Gulf Pro League",
+  "country": "IR",
+  "confederation": "AFC",
+  "kind": "league"
+ },
+ "qa-liga": {
+  "name": "Qatar Stars League",
+  "country": "QA",
+  "confederation": "AFC",
+  "kind": "league"
+ },
+ "ae-liga": {
+  "name": "UAE Pro League",
+  "country": "AE",
+  "confederation": "AFC",
+  "kind": "league"
+ },
+ "th-liga": {
+  "name": "Thai League 1",
+  "country": "TH",
+  "confederation": "AFC",
+  "kind": "league"
+ },
+ "sct-taca": {
+  "name": "Scottish Cup",
+  "country": "GB-SCT",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "at-taca": {
+  "name": "Austrian Cup",
+  "country": "AT",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "tr-taca": {
+  "name": "Turkish Cup",
+  "country": "TR",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "gr-taca": {
+  "name": "Greek Cup",
+  "country": "GR",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "ru-taca": {
+  "name": "Russian Cup",
+  "country": "RU",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "cn-taca": {
+  "name": "Chinese FA Cup",
+  "country": "CN",
+  "confederation": "AFC",
+  "kind": "cup"
+ },
+ "tn-taca": {
+  "name": "Tunisian Cup",
+  "country": "TN",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "ch-taca": {
+  "name": "Swiss Cup",
+  "country": "CH",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "is-taca": {
+  "name": "Icelandic Cup",
+  "country": "IS",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "cl-taca": {
+  "name": "Copa Chile",
+  "country": "CL",
+  "confederation": "CONMEBOL",
+  "kind": "cup"
+ },
+ "hr-taca": {
+  "name": "Croatian Cup",
+  "country": "HR",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "dk-taca": {
+  "name": "Danish Cup",
+  "country": "DK",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "ua-taca": {
+  "name": "Ukrainian Cup",
+  "country": "UA",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "cz-taca": {
+  "name": "Czech Cup",
+  "country": "CZ",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "hu-taca": {
+  "name": "Magyar Kupa",
+  "country": "HU",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "bg-taca": {
+  "name": "Bulgarian Cup",
+  "country": "BG",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "ro-taca": {
+  "name": "Cupa României",
+  "country": "RO",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "ma-taca": {
+  "name": "Moroccan Throne Cup",
+  "country": "MA",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "co-taca": {
+  "name": "Copa Colombia",
+  "country": "CO",
+  "confederation": "CONMEBOL",
+  "kind": "cup"
+ },
+ "no-taca": {
+  "name": "Norwegian Cup",
+  "country": "NO",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "fi-taca": {
+  "name": "Finnish Cup",
+  "country": "FI",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "ir-taca": {
+  "name": "Hazfi Cup",
+  "country": "IR",
+  "confederation": "AFC",
+  "kind": "cup"
+ },
+ "cy-taca": {
+  "name": "Cypriot Cup",
+  "country": "CY",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "se-taca": {
+  "name": "Svenska Cupen",
+  "country": "SE",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "sk-taca": {
+  "name": "Slovak Cup",
+  "country": "SK",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "ie-taca": {
+  "name": "FAI Cup",
+  "country": "IE",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "dz-taca": {
+  "name": "Algerian Cup",
+  "country": "DZ",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "gh-taca": {
+  "name": "Ghanaian FA Cup",
+  "country": "GH",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "cm-taca": {
+  "name": "Cameroonian Cup",
+  "country": "CM",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "ao-taca": {
+  "name": "Taça de Angola",
+  "country": "AO",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "ae-taca": {
+  "name": "UAE President's Cup",
+  "country": "AE",
+  "confederation": "AFC",
+  "kind": "cup"
+ },
+ "qa-taca": {
+  "name": "Emir of Qatar Cup",
+  "country": "QA",
+  "confederation": "AFC",
+  "kind": "cup"
+ },
+ "ve-taca": {
+  "name": "Copa Venezuela",
+  "country": "VE",
+  "confederation": "CONMEBOL",
+  "kind": "cup"
+ },
+ "za-taca": {
+  "name": "Nedbank Cup",
+  "country": "ZA",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "pl-taca": {
+  "name": "Polish Cup",
+  "country": "PL",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "mx-taca": {
+  "name": "Copa MX",
+  "country": "MX",
+  "confederation": "CONCACAF",
+  "kind": "cup"
+ },
+ "ng-taca": {
+  "name": "Nigeria FA Cup",
+  "country": "NG",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "by-taca": {
+  "name": "Belarusian Cup",
+  "country": "BY",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "rs-taca": {
+  "name": "Serbian Cup",
+  "country": "RS",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "si-taca": {
+  "name": "Slovenian Cup",
+  "country": "SI",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "th-taca": {
+  "name": "Thai FA Cup",
+  "country": "TH",
+  "confederation": "AFC",
+  "kind": "cup"
+ },
+ "il-taca": {
+  "name": "Israel State Cup",
+  "country": "IL",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "ge-taca": {
+  "name": "Georgian Cup",
+  "country": "GE",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "au-taca": {
+  "name": "Australia Cup",
+  "country": "AU",
+  "confederation": "AFC",
+  "kind": "cup"
+ },
+ "ci-taca": {
+  "name": "Coupe de Côte d'Ivoire",
+  "country": "CI",
+  "confederation": "CAF",
+  "kind": "cup"
+ },
+ "py-taca": {
+  "name": "Copa Paraguay",
+  "country": "PY",
+  "confederation": "CONMEBOL",
+  "kind": "cup"
+ },
+ "ec-taca": {
+  "name": "Copa Ecuador",
+  "country": "EC",
+  "confederation": "CONMEBOL",
+  "kind": "cup"
+ }
+}

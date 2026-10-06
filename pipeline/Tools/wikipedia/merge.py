@@ -83,6 +83,22 @@ def norm(s):
     s = re.sub(r"\b(fc|cf|ac|sc|afc|club|football|futebol|clube|de|sv|fk|as|ss|us|cd|ca|sk|1\.)\b", " ", s)
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
+STOP = set("fc cf sc ac as afc rsc rfc kv krc kaa ksc ksv ksk kfc kvc sk fk nk hnk gnk sv bk ff if ik is aif cd ca cs csd club clube de del do da la el le the team".split())
+def core(s):
+    """Palavras que identificam o clube, sem prefixos como FC, RSC, KV ou letras soltas."""
+    t = [w for w in norm(s).split() if len(w) > 1 and w not in STOP]
+    return frozenset(t or norm(s).split())
+
+def fuzzy(name, candidates):
+    """O clube do mesmo país cujo nome é o mesmo a menos de prefixos ("RSC Anderlecht" = "Anderlecht"),
+    ou que contém/está contido no nome ("Dinamo" = "Dinamo Zagreb"), se houver só um candidato."""
+    want = core(name)
+    same = [c for c in candidates if want in (core(c["shortName"]), core(c["name"]))]
+    if len(same) == 1: return same[0]
+    if same: return None
+    near = [c for c in candidates if any(want < k or k < want for k in (core(c["shortName"]), core(c["name"])))]
+    return near[0] if len(near) == 1 else None
+
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode().lower()).strip("-")
 
@@ -105,7 +121,7 @@ def merge(clubs, comps, honours, countries):
         index = {}
         for c in clubs.values():
             for n in (c["shortName"], c["name"]): index.setdefault(norm(n), []).append(c)
-        seen = set()
+        seen = set(); before = set(clubs)
         for row in page["rows"]:
             name = re.sub(r"\s*\[\w+\]$", "", row["club"]).strip()
             if name in SKIP_ROWS: continue
@@ -117,8 +133,14 @@ def merge(clubs, comps, honours, countries):
             countries.setdefault(code, EXTRA_COUNTRIES.get(code) or next((v[1] for v in COUNTRIES.values() if v[0] == code), None))
             target = norm(ALIASES.get(name, name))
             found = index.get(target, [])
-            match = [c for c in found if c["country"] == code or name in FOREIGN_WINNERS]
+            match = [c for c in found if (c["country"] == code or name in FOREIGN_WINNERS) and (c["id"], comp_id) not in seen]
             match.sort(key=lambda c: norm(c["shortName"]) != target)   # o nome curto igual ganha ao nome completo
+            if not match:
+                # só contra clubes que já existiam antes desta competição e ainda não usados nela,
+                # para dois clubes da mesma tabela (Club Brugge e Cercle Brugge) nunca se fundirem
+                near = fuzzy(ALIASES.get(name, name), [c for c in clubs.values() if c["country"] == code
+                                                       and c["id"] in before and (c["id"], comp_id) not in seen])
+                if near: match = [near]
             if match: club = match[0]
             else:
                 short = ALIASES.get(name, name)

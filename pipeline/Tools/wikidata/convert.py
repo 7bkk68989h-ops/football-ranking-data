@@ -83,6 +83,7 @@ short_by_qid = {q: clubs[cid]["shortName"] for q, cid in qid_to_id.items()}
 
 # --- troféus ---
 comps = {c["id"]: c for c in base["competitions"]}
+base_ids = set(comps)
 honours = {(h["club"], h["competition"]): dict(h) for h in base["honours"]}
 wd = collections.defaultdict(dict)   # (clube, competição) -> {época: registo}
 for r in records:
@@ -128,6 +129,10 @@ for c in comps.values():
 confed = {"PT": "UEFA", "ES": "UEFA", "GB-ENG": "UEFA", "GB-SCT": "UEFA", "IT": "UEFA", "DE": "UEFA", "FR": "UEFA", "NL": "UEFA", "AT": "UEFA",
           "RO": "UEFA", "RS": "UEFA", "AR": "CONMEBOL", "BR": "CONMEBOL", "UY": "CONMEBOL", "CO": "CONMEBOL", "PY": "CONMEBOL", "EC": "CONMEBOL",
           "CL": "CONMEBOL", "PE": "CONMEBOL", "MX": "CONCACAF", "EG": "CAF"}
+# Campeonatos e taças de outros países (pedido do Pedro, 6 out. 2026): só existem na Wikipédia.
+for cid, c in json.load(open(os.path.join(here, "extra_competitions.json"))).items():
+    comps[cid] = {"id": cid, "name": c["name"], "level": "domestic", "kind": c["kind"], "country": c["country"]}
+    confed.setdefault(c["country"], c["confederation"])
 report, sources = wikipedia_merge(clubs, comps, honours, confed)
 
 # Finais postas à mão, quando faltam nas duas fontes ou vêm sem resultado; substituem a da mesma época.
@@ -145,7 +150,7 @@ used = sorted({c["country"] for c in clubs.values() if c["id"] in used_clubs})
 missing = [u for u in used if not confed.get(u)]; assert not missing, missing
 countries = [{"id": u, "name": u, "confederation": confed[u]} for u in used]
 out = {"source": "Wikidata and Wikipedia.", "updated": datetime.date.today().isoformat(),
-       "countries": countries, "competitions": [c for c in comps.values() if c["id"] != "pt-campeonato"],
+       "countries": countries, "competitions": [c for c in comps.values() if c["id"] != "pt-campeonato" and (c["id"] in base_ids or c["id"] in {k[1] for k in honours})],
        "clubs": [c for c in clubs.values() if c["id"] in used_clubs], "honours": list(honours.values())}
 json.dump(out, open(os.path.join(root, 'FootballRanking/Resources/football_data.json'), 'w'), ensure_ascii=False, indent=1)
 # Pacote que a app descarrega para se atualizar sem nova versão (dados + pontuação + correções).
