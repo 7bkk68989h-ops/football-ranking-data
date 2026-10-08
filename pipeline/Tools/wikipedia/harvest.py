@@ -22,7 +22,7 @@ PAGES = {
  "conmebol-lib": "Copa Libertadores", "conmebol-sud": "Copa Sudamericana", "caf-cl": "CAF Champions League", "afc-cl": "AFC Champions League Elite",
  "fifa-cwc": "FIFA Club World Cup",
 }
-from harvest_lib import find, PICK
+from harvest_lib import find, PICK, split_rows
 # competições extra (outros países), com a página encontrada por discover.py
 _extra = os.path.join(here, "pages_extra.json")
 if os.path.exists(_extra): PAGES.update(json.load(open(_extra)))
@@ -35,6 +35,7 @@ for comp, title in PAGES.items():
         problems.append(f"{comp}: {e}"); continue
     if not best: problems.append(f"{comp}: sem tabela em «{title}»"); continue
     _, heading, rows = best
+    problems += split_rows(comp, rows)
     page = fetch(title)
     bad = [r["club"] for r in rows if not r["years"]]
     out[comp] = {"page": page["title"], "revid": page["revid"], "rows": rows}

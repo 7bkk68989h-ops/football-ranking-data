@@ -44,6 +44,24 @@ ALIASES = {
  "Al Mokawloon Al Arab SC": "Al Mokawloon", "Sporting": "Sporting CP", "Ambrosiana-Inter": "Inter", "Ambrosiana": "Inter",
  "SL Benfica": "Benfica", "Madrid FC": "Real Madrid", "The Wednesday": "Sheffield Wednesday", "Atlético Paranaense": "Athletico Paranaense",
  "Olympique Lillois": "Lille", "Atlético Aviación": "Atlético Madrid", "Atlético de Madrid": "Atlético Madrid", "Athletic Club": "Athletic", "Toulouse (1937)": "Toulouse FC (1937)", "FC Groningen": "Groningen", "Hafia FC": "Hafia",
+ # o mesmo clube com nomes diferentes de tabela para tabela (revisão de 8 out. 2026)
+ "ES Tunis": "Espérance de Tunis", "ES Sahel": "Étoile du Sahel", "Sporting Club": "Sporting Club de Tunis",
+ "US Douala": "Union Douala", "Tonnerre Kalara Club": "Tonnerre Yaoundé", "Grasshopper Club Zürich": "Grasshopper",
+ "RAC Casablanca": "Racing Casablanca", "OC Khouribga": "Olympique Khouribga", "KAC Marrakesh": "KAC Marrakech",
+ "Busan Daewoo Royals": "Busan IPark", "Kispest-Honvéd": "Budapest Honvéd", "Ebusua Dwarfs": "Mysterious Dwarfs",
+ "BSK Beograd": "OFK Beograd", "Royal Thai Air Force": "Air Force United", "Wits University": "Bidvest Wits",
+ "SK Admira Wien": "Admira Wien", "FC Wacker Innsbruck": "Wacker Innsbruck",
+}
+# Nomes parecidos que são mesmo o mesmo clube ("Red Star" = "Red Star Belgrade"). Só estes se ligam
+# por aproximação; qualquer outro nome parecido fica como clube à parte e vai para o relatório
+# (`parecidos_recusados`), porque "US Tunis" não é o "ES Tunis" nem o "Sydney FC" os "Wanderers".
+SAME_CLUB = {
+ ("Red Star", "Red Star Belgrade"), ("Aris", "Aris Thessaloniki"), ("Stade Gaulois", "Stade Gaulois de Tunis"),
+ ("Racing Club", "Racing Club de Tunis"), ("Avant Garde", "Avant Garde de Tunis"), ("Hradec Králové", "Spartak Hradec Králové"),
+ ("Atletik-Slava 23", "AS-23"), ("Accra Hearts of Oak", "Hearts of Oak"), ("Great Olympics", "Accra Great Olympics"),
+ ("Sekondi Eleven Wise", "Eleven Wise"), ("Atlético Zamora", "Zamora"), ("Jugoslavija", "Jugoslavija Beograd"),
+ ("Ankaragücü", "MKE Ankaragücü"), ("Shooting Stars (Ibadan)", "Shooting Stars"), ("Dolphins FC (Port-Harcourt)", "Dolphins"),
+ ("Iwuanyanwu Nationale/Heartland", "Heartland F.C."),
 }
 # Clubes austríacos que ganharam provas alemãs entre 1938 e 1943: são o mesmo clube, não um clube alemão.
 FOREIGN_WINNERS = {"Rapid Wien", "First Vienna"}
@@ -69,7 +87,7 @@ EXTRA_KNOWN = {
  "Colo-Colo": ("COL", "#FFFFFF", "#111111", "plain"), "Universidad de Chile": ("UCH", "#0A3F86", "#E2001A", "plain"), "Independiente del Valle": ("IDV", "#111111", "#0A5EB0", "stripes"),
  "Cienciano": ("CIE", "#E2001A", "#FFFFFF", "plain"), "Santa Fe": ("SFE", "#E2001A", "#FFFFFF", "plain"), "Pachuca": ("PAC", "#0A3F86", "#FFFFFF", "stripes"),
  "Zamalek": ("ZAM", "#FFFFFF", "#E2001A", "band"), "Ismaily": ("ISM", "#FFD100", "#0A5EB0", "plain"), "TP Mazembe": ("TPM", "#111111", "#FFFFFF", "stripes"),
- "ES Tunis": ("EST", "#E2001A", "#FFD100", "stripes"), "Wydad AC": ("WAC", "#E2001A", "#FFFFFF", "plain"), "Raja CA": ("RCA", "#00843D", "#FFFFFF", "plain"),
+ "Espérance de Tunis": ("EST", "#E2001A", "#FFD100", "stripes"), "Wydad AC": ("WAC", "#E2001A", "#FFFFFF", "plain"), "Raja CA": ("RCA", "#00843D", "#FFFFFF", "plain"),
  "Mamelodi Sundowns": ("SUN", "#FFD100", "#0A5EB0", "plain"), "Orlando Pirates": ("ORL", "#111111", "#FFFFFF", "plain"), "JS Kabylie": ("JSK", "#FFD100", "#00843D", "plain"),
  "Urawa Red Diamonds": ("URA", "#E2001A", "#111111", "plain"), "Kashima Antlers": ("KAS", "#B8193F", "#0A2240", "plain"), "Pohang Steelers": ("POH", "#E2001A", "#111111", "hoops"),
  "Jeonbuk Hyundai Motors": ("JEO", "#00843D", "#FFD100", "plain"), "Ulsan HD": ("ULS", "#0A5EB0", "#FFD100", "plain"), "Esteghlal": ("EST", "#0A5EB0", "#FFFFFF", "plain"),
@@ -114,7 +132,7 @@ def merge(clubs, comps, honours, countries):
     """clubs: id -> clube; comps: id -> competição; honours: (clube, comp) -> linha; countries: código -> confederação."""
     wiki = json.load(open(os.path.join(here, "wikipedia_titles.json")))
     known_by_name = {norm(v[0]): v for v in KNOWN.values()}
-    report = {"novos": [], "sem_pais": [], "excluidos": [], "retirados": []}
+    report = {"novos": [], "sem_pais": [], "excluidos": [], "retirados": [], "aproximados": [], "parecidos_recusados": [], "somados": []}
     for comp_id, page in wiki.items():
         comp = comps.get(comp_id)
         if comp is None: continue
@@ -135,12 +153,25 @@ def merge(clubs, comps, honours, countries):
             found = index.get(target, [])
             match = [c for c in found if (c["country"] == code or name in FOREIGN_WINNERS) and (c["id"], comp_id) not in seen]
             match.sort(key=lambda c: norm(c["shortName"]) != target)   # o nome curto igual ganha ao nome completo
+            # segunda linha do mesmo clube na mesma tabela ("Steaua București" e "FCSB"): soma-se à primeira
+            again = next((c for c in found if c["country"] == code and (c["id"], comp_id) in seen), None) if not match else None
+            if again:
+                h = honours[(again["id"], comp_id)]; more = [y.replace("-", "–").replace(" ", "") for y in row["years"]]
+                h["count"] += row["titles"]
+                if "seasons" in h and len(more) == row["titles"]: h["seasons"] = sorted(h["seasons"] + more, key=lambda y: end_year(y) or 0)
+                else: h.pop("seasons", None)
+                h.pop("finals", None); report["somados"].append(f"{name} + {again['shortName']} ({comp_id})"); continue
             if not match:
                 # só contra clubes que já existiam antes desta competição e ainda não usados nela,
                 # para dois clubes da mesma tabela (Club Brugge e Cercle Brugge) nunca se fundirem
                 near = fuzzy(ALIASES.get(name, name), [c for c in clubs.values() if c["country"] == code
                                                        and c["id"] in before and (c["id"], comp_id) not in seen])
-                if near: match = [near]
+                if near:
+                    exact = core(ALIASES.get(name, name)) in (core(near["shortName"]), core(near["name"]))
+                    if exact or (name, near["shortName"]) in SAME_CLUB:
+                        match = [near]
+                        report["aproximados"].append(f"{name} -> {near['shortName']} ({comp_id})")
+                    else: report["parecidos_recusados"].append(f"{name} -/-> {near['shortName']} ({comp_id})")
             if match: club = match[0]
             else:
                 short = ALIASES.get(name, name)
