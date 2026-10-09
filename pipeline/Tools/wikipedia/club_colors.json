@@ -1,0 +1,5682 @@
+{
+"1. FC Kaiserslautern": [
+"#FF0019",
+"#003981",
+"plain"
+],
+"1. FC Köln": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"1. FC Lokomotive Leipzig": [
+"#FFDD00",
+"#0044FF",
+"plain"
+],
+"1. FC Magdeburg": [
+"#0A5EB0",
+"#B04C35",
+"plain"
+],
+"1. FC Nürnberg": [
+"#900000",
+"#111111",
+"plain"
+],
+"1. FC Slovácko": [
+"#FFFFFF",
+"#000060",
+"plain"
+],
+"1. FC Tatran Prešov": [
+"#007711",
+"#FFFFFF",
+"plain"
+],
+"A.C.C.D. Mineros de Guayana": [
+"#111111",
+"#0A5EB0",
+"stripes"
+],
+"AC Bellinzona": [
+"#960018",
+"#0070DF",
+"plain"
+],
+"AC Milan": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"AC Omonia": [
+"#FFFFFF",
+"#007711",
+"plain"
+],
+"AC Sparta Prague": [
+"#8A1014",
+"#FFFFFF",
+"plain"
+],
+"ACF Fiorentina": [
+"#552A79",
+"#FFFFFF",
+"plain"
+],
+"ACF Gloria Bistrița": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"ADO Den Haag": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"AEK Larnaca F.C.": [
+"#D9FE40",
+"#009150",
+"plain"
+],
+"AEL Limassol": [
+"#FBD016",
+"#0A5EB0",
+"stripes"
+],
+"AFC Ajax": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"AFC DWS": [
+"#5A8AFA",
+"#111111",
+"stripes"
+],
+"AIK Fotboll": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"AJ Auxerre": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"APOEL FC": [
+"#FFDD00",
+"#0E00D9",
+"plain"
+],
+"APOP Kinyras FC": [
+"#FFD100",
+"#000040",
+"plain"
+],
+"AS Cannes": [
+"#E2001A",
+"#0A5EB0",
+"stripes"
+],
+"AS Casale Calcio": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"AS FAR (football club)": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"AS Marsa": [
+"#199844",
+"#00800A",
+"plain"
+],
+"AS Monaco FC": [
+"#FE0000",
+"#FFFFFF",
+"plain"
+],
+"AS Nancy": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"AS Roma": [
+"#980729",
+"#ECE3DA",
+"plain"
+],
+"AS Trenčín": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"AS Vita Club": [
+"#40C050",
+"#111111",
+"plain"
+],
+"ASEC Mimosas": [
+"#FFD100",
+"#111111",
+"hoops"
+],
+"ASO Chlef": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"AVV RAP": [
+"#111111",
+"#E2001A",
+"plain"
+],
+"AZ (football club)": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"AaB Fodbold": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Aalesunds FK": [
+"#FF5F00",
+"#0A5EB0",
+"plain"
+],
+"Aarhus Gymnastikforening": [
+"#FFFFFF",
+"#191C51",
+"plain"
+],
+"Aberdeen F.C.": [
+"#E2001A",
+"#880000",
+"plain"
+],
+"Accra Hearts of Oak SC": [
+"#FFEE00",
+"#0A5EB0",
+"plain"
+],
+"Adelaide United FC": [
+"#DD001F",
+"#121C33",
+"plain"
+],
+"Aduana Stars F.C.": [
+"#228B22",
+"#FFD100",
+"plain"
+],
+"Air Force United F.C.": [
+"#191970",
+"#D60202",
+"plain"
+],
+"Airdrieonians F.C. (1878)": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Ajman Club": [
+"#FF6600",
+"#FFFFFF",
+"plain"
+],
+"Akademisk Boldklub": [
+"#228B22",
+"#FFFFFF",
+"stripes"
+],
+"Akhisarspor": [
+"#111111",
+"#007711",
+"plain"
+],
+"Akwa United": [
+"#FF6600",
+"#FFFFFF",
+"plain"
+],
+"Al Ahli SFC": [
+"#FFFFFF",
+"#008456",
+"plain"
+],
+"Al Ahly SC": [
+"#CC0000",
+"#FFFFFF",
+"plain"
+],
+"Al Ain FC": [
+"#8754B0",
+"#FFFFFF",
+"plain"
+],
+"Al Hilal SFC": [
+"#0000DF",
+"#0040FF",
+"plain"
+],
+"Al Jazira Club": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Al Rayyan SC": [
+"#111111",
+"#E2001A",
+"plain"
+],
+"Al Sadd SC": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Al Shabab Al Arabi Club Dubai": [
+"#007819",
+"#FFFFFF",
+"plain"
+],
+"Al Wahda FC (UAE)": [
+"#8E1111",
+"#FFFFFF",
+"plain"
+],
+"Al Wasl FC": [
+"#FFD100",
+"#4B774B",
+"plain"
+],
+"Al-Ahli (Doha)": [
+"#008800",
+"#FFFFFF",
+"plain"
+],
+"Al-Arabi SC (Qatar)": [
+"#EF0000",
+"#FFFFFF",
+"plain"
+],
+"Al-Duhail SC": [
+"#CE0000",
+"#000060",
+"plain"
+],
+"Al-Gharafa SC": [
+"#FFEE00",
+"#0A5EB0",
+"plain"
+],
+"Al-Gharrafa": [
+"#FFEE00",
+"#0A5EB0",
+"plain"
+],
+"Al-Ittihad Club (Jeddah)": [
+"#FFDD00",
+"#111111",
+"plain"
+],
+"Al-Nasr SC (Dubai)": [
+"#0A5EB0",
+"#000066",
+"plain"
+],
+"Al-Rayyan SC": [
+"#111111",
+"#E2001A",
+"plain"
+],
+"Al-Shaab CSC": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"Al-Wakrah SC": [
+"#77BBFF",
+"#111111",
+"plain"
+],
+"Al-Wasl F.C.": [
+"#FFD100",
+"#4B774B",
+"plain"
+],
+"Altay S.K.": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"Alumni Athletic Club": [
+"#FFFFFF",
+"#E2001A",
+"stripes"
+],
+"Amica Wronki": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"América de Cali": [
+"#CC0000",
+"#FFFFFF",
+"plain"
+],
+"Anglo-American Club Zürich": [
+"#E2001A",
+"#111111",
+"halves"
+],
+"Ankara Demirspor": [
+"#0A2240",
+"#FFFFFF",
+"plain"
+],
+"Anorthosis Famagusta FC": [
+"#FFFFFF",
+"#0A5EB0",
+"stripes"
+],
+"Apollon Limassol": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Aragua F.C.": [
+"#F9F92B",
+"#111111",
+"plain"
+],
+"Arenas Club de Getxo": [
+"#E2001A",
+"#111111",
+"stripes"
+],
+"Argentinos Juniors": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Aris Limassol FC": [
+"#007711",
+"#5500AA",
+"plain"
+],
+"Arka Gdynia": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Arsenal F.C.": [
+"#F00000",
+"#FFFFFF",
+"plain"
+],
+"Arsenal de Sarandí": [
+"#27BEF8",
+"#E2001A",
+"plain"
+],
+"Asante Kotoko SC": [
+"#FF2400",
+"#FFFFFF",
+"plain"
+],
+"Ashanti Gold SC": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Asociación Civil Deportivo Lara": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Asociación Deportiva San Agustín": [
+"#FFD100",
+"#E2001A",
+"plain"
+],
+"Associação Académica de Coimbra - O.A.F.": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Associação Chapecoense de Futebol": [
+"#007744",
+"#FFFFFF",
+"plain"
+],
+"Aston Villa F.C.": [
+"#69091C",
+"#BBD5F2",
+"plain"
+],
+"Asturias F.C.": [
+"#FFFFFF",
+"#0A2240",
+"stripes"
+],
+"Athletic Bilbao": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Athlitiki Enosi Larissa F.C.": [
+"#601A22",
+"#FFFFFF",
+"plain"
+],
+"Athlone Town F.C.": [
+"#111111",
+"#0A5EB0",
+"stripes"
+],
+"Atlante F.C.": [
+"#1C1C57",
+"#FFFFFF",
+"plain"
+],
+"Atlantis FC": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Atlas F.C.": [
+"#D4AF37",
+"#111111",
+"plain"
+],
+"Atlético Bucaramanga": [
+"#FFE100",
+"#13634E",
+"plain"
+],
+"Atlético Chalaco": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Atlético Clube de Portugal": [
+"#FECD39",
+"#0A2240",
+"stripes"
+],
+"Atlético Junior": [
+"#FFFFFF",
+"#000066",
+"plain"
+],
+"Atlético Madrid": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"Atlético Morelia": [
+"#FBF105",
+"#111111",
+"plain"
+],
+"Atlético Nacional": [
+"#FFFFFF",
+"#289741",
+"plain"
+],
+"Atlético Petróleos de Luanda": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Atlético Petróleos do Namibe": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Atlético San Cristóbal": [
+"#FF9900",
+"#FFFFFF",
+"plain"
+],
+"Atlético Sport Aviação": [
+"#FF7F00",
+"#FFFFFF",
+"plain"
+],
+"Auckland FC": [
+"#111111",
+"#0A5EB0",
+"stripes"
+],
+"Audax Italiano": [
+"#1C9E1C",
+"#FFFFFF",
+"plain"
+],
+"BBCU F.C.": [
+"#FF1493",
+"#111111",
+"plain"
+],
+"BFC Siófok": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"BK Häcken": [
+"#FFDF00",
+"#111111",
+"plain"
+],
+"BSC Young Boys": [
+"#FFEE00",
+"#111111",
+"plain"
+],
+"Bahman F.C.": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Bangkok Bank FC": [
+"#FF1493",
+"#111111",
+"plain"
+],
+"Bangkok Glass F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Bangkok United F.C.": [
+"#EF0000",
+"#FFFFFF",
+"plain"
+],
+"Barcelona S.C.": [
+"#FFF200",
+"#111111",
+"plain"
+],
+"Bargh Shiraz F.C.": [
+"#F1771D",
+"#FFFFFF",
+"plain"
+],
+"Barnsley F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Bayelsa United FC": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Bayer 04 Leverkusen": [
+"#111111",
+"#D8E6E5",
+"plain"
+],
+"Bayi Football Team": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Be Quick 1887": [
+"#FFFFFF",
+"#000033",
+"plain"
+],
+"Bechem United": [
+"#BFFF00",
+"#FFFFFF",
+"plain"
+],
+"Beijing Guoan F.C.": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Beijing Renhe F.C.": [
+"#FF7300",
+"#FFFFFF",
+"plain"
+],
+"Beitar Jerusalem F.C.": [
+"#FFEE00",
+"#111111",
+"plain"
+],
+"Beitar Tel Aviv F.C.": [
+"#0000CC",
+"#FFFFFF",
+"plain"
+],
+"Belgrano Athletic Club": [
+"#601B27",
+"#D4AF37",
+"hoops"
+],
+"Bendel Insurance FC": [
+"#FFD100",
+"#00843D",
+"plain"
+],
+"Beşiktaş J.K.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Bidvest Wits F.C.": [
+"#FFFFFF",
+"#0A2240",
+"plain"
+],
+"Birmingham City F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Blackburn Olympic F.C.": [
+"#3399FF",
+"#FFFFFF",
+"plain"
+],
+"Blackburn Rovers F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Bloemfontein Celtic": [
+"#00843D",
+"#FFFFFA",
+"plain"
+],
+"Bnei Yehuda Tel Aviv F.C.": [
+"#FF6C00",
+"#FFFFFF",
+"plain"
+],
+"Boavista F.C.": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Boca Juniors de Cali": [
+"#133DC7",
+"#FFFFFF",
+"plain"
+],
+"Bocskai FC": [
+"#0A2240",
+"#FFFFFF",
+"stripes"
+],
+"Bohemians 1905": [
+"#009150",
+"#FFFFFF",
+"plain"
+],
+"Boldklubben 1903": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"Boldklubben 1909": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Boldklubben Frem": [
+"#E2001A",
+"#0A2240",
+"hoops"
+],
+"Boldklubben af 1893": [
+"#FFFFFF",
+"#0A2240",
+"plain"
+],
+"Bologna FC 1909": [
+"#00003C",
+"#FFFFFF",
+"plain"
+],
+"Bolton Wanderers F.C.": [
+"#FFFFFF",
+"#7B1E3A",
+"plain"
+],
+"Borussia Dortmund": [
+"#FFE300",
+"#111111",
+"plain"
+],
+"Borussia Mönchengladbach": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Botafogo de Futebol e Regatas": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Botev Plovdiv": [
+"#111111",
+"#87CEFA",
+"plain"
+],
+"Boyacá Chicó F.C.": [
+"#192649",
+"#FFFFFF",
+"plain"
+],
+"Bradford City A.F.C.": [
+"#FFD700",
+"#7B1E3A",
+"stripes"
+],
+"Bray Wanderers A.F.C.": [
+"#FFFFFF",
+"#009650",
+"plain"
+],
+"Brisbane Roar FC": [
+"#FF6700",
+"#691F5D",
+"plain"
+],
+"Bryne FK": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Brynäs IF Fotboll": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Brøndby IF": [
+"#003DA5",
+"#43473D",
+"plain"
+],
+"Budapest Honvéd FC": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Budapesti TC": [
+"#FF0800",
+"#FFFFFF",
+"stripes"
+],
+"Buriram United": [
+"#072A69",
+"#FFD100",
+"plain"
+],
+"Bursaspor": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Bury F.C.": [
+"#FFFFFF",
+"#093BDE",
+"plain"
+],
+"Busan IPark": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Békéscsaba 1912 Előre": [
+"#4B0082",
+"#FFFFFF",
+"plain"
+],
+"C.A. Bella Vista": [
+"#FAED01",
+"#FFFFFF",
+"halves"
+],
+"C.A. Progreso": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"C.D. Aves": [
+"#FFFFFF",
+"#C80000",
+"plain"
+],
+"C.D. Cobresal": [
+"#FFFFFF",
+"#007000",
+"plain"
+],
+"C.D. Cuenca": [
+"#FF001A",
+"#111111",
+"plain"
+],
+"C.D. El Nacional": [
+"#E2001A",
+"#0B0B3B",
+"plain"
+],
+"C.D. Everest": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"C.D. Guadalajara": [
+"#E2001A",
+"#000040",
+"plain"
+],
+"C.D. Jorge Wilstermann": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"C.D. Marte": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"C.D. Olmedo": [
+"#0A5EB0",
+"#E2001A",
+"plain"
+],
+"C.D. Oro": [
+"#FFFFFF",
+"#FFD100",
+"stripes"
+],
+"C.D. Palestino": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"C.D. Primeiro de Agosto": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"C.D. Universidad de Concepción": [
+"#FFD100",
+"#010633",
+"plain"
+],
+"C.D. Venezuela": [
+"#CD1939",
+"#D4AF37",
+"plain"
+],
+"C.D. Veracruz": [
+"#FFFFFF",
+"#000060",
+"plain"
+],
+"C.F. Estrela da Amadora (1932)": [
+"#FFFFFF",
+"#00843D",
+"plain"
+],
+"C.F. Monterrey": [
+"#000040",
+"#FFFFFF",
+"plain"
+],
+"C.F. Os Belenenses": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"C.F. Pachuca": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"C.S. Emelec": [
+"#0000DD",
+"#B1B1B1",
+"plain"
+],
+"C.S. Marítimo": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"C.S. Marítimo de Venezuela": [
+"#007500",
+"#FFFFFF",
+"plain"
+],
+"CA Bizertin": [
+"#FFD100",
+"#111111",
+"stripes"
+],
+"CA Paris-Charenton": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"CARA Brazzaville": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"CASG Paris": [
+"#ADD8E6",
+"#FFFFFF",
+"stripes"
+],
+"CFR Cluj": [
+"#780000",
+"#FFFFFF",
+"plain"
+],
+"CO Casablanca": [
+"#113ED7",
+"#FFFFFF",
+"stripes"
+],
+"CO Roubaix-Tourcoing": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"COD Meknès": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"CR Belouizdad": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"CR Béni Thour": [
+"#00A008",
+"#FFFFFF",
+"halves"
+],
+"CR Flamengo": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"CS Constantine": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"CS Corvinul Hunedoara": [
+"#87CEEB",
+"#FFFFFF",
+"plain"
+],
+"CS Hammam-Lif": [
+"#00936B",
+"#FFFFFF",
+"plain"
+],
+"CS Sedan Ardennes": [
+"#00843D",
+"#E2001A",
+"plain"
+],
+"CS Universitatea Craiova": [
+"#FFFFFF",
+"#0044FF",
+"plain"
+],
+"CSM Reșița": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Cagliari Calcio": [
+"#022249",
+"#FFFFFF",
+"plain"
+],
+"Canon Yaoundé": [
+"#E2001A",
+"#00B966",
+"plain"
+],
+"Cape Coast Ebusua Dwarfs": [
+"#FFD100",
+"#228B22",
+"plain"
+],
+"Cape Town Spurs": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Carabobo F.C.": [
+"#2B000C",
+"#FFFFFF",
+"plain"
+],
+"Caracas F.C.": [
+"#F00012",
+"#111111",
+"plain"
+],
+"Cardiff City F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Caïman Douala": [
+"#FFFFFF",
+"#E4002B",
+"plain"
+],
+"Celtic F.C.": [
+"#FFFFFF",
+"#114B40",
+"plain"
+],
+"Central Coast Mariners FC": [
+"#FEDF00",
+"#000040",
+"plain"
+],
+"Central Español": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Centro Iqueño": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Cercle Brugge KSV": [
+"#00852D",
+"#111111",
+"plain"
+],
+"Cerezo Osaka": [
+"#FA1A82",
+"#000040",
+"plain"
+],
+"Chacarita Juniors": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Chaco Petrolero": [
+"#FFFFFF",
+"#00843D",
+"stripes"
+],
+"Chainat Hornbill F.C.": [
+"#FF0080",
+"#111111",
+"plain"
+],
+"Changchun Yatai F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Charlton Athletic F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Chelsea F.C.": [
+"#14349B",
+"#FFFFFF",
+"plain"
+],
+"Chiangrai United F.C.": [
+"#FF5F00",
+"#111111",
+"plain"
+],
+"China national football B team": [
+"#E2001A",
+"#FFD100",
+"plain"
+],
+"Chinezul Timișoara": [
+"#660066",
+"#FFFFFF",
+"stripes"
+],
+"Chonburi F.C.": [
+"#0000EA",
+"#6CABDD",
+"stripes"
+],
+"Chongqing Liangjiang Athletic F.C.": [
+"#E2001A",
+"#090060",
+"plain"
+],
+"Cienciano": [
+"#ED0011",
+"#FFFFFF",
+"plain"
+],
+"Clapham Rovers F.C.": [
+"#C1BCA8",
+"#E2001A",
+"halves"
+],
+"Club Africain": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Club Alianza Lima": [
+"#071241",
+"#FFFFFF",
+"plain"
+],
+"Club Always Ready": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Club Athletico Paranaense": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Club Atlético Banfield": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Club Atlético Belgrano": [
+"#0099F1",
+"#FFFFFF",
+"plain"
+],
+"Club Atlético Huracán": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Club Atlético Lanús": [
+"#58151C",
+"#FFFFFF",
+"plain"
+],
+"Club Atlético Platense": [
+"#FFFFFF",
+"#3E2315",
+"plain"
+],
+"Club Atlético Porteño": [
+"#87CEFA",
+"#0A2240",
+"hoops"
+],
+"Club Atlético San Lorenzo de Almagro": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Club Atlético Vélez Sarsfield": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Club Aurora": [
+"#95DFFF",
+"#FFFFFF",
+"plain"
+],
+"Club Blooming": [
+"#0099FF",
+"#000050",
+"plain"
+],
+"Club Bolívar": [
+"#79C3FF",
+"#FFFFFF",
+"plain"
+],
+"Club Brugge KV": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Club Ciclista de San Sebastián": [
+"#FFFFFF",
+"#0A5EB0",
+"stripes"
+],
+"Club Deportivo Guabirá": [
+"#EF0000",
+"#FFFFFF",
+"plain"
+],
+"Club Deportivo Litoral (La Paz)": [
+"#FFFFFF",
+"#00843D",
+"plain"
+],
+"Club Deportivo Palestino": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Club Deportivo Universidad de San Martín de Porres": [
+"#FFFFFF",
+"#0C1732",
+"plain"
+],
+"Club Ferro Carril Oeste": [
+"#004000",
+"#FFFFFF",
+"plain"
+],
+"Club Français": [
+"#A41D21",
+"#233158",
+"plain"
+],
+"Club Guaraní": [
+"#FFDF00",
+"#111111",
+"plain"
+],
+"Club Independiente Petrolero": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Club León": [
+"#FFFFFF",
+"#1C302E",
+"plain"
+],
+"Club Nacional de Football": [
+"#FFFFFF",
+"#ED1C24",
+"plain"
+],
+"Club Necaxa": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Club Olimpia": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Club Olympique des Transports": [
+"#1D0F81",
+"#111111",
+"stripes"
+],
+"Club Presidente Hayes": [
+"#E2001A",
+"#FFFFFF",
+"stripes"
+],
+"Club Puebla": [
+"#FFFFFF",
+"#00C4F3",
+"plain"
+],
+"Club Real Potosí": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Club San José": [
+"#FFFFFF",
+"#001FAE",
+"plain"
+],
+"Club Sol de América": [
+"#0038A2",
+"#0A5EB0",
+"plain"
+],
+"Club Sportivo Luqueño": [
+"#FFCD00",
+"#00008A",
+"plain"
+],
+"Club Tijuana": [
+"#F00000",
+"#111111",
+"plain"
+],
+"Club Universidad de Chile": [
+"#0000BF",
+"#FFFFFF",
+"plain"
+],
+"Club Universitario de Deportes": [
+"#FEFAEB",
+"#111111",
+"plain"
+],
+"Club de Deportes Green Cross": [
+"#FFFFFF",
+"#006400",
+"plain"
+],
+"Clube Atlético Mineiro": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Clube Ferroviário da Huíla": [
+"#17AF46",
+"#F5F5F5",
+"plain"
+],
+"Clube de Regatas do Flamengo": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Clyde F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Colentina A.C. București": [
+"#111111",
+"#FFFFFF",
+"stripes"
+],
+"Colo-Colo": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Coquimbo Unido": [
+"#FFDE00",
+"#111111",
+"plain"
+],
+"Cork Athletic F.C.": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Cork Celtic F.C.": [
+"#FFD100",
+"#FFFFFF",
+"plain"
+],
+"Cork City F.C.": [
+"#FFFFFF",
+"#008022",
+"plain"
+],
+"Cork F.C.": [
+"#FFFFFF",
+"#00843D",
+"stripes"
+],
+"Cork Hibernians F.C.": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Cork United F.C. (1940)": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Coton Sport FC de Garoua": [
+"#008633",
+"#FFFFFF",
+"plain"
+],
+"Coventry City F.C.": [
+"#62B5E5",
+"#F5F3F1",
+"plain"
+],
+"Criciúma Esporte Clube": [
+"#FFFFFF",
+"#FBC500",
+"plain"
+],
+"Cruz Azul": [
+"#0A5EB0",
+"#E0E4E3",
+"plain"
+],
+"Cruzeiro Esporte Clube": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Crystal Palace F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Csepel SC": [
+"#0E22E9",
+"#E2001A",
+"stripes"
+],
+"Cúcuta Deportivo": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Dalian Shide F.C.": [
+"#00BFFF",
+"#FFFFFF",
+"plain"
+],
+"Danubio F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Daring de Bruxelles": [
+"#111111",
+"#E2001A",
+"stripes"
+],
+"De Volewijckers": [
+"#006400",
+"#FFFFFF",
+"stripes"
+],
+"Debreceni VSC": [
+"#EE0000",
+"#FFFFFF",
+"plain"
+],
+"Defensa y Justicia": [
+"#004020",
+"#FFD100",
+"plain"
+],
+"Defensor Lima": [
+"#7B1E3A",
+"#FFFFFF",
+"plain"
+],
+"Defensor Sporting": [
+"#FFFFFF",
+"#6000BF",
+"plain"
+],
+"Degerfors IF": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Delfín S.C.": [
+"#0000C0",
+"#FFCF0F",
+"plain"
+],
+"Deportes Iquique": [
+"#5EDBFF",
+"#111111",
+"plain"
+],
+"Deportes La Serena": [
+"#B20837",
+"#FFFFFF",
+"plain"
+],
+"Deportes Magallanes": [
+"#FFFFFF",
+"#0099FF",
+"plain"
+],
+"Deportes Quindío": [
+"#13C46E",
+"#235647",
+"plain"
+],
+"Deportes Tolima": [
+"#971B27",
+"#FFFFFF",
+"plain"
+],
+"Deportivo Anzoátegui S.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Deportivo Binacional FC": [
+"#061CAE",
+"#FFFFFF",
+"plain"
+],
+"Deportivo Cali": [
+"#009A6A",
+"#FFFFFF",
+"plain"
+],
+"Deportivo Español de Venezuela": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"Deportivo Galicia": [
+"#FFFFFF",
+"#0A5EB0",
+"sash"
+],
+"Deportivo La Guaira F.C.": [
+"#FF7400",
+"#0A5EB0",
+"plain"
+],
+"Deportivo Municipal": [
+"#FFFFFF",
+"#00102B",
+"plain"
+],
+"Deportivo Municipal de La Paz": [
+"#880000",
+"#00843D",
+"plain"
+],
+"Deportivo Pasto": [
+"#E50303",
+"#172346",
+"plain"
+],
+"Deportivo Pereira": [
+"#FFF200",
+"#F91010",
+"plain"
+],
+"Deportivo Portugués": [
+"#E2001A",
+"#15642F",
+"plain"
+],
+"Deportivo Táchira F.C.": [
+"#FFE600",
+"#111111",
+"plain"
+],
+"Derby County F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Derry City F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Difaa El Jadida": [
+"#008800",
+"#000044",
+"plain"
+],
+"Diósgyőri VTK": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Djurgårdens IF Fotboll": [
+"#001340",
+"#65A7E2",
+"plain"
+],
+"Dolphin F.C. (Dublin)": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Dolphins F.C. (Port Harcourt)": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Dresdner SC": [
+"#E2001A",
+"#111111",
+"stripes"
+],
+"Drogheda United F.C.": [
+"#7B1E3A",
+"#FFFFFF",
+"plain"
+],
+"Drumcondra F.C.": [
+"#FEBD11",
+"#1F2FB4",
+"plain"
+],
+"Dukla Prague": [
+"#67111A",
+"#FFD100",
+"plain"
+],
+"Dumbarton F.C.": [
+"#FFFFFF",
+"#FFCC00",
+"plain"
+],
+"Dunaújváros FC (1998)": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"Dundee F.C.": [
+"#172643",
+"#FFFFFF",
+"plain"
+],
+"Dundee United F.C.": [
+"#F16622",
+"#111111",
+"plain"
+],
+"Dunfermline Athletic F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Dyskobolia Grodzisk Wielkopolski": [
+"#286F6B",
+"#FFFFFF",
+"plain"
+],
+"ES Setif": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"ES Zarzis": [
+"#FFD100",
+"#E2001A",
+"stripes"
+],
+"East Fife F.C.": [
+"#F2BC00",
+"#111111",
+"plain"
+],
+"Ebusua Dwarfs": [
+"#FFD100",
+"#228B22",
+"plain"
+],
+"Eding Sport FC": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Eintracht Braunschweig": [
+"#FFDD00",
+"#0044FF",
+"plain"
+],
+"Eintracht Frankfurt": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Emirates Club": [
+"#05472A",
+"#FFFFFF",
+"plain"
+],
+"En Avant de Guingamp": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Enosis Neon Trust": [
+"#FFD100",
+"#13AA83",
+"plain"
+],
+"Enugu Rangers": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Enyimba FC": [
+"#0A5EB0",
+"#175EAB",
+"plain"
+],
+"Esbjerg fB": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Eskişehir Demirspor": [
+"#E2001A",
+"#0A2240",
+"plain"
+],
+"Eskişehirspor": [
+"#E2001A",
+"#111111",
+"stripes"
+],
+"Esporte Clube Bahia": [
+"#FFFFFF",
+"#0000BF",
+"plain"
+],
+"Esporte Clube Juventude": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Esporte Clube Santo André": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Espérance Sportive de Tunis": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Esteghlal F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Esteghlal Khuzestan F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Estrela Clube Primeiro de Maio": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Estudiantes de La Plata": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Estudiantes de Mérida F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Estudiantil Porteño": [
+"#003366",
+"#E2001A",
+"stripes"
+],
+"Ethnikos Piraeus F.C.": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Everton F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Everton de Viña del Mar": [
+"#003159",
+"#FFED00",
+"plain"
+],
+"Excelsior AC Roubaix": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"F.C. Bravos do Maquis": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"F.C. Copenhagen": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"F.C. Fajr Sepasi": [
+"#FFD100",
+"#FFFFFF",
+"plain"
+],
+"F.C. Nania": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"F.C. Nassaji Mazandaran": [
+"#BD0835",
+"#273496",
+"plain"
+],
+"F.C. Zob Ahan": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FBC Melgar": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Aarau": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Admira Wacker Mödling": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Ameri Tbilisi": [
+"#FFD100",
+"#FFFFFF",
+"stripes"
+],
+"FC Ararat Yerevan": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC BATE Borisov": [
+"#F7FF3C",
+"#000060",
+"plain"
+],
+"FC Baník Ostrava": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"FC Barcelona": [
+"#05003B",
+"#FFFFFF",
+"plain"
+],
+"FC Basel": [
+"#0A5EB0",
+"#E2001A",
+"plain"
+],
+"FC Bayern Munich": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Belshina Bobruisk": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Biel-Bienne": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Cantonal Neuchâtel": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Chikhura Sachkhere": [
+"#81DAF5",
+"#FFFFFF",
+"plain"
+],
+"FC Den Bosch": [
+"#0052AD",
+"#FFFFFF",
+"stripes"
+],
+"FC Dila Gori": [
+"#E2001A",
+"#000055",
+"plain"
+],
+"FC Dinamo Batumi": [
+"#0044FF",
+"#000088",
+"plain"
+],
+"FC Dinamo București": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Dinamo Minsk": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Dinamo Tbilisi": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"FC Dnepr Mogilev": [
+"#0033FF",
+"#FFFFFF",
+"plain"
+],
+"FC Dordrecht": [
+"#069261",
+"#111111",
+"plain"
+],
+"FC Dynamo Brest": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"FC Dynamo Kyiv": [
+"#FFFFFF",
+"#176FC1",
+"plain"
+],
+"FC Eindhoven": [
+"#0A5EB0",
+"#FFFFFF",
+"stripes"
+],
+"FC Etar (Veliko Tarnovo)": [
+"#5B0CB3",
+"#FFFFFF",
+"plain"
+],
+"FC Etoile-Sporting": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Gagra": [
+"#0044FF",
+"#FFFFFF",
+"plain"
+],
+"FC Girondins de Bordeaux": [
+"#000055",
+"#FFFFFF",
+"plain"
+],
+"FC Gomel": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"FC Grenchen": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"FC Groningen": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Guria Lanchkhuti": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"FC Haka": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Honka": [
+"#111111",
+"#FFFFFF",
+"stripes"
+],
+"FC Hradec Králové": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Iberia 1999": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"FC Ilves": [
+"#FFEE00",
+"#008030",
+"plain"
+],
+"FC Inter Turku": [
+"#02509B",
+"#111111",
+"stripes"
+],
+"FC Jazz": [
+"#E2001A",
+"#D4AF37",
+"stripes"
+],
+"FC Jokerit": [
+"#111111",
+"#00843D",
+"plain"
+],
+"FC Kiffen 08": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Krasnodar": [
+"#111111",
+"#0A5EB0",
+"plain"
+],
+"FC Kuusysi": [
+"#007FFF",
+"#FFFFFF",
+"plain"
+],
+"FC Kärnten": [
+"#FFD100",
+"#111111",
+"stripes"
+],
+"FC La Chaux-de-Fonds": [
+"#FFDD00",
+"#0A5EB0",
+"plain"
+],
+"FC Lahti": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Lausanne-Sport": [
+"#FFFFFF",
+"#0000F3",
+"plain"
+],
+"FC Locomotive Tbilisi": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Lokomotiv 1929 Sofia": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Lokomotiv Moscow": [
+"#094422",
+"#E2001A",
+"plain"
+],
+"FC Lokomotíva Košice": [
+"#333366",
+"#FFFFFF",
+"plain"
+],
+"FC Lovech": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Lugano": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Lyn Oslo": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"FC Marek Dupnitsa": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Maxline Vitebsk": [
+"#8CFF00",
+"#FFFFFF",
+"plain"
+],
+"FC Metalurgi Rustavi": [
+"#FF3030",
+"#111111",
+"plain"
+],
+"FC Midtjylland": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Minsk": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Naftan Novopolotsk": [
+"#000060",
+"#FFFFFF",
+"plain"
+],
+"FC Nantes": [
+"#FFD100",
+"#00B211",
+"plain"
+],
+"FC Neman Grodno": [
+"#007000",
+"#FFEE00",
+"plain"
+],
+"FC Nordsjælland": [
+"#E2001A",
+"#000055",
+"plain"
+],
+"FC Partizan Minsk": [
+"#DD0000",
+"#FFFFFF",
+"plain"
+],
+"FC Pasching": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Petrolul Ploiești": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"FC Petržalka": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"FC Porto": [
+"#0122EB",
+"#FFFFFF",
+"plain"
+],
+"FC Progresul București": [
+"#A4DDED",
+"#0070FF",
+"plain"
+],
+"FC Red Bull Salzburg": [
+"#FFFFFF",
+"#900018",
+"plain"
+],
+"FC Rubin Kazan": [
+"#AA2704",
+"#F1EBDB",
+"plain"
+],
+"FC Samtredia": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"FC Schalke 04": [
+"#0000DD",
+"#FFFFFF",
+"plain"
+],
+"FC Senec": [
+"#E46020",
+"#111111",
+"plain"
+],
+"FC Seoul": [
+"#C70A1C",
+"#111111",
+"stripes"
+],
+"FC Shakhtar Donetsk": [
+"#FD7D28",
+"#111111",
+"plain"
+],
+"FC Shakhtyor Soligorsk": [
+"#F7FF3C",
+"#111111",
+"plain"
+],
+"FC Shipka Sofia": [
+"#077C3B",
+"#FFFFFF",
+"stripes"
+],
+"FC Sion": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Sioni Bolnisi": [
+"#111111",
+"#FFD100",
+"plain"
+],
+"FC Slavia Mozyr": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Slovan Liberec": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Sopron": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Spaeri": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"FC Spartak Moscow": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Spartak Plovdiv": [
+"#2020FF",
+"#FFFFFF",
+"plain"
+],
+"FC Spartak Trnava": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Spartak Varna": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"FC St. Gallen": [
+"#087B57",
+"#FFFFFF",
+"plain"
+],
+"FC Thun": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Torpedo Kutaisi": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Torpedo Moscow": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Torpedo-BelAZ Zhodino": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"FC Twente": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC U Craiova 1948": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"FC UTA Arad": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FC Unirea Urziceni": [
+"#111111",
+"#43BFC7",
+"plain"
+],
+"FC Universitatea Cluj": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Utrecht": [
+"#ED1A2F",
+"#313C2C",
+"plain"
+],
+"FC Vado": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"FC ViOn Zlaté Moravce": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"FC Viktoria 1889 Berlin": [
+"#77BBFF",
+"#FFFFFF",
+"plain"
+],
+"FC Viktoria Plzeň": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"FC Vitebsk": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"FC Voluntari": [
+"#77BBFF",
+"#FFFFFF",
+"plain"
+],
+"FC Vorskla Poltava": [
+"#FFFFFF",
+"#37DA8B",
+"plain"
+],
+"FC WIT Georgia": [
+"#008800",
+"#111111",
+"plain"
+],
+"FC Wacker Innsbruck": [
+"#00843D",
+"#111111",
+"stripes"
+],
+"FC Wageningen": [
+"#FFFFFF",
+"#00843D",
+"stripes"
+],
+"FC Wil": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Winterthur": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"FC Young Fellows Zurich": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FC Zbrojovka Brno": [
+"#E2001A",
+"#0044FF",
+"plain"
+],
+"FC Zestaponi": [
+"#FFFFFF",
+"#1E90FF",
+"plain"
+],
+"FC Zlín": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"FCSB": [
+"#0A5EB0",
+"#E2001A",
+"plain"
+],
+"FCV Farul Constanța": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"FK 13 Sofia": [
+"#FF2020",
+"#111111",
+"plain"
+],
+"FK AS Trenčín": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"FK Bodø/Glimt": [
+"#FFDD00",
+"#00093B",
+"plain"
+],
+"FK DAC 1904 Dunajská Streda": [
+"#FFD900",
+"#5E733A",
+"plain"
+],
+"FK Dukla Banská Bystrica": [
+"#EF0000",
+"#111111",
+"plain"
+],
+"FK Inter Bratislava": [
+"#FFD100",
+"#111111",
+"stripes"
+],
+"FK Jablonec": [
+"#0B6121",
+"#FFFFFF",
+"plain"
+],
+"FK Jagodina": [
+"#0033CC",
+"#FFFFFF",
+"plain"
+],
+"FK Mladá Boleslav": [
+"#0042FF",
+"#FFDD00",
+"plain"
+],
+"FK Obilić": [
+"#FFFF33",
+"#0A5EB0",
+"plain"
+],
+"FK Sarajevo": [
+"#600020",
+"#FFFFFF",
+"plain"
+],
+"FK Smederevo 1924": [
+"#191970",
+"#6CABDD",
+"stripes"
+],
+"FK Teplice": [
+"#FFDD00",
+"#0033FF",
+"plain"
+],
+"FK Viktoria Žižkov": [
+"#E30000",
+"#FFFFFF",
+"stripes"
+],
+"FK Vojvodina": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"FK Ørn-Horten": [
+"#833C12",
+"#FFFFFF",
+"plain"
+],
+"FK Čukarički": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"FK Železnik": [
+"#E62020",
+"#111111",
+"plain"
+],
+"FUS Rabat": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"Falkirk F.C.": [
+"#000066",
+"#E2001A",
+"plain"
+],
+"Fehérvár FC": [
+"#000060",
+"#EF0000",
+"plain"
+],
+"Ferencvárosi TC": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Finn Harps F.C.": [
+"#0669C9",
+"#FFFFFF",
+"plain"
+],
+"First Vienna FC": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Floridsdorfer AC": [
+"#0044FF",
+"#FFFFFF",
+"plain"
+],
+"Fluminense Football Club": [
+"#7B1E3A",
+"#FFFFFF",
+"plain"
+],
+"Foolad F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Fortuna Düsseldorf": [
+"#B00000",
+"#FFFFFF",
+"plain"
+],
+"Fortuna Sittard": [
+"#FFD100",
+"#00684B",
+"plain"
+],
+"Fovu Baham": [
+"#5B0CB3",
+"#FFFFFF",
+"plain"
+],
+"Fredrikstad FK": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Free State Stars": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Freiburger FC": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Frigg Oslo FK": [
+"#2F3B71",
+"#6CABDD",
+"plain"
+],
+"Fässbergs IF": [
+"#7305BF",
+"#FFFFFF",
+"plain"
+],
+"G.D. Interclube": [
+"#0A5EB0",
+"#111111",
+"plain"
+],
+"G.D. Sagrada Esperança": [
+"#FFFFFF",
+"#008800",
+"plain"
+],
+"GAIS": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"GC Mascara": [
+"#FFFFFF",
+"#006600",
+"plain"
+],
+"GKS Katowice": [
+"#FFEE00",
+"#111111",
+"plain"
+],
+"GNK Dinamo Zagreb": [
+"#0000FE",
+"#FFFFFF",
+"plain"
+],
+"Galatasaray S.K. (football)": [
+"#270E8B",
+"#8B0E2C",
+"plain"
+],
+"Galway United F.C.": [
+"#6D1923",
+"#FFFFFF",
+"stripes"
+],
+"Gamba Osaka": [
+"#000055",
+"#FEFEFE",
+"plain"
+],
+"Garbarnia Kraków": [
+"#961A12",
+"#FFFFFF",
+"stripes"
+],
+"Genoa CFC": [
+"#FFFFFF",
+"#000040",
+"plain"
+],
+"Gençlerbirliği S.K.": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Gimcheon Sangmu FC": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Gimnasia y Esgrima La Plata": [
+"#FFFFFF",
+"#000040",
+"plain"
+],
+"Go Ahead Eagles": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Grasshopper Club Zürich": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Grazer AK": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Great Mariners F.C.": [
+"#0000BB",
+"#E2001A",
+"plain"
+],
+"Greenock Morton F.C.": [
+"#FFFFFF",
+"#0033FF",
+"plain"
+],
+"Grêmio Foot-Ball Porto Alegrense": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Guangdong Winnerway F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Guangzhou F.C.": [
+"#DF0000",
+"#7B1E3A",
+"plain"
+],
+"Guarani FC": [
+"#016D39",
+"#FFFFFF",
+"plain"
+],
+"Gyeongju Korea Hydro & Nuclear Power FC": [
+"#006400",
+"#1A8031",
+"plain"
+],
+"Győri ETO FC": [
+"#006837",
+"#FFFAFA",
+"plain"
+],
+"Górnik Zabrze": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Güneş S.K.": [
+"#FFFFFF",
+"#A81C07",
+"plain"
+],
+"HAŠK": [
+"#FCB600",
+"#E2001A",
+"plain"
+],
+"HBS Craeyenhout (football club)": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"HFC Haarlem": [
+"#0A2240",
+"#BB0000",
+"plain"
+],
+"HIFK Fotboll": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"HNK Hajduk Split": [
+"#FFFFFF",
+"#0000DD",
+"plain"
+],
+"HV & CV Quick": [
+"#00008B",
+"#FFFFFF",
+"plain"
+],
+"HVV Den Haag": [
+"#FFD700",
+"#111111",
+"plain"
+],
+"Hafia FC": [
+"#198042",
+"#FFFFFF",
+"plain"
+],
+"Hakoah Amidar Ramat Gan F.C.": [
+"#54008B",
+"#FFFFFF",
+"plain"
+],
+"Hakoah Vienna": [
+"#FFFFFF",
+"#0A5EB0",
+"halves"
+],
+"Halmstads BK": [
+"#0044FF",
+"#111111",
+"plain"
+],
+"Hamburger SV": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Hammarby Fotboll": [
+"#FFFFFF",
+"#16A452",
+"plain"
+],
+"Hamra Annaba": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Hannover 96": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Hapoel Be'er Sheva F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Hapoel Haifa F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Hapoel Ironi Kiryat Shmona F.C.": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Hapoel Kfar Saba F.C.": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Hapoel Petah Tikva F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Hapoel Ramat Gan Givatayim F.C.": [
+"#E2001A",
+"#111111",
+"stripes"
+],
+"Hapoel Tel Aviv F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Hassania Agadir": [
+"#E2001A",
+"#0099CC",
+"plain"
+],
+"Heart of Midlothian F.C.": [
+"#601F2E",
+"#FFFFFF",
+"plain"
+],
+"Heartland F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Hellas Verona FC": [
+"#203664",
+"#FFDC00",
+"plain"
+],
+"Helsingborgs IF": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Helsingin Jalkapalloklubi": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Helsingin Palloseura": [
+"#00994D",
+"#FFFFFF",
+"plain"
+],
+"Heracles Almelo": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Herfølge Boldklub": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Hertha BSC": [
+"#FFFFFF",
+"#040404",
+"plain"
+],
+"Hibernian F.C.": [
+"#335649",
+"#FFFFFF",
+"plain"
+],
+"Holstein Kiel": [
+"#0042FF",
+"#FFFFFF",
+"plain"
+],
+"Home Farm F.C.": [
+"#3232CD",
+"#FFFFFF",
+"hoops"
+],
+"Huachipato FC": [
+"#0A5EB0",
+"#111111",
+"plain"
+],
+"Huddersfield Town F.C.": [
+"#037FF8",
+"#111111",
+"plain"
+],
+"Hvidovre IF": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"HŠK Concordia": [
+"#339933",
+"#FFFFFF",
+"plain"
+],
+"HŠK Građanski Zagreb": [
+"#4169E1",
+"#FFFFFF",
+"plain"
+],
+"IF Elfsborg": [
+"#FFDD00",
+"#111111",
+"plain"
+],
+"IFK Eskilstuna": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"IFK Göteborg": [
+"#0023DD",
+"#FFFFFF",
+"plain"
+],
+"IFK Mariehamn": [
+"#FFFFFF",
+"#009150",
+"plain"
+],
+"IFK Norrköping": [
+"#FFFFFF",
+"#0000DD",
+"plain"
+],
+"III. Kerületi TVE": [
+"#0A5EB0",
+"#111111",
+"plain"
+],
+"IK Sleipner": [
+"#003399",
+"#FFFFFF",
+"stripes"
+],
+"IL Hødd": [
+"#0042FF",
+"#FFFFFF",
+"plain"
+],
+"Ifeanyi Ubah F.C.": [
+"#7F0000",
+"#7ACBE5",
+"plain"
+],
+"Ilves-Kissat": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Impôts FC": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Independiente Medellín": [
+"#E2001A",
+"#000049",
+"plain"
+],
+"Independiente Santa Fe": [
+"#F91010",
+"#FFFFFF",
+"plain"
+],
+"Independiente del Valle": [
+"#0040BF",
+"#111111",
+"plain"
+],
+"Inter Milan": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Inverness Caledonian Thistle F.C.": [
+"#0044FF",
+"#FF0070",
+"plain"
+],
+"Ipswich Town F.C.": [
+"#0333A0",
+"#F7EBC8",
+"plain"
+],
+"Iraklis F.C. (Thessaloniki)": [
+"#000066",
+"#FFFFFF",
+"stripes"
+],
+"JEF United Chiba": [
+"#FFFFFF",
+"#C8FE2E",
+"plain"
+],
+"JS Kabylie": [
+"#FFEE00",
+"#00843D",
+"plain"
+],
+"JS Kairouan": [
+"#005E21",
+"#FFFFFF",
+"stripes"
+],
+"JSM Béjaïa": [
+"#00843D",
+"#E2001A",
+"plain"
+],
+"Jagiellonia Białystok": [
+"#FFCC00",
+"#E2001A",
+"plain"
+],
+"Jeju SK FC": [
+"#EC6B32",
+"#FFFFFF",
+"plain"
+],
+"Jeonbuk Hyundai Motors": [
+"#7FC652",
+"#0A0C0B",
+"plain"
+],
+"Jiangsu F.C.": [
+"#0A5EB0",
+"#FFD100",
+"plain"
+],
+"Jomo Cosmos": [
+"#DD0000",
+"#082567",
+"plain"
+],
+"Jorge Chávez No. 1": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Juan Aurich": [
+"#EA0017",
+"#FFFFFF",
+"plain"
+],
+"Julius Berger F.C.": [
+"#0000DD",
+"#FFFFFF",
+"plain"
+],
+"Júbilo Iwata": [
+"#FFFFFF",
+"#3F9FFF",
+"plain"
+],
+"K. Waterschei S.V. Thor Genk": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"K.A.A. Gent": [
+"#0023DD",
+"#FFFFFF",
+"plain"
+],
+"K.F.C. Germinal Beerschot": [
+"#400080",
+"#FFFFFF",
+"plain"
+],
+"K.R.C. Genk": [
+"#007AFF",
+"#FFFFFF",
+"plain"
+],
+"K.S.C. Lokeren Oost-Vlaanderen": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"K.S.K. Beveren": [
+"#FCDD09",
+"#0F47AF",
+"plain"
+],
+"K.V. Mechelen": [
+"#FFD700",
+"#E2001A",
+"plain"
+],
+"K.V.C. Westerlo": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"KAC Marrakesh": [
+"#E2001A",
+"#6104D2",
+"plain"
+],
+"KFC Uerdingen 05": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"KS Cracovia": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Kabuscorp S.C.P.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Kaduna United F.C.": [
+"#FFD100",
+"#FFFFFF",
+"plain"
+],
+"Kalmar FF": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Kano Pillars F.C.": [
+"#FFD100",
+"#00843D",
+"plain"
+],
+"Karlsruher FV": [
+"#CC0033",
+"#111111",
+"stripes"
+],
+"Karlsruher SC": [
+"#0A5EB0",
+"#EDECE7",
+"plain"
+],
+"Kashima Antlers": [
+"#E20018",
+"#00003E",
+"plain"
+],
+"Kastoria F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Kawasaki Frontale": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Kayserispor": [
+"#AE1022",
+"#E2001A",
+"plain"
+],
+"Kecskeméti TE": [
+"#5A009C",
+"#FFFFFF",
+"plain"
+],
+"Kenitra AC": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Kickers Offenbach": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Kispest Honvéd FC": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Kjøbenhavns Boldklub": [
+"#0A5EB0",
+"#FFFFFF",
+"stripes"
+],
+"Kokkolan Palloveikot": [
+"#008833",
+"#FFFFFF",
+"plain"
+],
+"Koninklijke HFC": [
+"#0A2240",
+"#FFFFFF",
+"plain"
+],
+"Konyaspor": [
+"#008250",
+"#FFFFFF",
+"plain"
+],
+"Kotkan Työväen Palloilijat": [
+"#00924F",
+"#111111",
+"stripes"
+],
+"Kremser SC": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Krung Thai Bank F.C.": [
+"#0033FF",
+"#FFFFFF",
+"stripes"
+],
+"Kuopion Palloseura": [
+"#FFDD00",
+"#111111",
+"plain"
+],
+"Kvik Halden FK": [
+"#E2001A",
+"#FFFFFF",
+"stripes"
+],
+"Kwara United": [
+"#00843D",
+"#00843D",
+"plain"
+],
+"Kénitra AC": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Køge BK": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"L.D.U. Quito": [
+"#FFFFFF",
+"#808080",
+"plain"
+],
+"LASK": [
+"#FFFFFF",
+"#FFDD00",
+"plain"
+],
+"La Equidad": [
+"#174145",
+"#FFFFFF",
+"plain"
+],
+"Landskrona BoIS": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Lara Fútbol Club": [
+"#DD0000",
+"#FFFFFF",
+"plain"
+],
+"Le Havre AC": [
+"#8ED6F9",
+"#0D2142",
+"plain"
+],
+"Lech Poznań": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Lechia Gdańsk": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Legia Warsaw": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Leicester City F.C.": [
+"#0A5EB0",
+"#7B1E3A",
+"plain"
+],
+"Leixões S.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Leones Negros UdeG": [
+"#111111",
+"#062250",
+"plain"
+],
+"Liaoning F.C.": [
+"#C80815",
+"#FFFFFF",
+"plain"
+],
+"Lierse S.K. (1906)": [
+"#111111",
+"#FFFF22",
+"plain"
+],
+"Lille OSC": [
+"#FE0000",
+"#221F64",
+"plain"
+],
+"Lillestrøm SK": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Lima Cricket and Football Club": [
+"#111111",
+"#32CD32",
+"plain"
+],
+"Limerick F.C.": [
+"#0000DD",
+"#7AC143",
+"plain"
+],
+"Liverpool F.C.": [
+"#8F1E32",
+"#FFFFFF",
+"plain"
+],
+"Liverpool F.C. (Montevideo)": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Lobi Stars": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Lomas Academy": [
+"#F27E3D",
+"#0B5D2E",
+"stripes"
+],
+"Lomas Athletic Club": [
+"#336633",
+"#FFFFFF",
+"plain"
+],
+"Longford Town F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Luis Cruz Martínez de Curicó": [
+"#1661D4",
+"#FFFFFF",
+"plain"
+],
+"Lyngby Boldklub": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"MA Tétouan": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"MC Alger": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"MC Oran": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"MC Oujda": [
+"#007700",
+"#FFFFFF",
+"plain"
+],
+"MC Saïda": [
+"#FFFFFF",
+"#00843D",
+"plain"
+],
+"MFK Karviná": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"MFK Ružomberok": [
+"#C0C0C0",
+"#FF5000",
+"plain"
+],
+"MKE Ankaragücü": [
+"#040D42",
+"#FFD100",
+"plain"
+],
+"MO Béjaïa": [
+"#111111",
+"#00843D",
+"stripes"
+],
+"MO Constantine": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"MTK Budapest FC": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"MYPA": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Macarthur FC": [
+"#FFFFFF",
+"#080808",
+"plain"
+],
+"Maccabi Haifa F.C.": [
+"#007711",
+"#FFFFFF",
+"plain"
+],
+"Maccabi Netanya F.C.": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Maccabi Tel Aviv F.C.": [
+"#FFDF00",
+"#001450",
+"plain"
+],
+"Maghreb of Fez": [
+"#FFDF00",
+"#111111",
+"plain"
+],
+"Malavan F.C.": [
+"#0A0AB6",
+"#FFFFFF",
+"plain"
+],
+"Malmö FF": [
+"#77BBFF",
+"#FFFFFF",
+"plain"
+],
+"Mamelodi Sundowns F.C.": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Manchester City F.C.": [
+"#98C6EB",
+"#FFFFFF",
+"plain"
+],
+"Manchester United F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Manning Rangers F.C.": [
+"#FFD100",
+"#0000CD",
+"plain"
+],
+"Mariscal Sucre": [
+"#87CEFA",
+"#FFFFFF",
+"plain"
+],
+"Melbourne City FC": [
+"#81C1FF",
+"#FFFFFF",
+"plain"
+],
+"Melbourne Victory FC": [
+"#000947",
+"#E3E3E3",
+"plain"
+],
+"Mercantile SFK": [
+"#0A5EB0",
+"#FFFFFF",
+"halves"
+],
+"Metropolitanos F.C.": [
+"#FFFFFF",
+"#3C119D",
+"plain"
+],
+"Middlesbrough F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Miedź Legnica": [
+"#0A5EB0",
+"#E2001A",
+"plain"
+],
+"Mighty Jets": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Mikkelin Palloilijat": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Millonarios F.C.": [
+"#0415BA",
+"#CFC5D9",
+"plain"
+],
+"Mineros de Guayana": [
+"#111111",
+"#0A5EB0",
+"stripes"
+],
+"Minervén Fútbol Club": [
+"#FFFFFF",
+"#0033CC",
+"plain"
+],
+"Mjällby AIF": [
+"#FFEE00",
+"#111111",
+"plain"
+],
+"Mjøndalen IF Fotball": [
+"#5C2B00",
+"#FFFFFF",
+"plain"
+],
+"Molde FK": [
+"#0000DD",
+"#FFFFFF",
+"plain"
+],
+"Monagas S.C.": [
+"#020A2E",
+"#FFFFFF",
+"plain"
+],
+"Montevideo Wanderers F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Montpellier HSC": [
+"#000055",
+"#FF6600",
+"plain"
+],
+"Moreirense F.C.": [
+"#FFFFFF",
+"#00843D",
+"plain"
+],
+"Moroka Swallows F.C.": [
+"#FFFFFF",
+"#960018",
+"plain"
+],
+"Moss FK": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Motherwell F.C.": [
+"#FFBE00",
+"#FFFFFF",
+"plain"
+],
+"Mount Cameroon FC": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Mpumalanga Black Aces": [
+"#003366",
+"#FFFFFF",
+"plain"
+],
+"Muangthong United F.C.": [
+"#D20C0C",
+"#111111",
+"plain"
+],
+"MyPa": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"MŠK Púchov": [
+"#E2001A",
+"#111111",
+"stripes"
+],
+"MŠK Žilina": [
+"#FFD100",
+"#00843D",
+"plain"
+],
+"NAC Breda": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"ND Gorica": [
+"#1D68C5",
+"#FFFFFF",
+"plain"
+],
+"NK Domžale": [
+"#FFFFFF",
+"#FFD100",
+"plain"
+],
+"NK IB 1975 Ljubljana": [
+"#FF1A1A",
+"#FFFFFF",
+"plain"
+],
+"NK Maribor": [
+"#373C7D",
+"#FFFFFF",
+"plain"
+],
+"NK Mura": [
+"#111111",
+"#FFFFFF",
+"stripes"
+],
+"NK Olimpija Ljubljana (1945–2005)": [
+"#34925E",
+"#FFFFFF",
+"plain"
+],
+"NK Rogaška": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"NK Rudar Velenje": [
+"#111111",
+"#00843D",
+"stripes"
+],
+"NK Zagreb": [
+"#FFFFFF",
+"#E21A22",
+"plain"
+],
+"Naft Tehran F.C.": [
+"#D50030",
+"#0A2240",
+"plain"
+],
+"Nagoya Grampus": [
+"#D70C18",
+"#FFFFFF",
+"plain"
+],
+"Nea Salamis Famagusta FC": [
+"#E2001A",
+"#111111",
+"stripes"
+],
+"Neuchâtel Xamax": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Newcastle Jets FC": [
+"#B89C5C",
+"#000040",
+"plain"
+],
+"Newcastle United F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Newell's Old Boys": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Niger Tornadoes": [
+"#FFFFFF",
+"#FFD100",
+"plain"
+],
+"Nordstrand IF": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Norwich City F.C.": [
+"#FFD100",
+"#00843D",
+"plain"
+],
+"Nottingham Forest F.C.": [
+"#D70926",
+"#FFFFFF",
+"plain"
+],
+"Notts County F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"O'Higgins F.C.": [
+"#83CCF9",
+"#FFD100",
+"plain"
+],
+"OC Khouribga": [
+"#008800",
+"#FFFFFF",
+"plain"
+],
+"OC Safi": [
+"#000077",
+"#FFFFFF",
+"plain"
+],
+"OFC Sliven 2000": [
+"#FF8800",
+"#436EEE",
+"plain"
+],
+"OFK Beograd": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"OGC Nice": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"OSK AS-23": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Ocean Boys FC": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Odds BK": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Old Carthusians F.C.": [
+"#FF0099",
+"#000099",
+"plain"
+],
+"Old Etonians F.C.": [
+"#CDDAAC",
+"#FFFFFF",
+"plain"
+],
+"Olympia București": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Olympiacos F.C.": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Olympiakos Nicosia": [
+"#111111",
+"#007711",
+"plain"
+],
+"Olympic Club (Egypt)": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Olympic Mvolyé": [
+"#ADD8E6",
+"#FFFFFF",
+"stripes"
+],
+"Olympique Béja": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Olympique Lyonnais": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Olympique de Casablanca": [
+"#113ED7",
+"#FFFFFF",
+"stripes"
+],
+"Olympique de Marseille": [
+"#FFFFFF",
+"#2C2C3E",
+"plain"
+],
+"Olympique de Paris": [
+"#1952CD",
+"#FFFFFF",
+"plain"
+],
+"Once Caldas": [
+"#FFFFFF",
+"#1C1C1C",
+"plain"
+],
+"Oriente Petrolero": [
+"#00712D",
+"#D0FFD0",
+"plain"
+],
+"Orlando Pirates": [
+"#111111",
+"#FDF1E6",
+"plain"
+],
+"Oryx Douala": [
+"#FFDD00",
+"#FFFFFF",
+"plain"
+],
+"Oxford United F.C.": [
+"#F9E758",
+"#0A2240",
+"plain"
+],
+"Oxford University A.F.C.": [
+"#000099",
+"#FFFFFF",
+"plain"
+],
+"PAOK FC": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"PAS Tehran F.C.": [
+"#12C627",
+"#FFFFFF",
+"plain"
+],
+"PEC Zwolle": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"PFC Beroe Stara Zagora": [
+"#008100",
+"#FFFFFF",
+"plain"
+],
+"PFC Botev Plovdiv": [
+"#111111",
+"#87CEFA",
+"plain"
+],
+"PFC CSKA Moscow": [
+"#EB2F2D",
+"#031B6E",
+"plain"
+],
+"PFC CSKA Sofia": [
+"#DD0000",
+"#FFFFFF",
+"plain"
+],
+"PFC Cherno More Varna": [
+"#34B36B",
+"#111111",
+"plain"
+],
+"PFC Levski Sofia": [
+"#0000DD",
+"#EFD478",
+"plain"
+],
+"PFC Lokomotiv Plovdiv": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"PFC Lokomotiv Sofia": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"PFC Ludogorets Razgrad": [
+"#00843D",
+"#FFF542",
+"plain"
+],
+"PFC Septemvri Sofia": [
+"#9B111E",
+"#FFFFFF",
+"plain"
+],
+"PFC Slavia Sofia": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"PFC Spartak Plovdiv": [
+"#2020FF",
+"#FFFFFF",
+"plain"
+],
+"PSV Eindhoven": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"PWD Bamenda": [
+"#054C9A",
+"#0A5EB0",
+"plain"
+],
+"Pafos FC": [
+"#0042FF",
+"#FFFFFF",
+"plain"
+],
+"Panathinaikos F.C.": [
+"#1B6A64",
+"#FFFFFF",
+"plain"
+],
+"Panionios F.C.": [
+"#318CE7",
+"#E2001A",
+"stripes"
+],
+"Panthère du Ndé": [
+"#FFD100",
+"#008633",
+"plain"
+],
+"Paris Saint-Germain FC": [
+"#0000CC",
+"#FFFFFF",
+"plain"
+],
+"Parma Calcio 1913": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Partick Thistle F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Paulista Futebol Clube": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Persepolis F.C.": [
+"#E50000",
+"#FBFBFB",
+"plain"
+],
+"Peñarol": [
+"#FFE517",
+"#111111",
+"plain"
+],
+"Piast Gliwice": [
+"#0A5EB0",
+"#E2001A",
+"plain"
+],
+"Plateau United": [
+"#FFD100",
+"#007819",
+"plain"
+],
+"Pogoń Lwów": [
+"#211288",
+"#E2001A",
+"stripes"
+],
+"Pohang Steelers": [
+"#111111",
+"#E2001A",
+"hoops"
+],
+"Police Tero F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Polonia Bytom": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Polonia Warsaw": [
+"#111111",
+"#E2001A",
+"plain"
+],
+"Port F.C.": [
+"#0000CD",
+"#F58113",
+"stripes"
+],
+"Portsmouth F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Portuguesa F.C.": [
+"#E30000",
+"#111111",
+"plain"
+],
+"Prahova Ploiești": [
+"#FFEF00",
+"#0A5EB0",
+"plain"
+],
+"Preston North End F.C.": [
+"#FFFFFF",
+"#000055",
+"plain"
+],
+"Progresso Associação do Sambizanga": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Pyramids FC": [
+"#FFFFFF",
+"#00FFEE",
+"plain"
+],
+"Pyrkivä Turku": [
+"#008800",
+"#111111",
+"stripes"
+],
+"Pécsi MFC": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Qatar SC": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Qingdao Hainiu F.C. (1990)": [
+"#FF7D00",
+"#0A5EB0",
+"plain"
+],
+"Queen's Park F.C.": [
+"#FFFFFF",
+"#000060",
+"plain"
+],
+"Querétaro F.C.": [
+"#21497A",
+"#111111",
+"plain"
+],
+"Quilmes Atlético Club": [
+"#FFFFFF",
+"#000040",
+"plain"
+],
+"R.A.A. Louviéroise": [
+"#2F847C",
+"#FFFFFF",
+"stripes"
+],
+"R.F.C. Liégeois": [
+"#E2001A",
+"#0A5EB0",
+"stripes"
+],
+"R.R.C. Tournaisien": [
+"#E7DA5A",
+"#111111",
+"plain"
+],
+"R.S.C. Anderlecht": [
+"#5C2195",
+"#F9F9EF",
+"plain"
+],
+"R.W.D. Molenbeek (1909)": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"RAC Casablanca": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"RAP (football club)": [
+"#111111",
+"#E2001A",
+"plain"
+],
+"RB Leipzig": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"RC Strasbourg": [
+"#0000DD",
+"#FFFFFF",
+"plain"
+],
+"RCD Mallorca": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"RCH (football club)": [
+"#0A5EB0",
+"#111111",
+"stripes"
+],
+"RS Berkane": [
+"#FF6C00",
+"#111111",
+"plain"
+],
+"RS Settat": [
+"#99CCFF",
+"#111111",
+"plain"
+],
+"Racing Bafoussam": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Racing Club Bafoussam": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Racing Club Heemstede": [
+"#0A5EB0",
+"#111111",
+"stripes"
+],
+"Racing Club de Avellaneda": [
+"#FFFFFF",
+"#44A3FC",
+"plain"
+],
+"Racing Club de France Football": [
+"#AFD9F0",
+"#111111",
+"plain"
+],
+"Racing de Casablanca": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Raj-Vithi FC": [
+"#FFD100",
+"#00B9E9",
+"plain"
+],
+"Raja Beni Mellal": [
+"#007700",
+"#FFFFFF",
+"plain"
+],
+"Raków Częstochowa": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"Rampla Juniors": [
+"#FFFFFF",
+"#008022",
+"plain"
+],
+"Rangers F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Ratchaburi Mitr Phol F.C.": [
+"#FB5503",
+"#FFFFFF",
+"plain"
+],
+"Real Betis": [
+"#359B5C",
+"#FFFFFF",
+"plain"
+],
+"Real Madrid CF": [
+"#FFFFFF",
+"#162E32",
+"plain"
+],
+"Real Sociedad": [
+"#0042FF",
+"#FFFFFF",
+"plain"
+],
+"Real Unión": [
+"#111111",
+"#670E36",
+"plain"
+],
+"Red Star F.C.": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Reipas Lahti": [
+"#FF6600",
+"#111111",
+"stripes"
+],
+"Remo Stars": [
+"#19D9FF",
+"#111111",
+"plain"
+],
+"Renton F.C.": [
+"#0A2240",
+"#FFFFFF",
+"plain"
+],
+"River Plate F.C.": [
+"#FFFFFF",
+"#E2001A",
+"stripes"
+],
+"Rivers United F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"RoPS": [
+"#0042FF",
+"#FFFFFF",
+"plain"
+],
+"Roda JC Kerkrade": [
+"#E1AD00",
+"#111111",
+"stripes"
+],
+"Rosario Central": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Rosenborg BK": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Rot-Weiss Essen": [
+"#F1EBDB",
+"#D80000",
+"plain"
+],
+"Royal Antwerp F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Royal Engineers A.F.C.": [
+"#E41B17",
+"#0A2240",
+"hoops"
+],
+"Royal Thai Air Force FC": [
+"#191970",
+"#D60202",
+"plain"
+],
+"Royale Union Saint-Gilloise": [
+"#FFE000",
+"#000055",
+"plain"
+],
+"Ruch Chorzów": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Råå IF": [
+"#9CE0FF",
+"#FFFFFF",
+"plain"
+],
+"S.C. Beira-Mar": [
+"#FFDD00",
+"#111111",
+"stripes"
+],
+"S.C. Braga": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"S.C. Olhanense": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"S.C.U. Torreense": [
+"#AA0000",
+"#003B6F",
+"plain"
+],
+"S.D. Aucas": [
+"#FFF200",
+"#E2001A",
+"plain"
+],
+"S.D. Quito": [
+"#E2001A",
+"#0A2240",
+"plain"
+],
+"S.L. Benfica": [
+"#FE0000",
+"#FFFFFF",
+"plain"
+],
+"S.L. Benfica (Luanda)": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"S.V. Zulte Waregem": [
+"#FF0026",
+"#FFFFFF",
+"plain"
+],
+"SBV Vitesse": [
+"#FFDD00",
+"#111111",
+"plain"
+],
+"SC Bastia": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"SC Brühl": [
+"#00AA00",
+"#FFFFFF",
+"plain"
+],
+"SC Corinthians Paulista": [
+"#FCFAF5",
+"#111111",
+"plain"
+],
+"SC Heerenveen": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"SC Internacional": [
+"#EF0000",
+"#FFFFFF",
+"plain"
+],
+"SC Tavriya Simferopol": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"SCC Mohammédia": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"SE Palmeiras": [
+"#035F30",
+"#FFFFFF",
+"plain"
+],
+"SK Brann": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"SK Gjøvik-Lyn": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"SK Hradec Králové": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"SK Jugoslavija": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"SK Rapid Wien": [
+"#009150",
+"#FE0000",
+"plain"
+],
+"SK Sigma Olomouc": [
+"#000066",
+"#FFFFFF",
+"plain"
+],
+"SK Slavia Prague": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"SK Slovan Bratislava": [
+"#80BFFF",
+"#000060",
+"plain"
+],
+"SK Sturm Graz": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"SK Vladislav": [
+"#2E8B57",
+"#FFFFFF",
+"stripes"
+],
+"SS Lazio": [
+"#88BFF7",
+"#FFFFFF",
+"plain"
+],
+"SV Horn": [
+"#0A5EB0",
+"#E2001A",
+"plain"
+],
+"SV Limburgia": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"SV Ried": [
+"#175C49",
+"#111111",
+"plain"
+],
+"SV Werder Bremen": [
+"#FFFFFF",
+"#009A59",
+"plain"
+],
+"Saba Qom F.C.": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"Sable FC (Cameroon)": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
+"Saipa F.C.": [
+"#F28500",
+"#111111",
+"plain"
+],
+"Sakaryaspor": [
+"#111111",
+"#009150",
+"stripes"
+],
+"San Lorenzo de Almagro": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Sanfrecce Hiroshima": [
+"#533C82",
+"#FFFFFF",
+"plain"
+],
+"Santiago Morning": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Santiago Wanderers": [
+"#66DECE",
+"#0C3433",
+"plain"
+],
+"Santos F.C. (South Africa)": [
+"#FFD100",
+"#FFFFFF",
+"stripes"
+],
+"Santos FC": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Santos Futebol Clube de Angola": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"Santos Laguna": [
+"#01AF54",
+"#FFFFFF",
+"plain"
+],
+"Sarpsborg FK": [
+"#FFFFFF",
+"#0A5EB0",
+"stripes"
+],
+"Schiedamse Voetbal Vereniging": [
+"#00843D",
+"#E2001A",
+"halves"
+],
+"Schwarz-Weiss Essen": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Seinäjoen Jalkapallokerho": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Sekondi Eleven Wise": [
+"#111111",
+"#FFFFFF",
+"stripes"
+],
+"Sekondi Hasaacas F.C.": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Seongnam FC": [
+"#050D10",
+"#FFFFFF",
+"plain"
+],
+"Seoul FC": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Sepahan S.C.": [
+"#F9F32D",
+"#111111",
+"plain"
+],
+"Sepsi OSK Sfântu Gheorghe": [
+"#EF0000",
+"#006633",
+"plain"
+],
+"Servette FC": [
+"#820013",
+"#FCFAF5",
+"plain"
+],
+"Sevilla FC": [
+"#FFFFFF",
+"#E20001",
+"plain"
+],
+"Sfax RS": [
+"#00000A",
+"#FFD100",
+"hoops"
+],
+"Shabab Al Ahli Club": [
+"#FE3502",
+"#00843D",
+"plain"
+],
+"Shahin Ahvaz F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Shamrock Rovers F.C.": [
+"#FFFFFF",
+"#176A56",
+"plain"
+],
+"Shandong Taishan F.C.": [
+"#FF7700",
+"#0000DD",
+"plain"
+],
+"Shanghai Port F.C.": [
+"#DD0000",
+"#FFFFFF",
+"plain"
+],
+"Shanghai Shenhua F.C.": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Sharjah FC": [
+"#FFFFFF",
+"#EF0000",
+"plain"
+],
+"Sheffield United F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Sheffield Wednesday F.C.": [
+"#0257BD",
+"#FFFFFF",
+"stripes"
+],
+"Shelbourne F.C.": [
+"#E2001A",
+"#AAD2F8",
+"plain"
+],
+"Shenzhen F.C.": [
+"#FF6600",
+"#BBBBBB",
+"plain"
+],
+"Shonan Bellmare": [
+"#6FB92E",
+"#38E64E",
+"plain"
+],
+"Shooting Stars FC": [
+"#0A5EB0",
+"#FFFFFF",
+"stripes"
+],
+"Silkeborg IF": [
+"#EF0000",
+"#FFFFFF",
+"plain"
+],
+"Sinthana FC": [
+"#FF1493",
+"#111111",
+"plain"
+],
+"Sivasspor": [
+"#E00000",
+"#FFFFFF",
+"plain"
+],
+"Skeid Fotball": [
+"#EF0000",
+"#0000DD",
+"plain"
+],
+"Sligo Rovers F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Sociedade Esportiva Palmeiras": [
+"#035F30",
+"#FFFFFF",
+"plain"
+],
+"Soroksár SC": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Southampton F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"SpVg Blau-Weiß 90 Berlin": [
+"#00AAFF",
+"#111111",
+"hoops"
+],
+"SpVgg Greuther Fürth": [
+"#FFEFDD",
+"#01744D",
+"plain"
+],
+"Sparta Rotterdam": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Sport Boys": [
+"#FFCADD",
+"#111111",
+"plain"
+],
+"Sport Boys Warnes": [
+"#0000B5",
+"#FF7A00",
+"plain"
+],
+"Sport Club Corinthians Paulista": [
+"#FCFAF5",
+"#111111",
+"plain"
+],
+"Sport Club Internacional": [
+"#EF0000",
+"#FFFFFF",
+"plain"
+],
+"Sport Club do Recife": [
+"#111111",
+"#E2001A",
+"plain"
+],
+"Sport Inca": [
+"#8B0000",
+"#FFD100",
+"sash"
+],
+"Sport José Gálvez": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Sport Juan Bielovucic": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"Sport Progreso": [
+"#E2001A",
+"#111111",
+"stripes"
+],
+"Sportclub Enschede": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Sporting CP": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Sporting Cristal": [
+"#6BC5FD",
+"#FFFFFF",
+"plain"
+],
+"Sporting Fingal F.C.": [
+"#FFFFFF",
+"#D4AF37",
+"plain"
+],
+"Sportivo Barracas": [
+"#FFFFFF",
+"#0A2240",
+"stripes"
+],
+"Sportivo Dock Sud": [
+"#000040",
+"#FFFFFF",
+"plain"
+],
+"Sportklub Sofia": [
+"#660066",
+"#FFFFFF",
+"plain"
+],
+"St Bernard's F.C.": [
+"#FFFFFF",
+"#0A5EB0",
+"hoops"
+],
+"St Johnstone F.C.": [
+"#0A5EB0",
+"#E2001A",
+"plain"
+],
+"St Patrick's Athletic F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"St. Andrew's Athletic Club": [
+"#FFFFFF",
+"#0A5EB0",
+"hoops"
+],
+"St. James's Gate F.C.": [
+"#00843D",
+"#EE0000",
+"plain"
+],
+"Stabæk Fotball": [
+"#000050",
+"#FFFFFF",
+"plain"
+],
+"Stade Africain Menzel Bourguiba": [
+"#0A9948",
+"#FFFFFF",
+"plain"
+],
+"Stade Marocain": [
+"#009900",
+"#111111",
+"plain"
+],
+"Stade Rennais F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Stade Tunisien": [
+"#009900",
+"#E2001A",
+"stripes"
+],
+"Stade d'Abidjan": [
+"#E2001A",
+"#0A5EB0",
+"plain"
+],
+"Stade de Reims": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Stal Mielec": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Stal Rzeszów (football)": [
+"#FFFFFF",
+"#00ADFF",
+"plain"
+],
+"Standard Liège": [
+"#DD0000",
+"#111111",
+"plain"
+],
+"Stationery Stores": [
+"#FFD700",
+"#E2001A",
+"sash"
+],
+"Stoke City F.C.": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Strømsgodset Toppfotball": [
+"#000060",
+"#FFFFFF",
+"plain"
+],
+"Sudet": [
+"#C80815",
+"#111111",
+"plain"
+],
+"Sukhothai F.C.": [
+"#801322",
+"#58AAA8",
+"plain"
+],
+"Sunderland A.F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"SuperSport United F.C.": [
+"#0000CD",
+"#FFFFFF",
+"plain"
+],
+"Suwon Samsung Bluewings": [
+"#0042FF",
+"#FFFFFF",
+"plain"
+],
+"Swansea City A.F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Swindon Town F.C.": [
+"#EF0000",
+"#FFFFFF",
+"plain"
+],
+"Sydney FC": [
+"#87CEEB",
+"#0A2240",
+"plain"
+],
+"Szolnoki MÁV FC": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Szombierki Bytom": [
+"#348153",
+"#FFFFFF",
+"stripes"
+],
+"São Paulo FC": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"TAS Casablanca": [
+"#FFFFFF",
+"#999999",
+"plain"
+],
+"TJ Vítkovice": [
+"#0000CD",
+"#FFFFFF",
+"plain"
+],
+"TOT FC": [
+"#C2DFFF",
+"#6CABDD",
+"plain"
+],
+"TP Mazembe": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"TS Galaxy F.C.": [
+"#111111",
+"#E2001A",
+"stripes"
+],
+"TSV 1860 Munich": [
+"#A0C7E5",
+"#1B2C47",
+"plain"
+],
+"TTS Trenčín": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Tampere United": [
+"#4169E1",
+"#00843D",
+"plain"
+],
+"Tampereen Pallo-Veikot": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Tecos F.C.": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Tersana SC": [
+"#0032C2",
+"#FFFFFF",
+"plain"
+],
+"Thai Farmers Bank F.C.": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"Thailand Tobacco Monopoly F.C.": [
+"#E91010",
+"#0521B1",
+"plain"
+],
+"Third Lanark A.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Tianjin Jinmen Tiger F.C.": [
+"#5A28B7",
+"#FFFFFF",
+"plain"
+],
+"Tigres UANL": [
+"#FFCB09",
+"#092080",
+"plain"
+],
+"Tiko United": [
+"#0A5EB0",
+"#FFD100",
+"plain"
+],
+"Tokyo Verdy": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Toluca FC": [
+"#F9E4A6",
+"#E2001A",
+"plain"
+],
+"Tonnerre Yaoundé": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Torino FC": [
+"#65001B",
+"#FFFFFF",
+"plain"
+],
+"Tottenham Hotspur F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Toulouse FC": [
+"#3C0082",
+"#FFFFFF",
+"plain"
+],
+"Toulouse FC (1937)": [
+"#CC0000",
+"#FFFFFF",
+"plain"
+],
+"Toverit Helsinki": [
+"#0A5EB0",
+"#FFFFFF",
+"stripes"
+],
+"Trabzonspor": [
+"#5A1129",
+"#74B7E6",
+"plain"
+],
+"Tractor SC": [
+"#E2001A",
+"#111111",
+"stripes"
+],
+"Transport F.C.": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Tromsø IL": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Trujillanos F.C.": [
+"#FFD100",
+"#FFFFFF",
+"plain"
+],
+"Turun Palloseura": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"U.D. Moctezuma de Orizaba": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"UC Sampdoria": [
+"#2345C0",
+"#FFFFFF",
+"plain"
+],
+"US Chaouia": [
+"#F2F100",
+"#020001",
+"plain"
+],
+"US Monastir (football)": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"US Pro Vercelli Calcio": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"USD Novese": [
+"#83D3F4",
+"#FFFFFF",
+"plain"
+],
+"USM Alger": [
+"#E2001A",
+"#111111",
+"plain"
+],
+"USM Bel Abbès": [
+"#2C8F4F",
+"#E2001A",
+"plain"
+],
+"USM El Harrach": [
+"#FFEE00",
+"#111111",
+"plain"
+],
+"Ulsan HD FC": [
+"#102FDD",
+"#FFFFFF",
+"plain"
+],
+"Umm-Salal Sports Club": [
+"#FF8D00",
+"#FFFFFF",
+"plain"
+],
+"Union Sportive de Douala": [
+"#008633",
+"#FFFFFF",
+"plain"
+],
+"Unirea Tricolor București": [
+"#FFDE00",
+"#0A5EB0",
+"plain"
+],
+"Unisport Bafang": [
+"#E2001A",
+"#FFD100",
+"plain"
+],
+"Unitas Sports Club": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Universidad Central de Venezuela F.C.": [
+"#0A5EB0",
+"#FFFF01",
+"plain"
+],
+"Universidad de Los Andes FC": [
+"#FFFFFF",
+"#0A2240",
+"stripes"
+],
+"Universitario de Sucre": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Unión Atlético Maracaibo": [
+"#3D69AA",
+"#E2001A",
+"stripes"
+],
+"Unión Española": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Unión Huaral": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Unión Magdalena": [
+"#0A5EB0",
+"#E10000",
+"plain"
+],
+"Unión S.C.": [
+"#E2001A",
+"#111111",
+"hoops"
+],
+"Unión San Felipe": [
+"#FFFFFF",
+"#EE0000",
+"plain"
+],
+"Urania Genève Sport": [
+"#513CA3",
+"#FFFFFF",
+"plain"
+],
+"Urawa Red Diamonds": [
+"#111111",
+"#E2001A",
+"plain"
+],
+"VV Concordia": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"VV DOS": [
+"#191970",
+"#FFFFFF",
+"plain"
+],
+"VVV-Venlo": [
+"#FFCC00",
+"#111111",
+"plain"
+],
+"Vaasan Palloseura": [
+"#FFFFFF",
+"#111111",
+"stripes"
+],
+"Vale of Leven F.C.": [
+"#181146",
+"#FFFFFF",
+"plain"
+],
+"Valencia CF": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Vasa IFK": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Vasas SC": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Vejle Boldklub": [
+"#EF0000",
+"#FFFFFF",
+"plain"
+],
+"Velocitas 1897": [
+"#FFFFFF",
+"#00843D",
+"stripes"
+],
+"Venezia FC": [
+"#111111",
+"#EDE4D9",
+"plain"
+],
+"VfB Stuttgart": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"VfL Wolfsburg": [
+"#1A3A2F",
+"#C6D1CE",
+"plain"
+],
+"VfR Mannheim": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Victoria United FC (Cameroon)": [
+"#FFFFFF",
+"#9AA0A6",
+"stripes"
+],
+"Videoton FC Fehérvár": [
+"#000060",
+"#EF0000",
+"plain"
+],
+"Viking FK": [
+"#061528",
+"#FFFFFF",
+"plain"
+],
+"Villarreal CF": [
+"#FFD100",
+"#CBCBCB",
+"plain"
+],
+"Vissel Kobe": [
+"#5F0101",
+"#111111",
+"plain"
+],
+"Vitória F.C.": [
+"#FFFFFF",
+"#006030",
+"plain"
+],
+"Vitória S.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Voradep Ho F.C.": [
+"#0098DE",
+"#00843D",
+"hoops"
+],
+"Vác FC-Samsung": [
+"#E32636",
+"#0A2240",
+"plain"
+],
+"Vålerenga Fotball": [
+"#0000DD",
+"#FFFFFF",
+"plain"
+],
+"WA Tlemcen": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"Wanderers F.C.": [
+"#FFDE00",
+"#FFFFFF",
+"plain"
+],
+"Warta Poznań": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Waterford United F.C.": [
+"#0044FF",
+"#FFFFFF",
+"plain"
+],
+"West Bromwich Albion F.C.": [
+"#091453",
+"#FFFFFF",
+"plain"
+],
+"West Ham United F.C.": [
+"#7E1823",
+"#FFFFFF",
+"plain"
+],
+"Western United FC": [
+"#2BB56C",
+"#111111",
+"stripes"
+],
+"Widzew Łódź": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Wiener AC": [
+"#FFFFFF",
+"#E2001A",
+"stripes"
+],
+"Wiener Sport-Club": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Wigan Athletic F.C.": [
+"#0A5EB0",
+"#0A5EB0",
+"stripes"
+],
+"Wikki Tourists": [
+"#E20E0E",
+"#FFE700",
+"plain"
+],
+"Wiliete S.C.": [
+"#00843D",
+"#FFFFFF",
+"plain"
+],
+"Willem II (football club)": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Wisła Kraków": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Wisła Płock": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Wolfsberger AC": [
+"#FFFFFF",
+"#0000DD",
+"plain"
+],
+"Wolverhampton Wanderers F.C.": [
+"#F4B125",
+"#111111",
+"plain"
+],
+"Wuhan Three Towns F.C.": [
+"#000066",
+"#FFFFFF",
+"plain"
+],
+"Wydad AC": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
+"Yanbian Funde F.C.": [
+"#FF3300",
+"#FFFFFF",
+"plain"
+],
+"Yokohama F. Marinos": [
+"#0A5EB0",
+"#FFFFFF",
+"plain"
+],
+"Yong Sports Academy": [
+"#FFD100",
+"#00843D",
+"plain"
+],
+"Zacatepec F.C.": [
+"#FFFFFF",
+"#00843D",
+"plain"
+],
+"Zagłębie Lubin": [
+"#FF6600",
+"#B0B0B0",
+"plain"
+],
+"Zagłębie Sosnowiec": [
+"#E2001A",
+"#007642",
+"plain"
+],
+"Zalaegerszegi TE": [
+"#FFFFFF",
+"#004DA2",
+"plain"
+],
+"Zamalek SC": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Zamora F.C.": [
+"#FFFFFF",
+"#111111",
+"plain"
+],
+"Zawisza Bydgoszcz": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Zulia F.C.": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
+"ÅIFK": [
+"#FFD100",
+"#111111",
+"plain"
+],
+"Åtvidabergs FF": [
+"#303090",
+"#FFFFFF",
+"plain"
+],
+"Çetinkaya Türk S.K.": [
+"#FFD100",
+"#E2001A",
+"stripes"
+],
+"Étoile de Casablanca": [
+"#FFF000",
+"#00843D",
+"plain"
+],
+"Örgryte IS": [
+"#DD0000",
+"#000055",
+"plain"
+],
+"Östers IF": [
+"#EE0000",
+"#000066",
+"plain"
+],
+"Östersunds FK": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
+"Újpest FC": [
+"#FFFFFF",
+"#440088",
+"plain"
+],
+"ŁKS Łódź": [
+"#FFFFFF",
+"#E2001A",
+"plain"
+],
+"Śląsk Wrocław": [
+"#005000",
+"#FFFFFF",
+"plain"
+],
+"ŠK Futura Humenné": [
+"#003471",
+"#111111",
+"plain"
+],
+"ŠK Slovan Bratislava": [
+"#80BFFF",
+"#000060",
+"plain"
+]
+}

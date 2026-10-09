@@ -94,7 +94,18 @@ EXTRA_KNOWN = {
  "Al Ain": ("AIN", "#5F2C83", "#FFFFFF", "plain"), "Al-Sadd": ("SAD", "#FFFFFF", "#111111", "plain"), "Guangzhou": ("GUA", "#E2001A", "#FFD100", "plain"),
  "Maccabi Tel Aviv": ("MTA", "#FFD100", "#0A5EB0", "plain"), "Hapoel Tel Aviv": ("HTA", "#E2001A", "#FFFFFF", "plain"), "Gamba Osaka": ("GAM", "#0A3F86", "#111111", "stripes"),
  "Western Sydney Wanderers": ("WSW", "#E2001A", "#111111", "hoops"),
+ # Polónia (o Pedro reparou a 9 out. 2026 que estavam todos iguais)
+ "Legia Warsaw": ("LEG", "#FFFFFF", "#00843D", "plain"), "Górnik Zabrze": ("GZA", "#FFFFFF", "#0A5EB0", "plain"), "Ruch Chorzów": ("RCH", "#0A5EB0", "#FFFFFF", "plain"),
+ "Wisła Kraków": ("WIS", "#E2001A", "#0A5EB0", "plain"), "Lech Poznań": ("LPO", "#0A5EB0", "#FFFFFF", "plain"), "Cracovia": ("CRA", "#FFFFFF", "#E2001A", "stripes"),
+ "Widzew Łódź": ("WID", "#E2001A", "#FFFFFF", "plain"), "ŁKS Łódź": ("ŁKS", "#FFFFFF", "#E2001A", "plain"), "Śląsk Wrocław": ("ŚLĄ", "#00843D", "#FFFFFF", "plain"),
+ "Polonia Warsaw": ("POL", "#111111", "#FFFFFF", "plain"), "Zagłębie Lubin": ("ZAG", "#F58113", "#FFFFFF", "plain"), "Jagiellonia Białystok": ("JAG", "#FFD100", "#E2001A", "stripes"),
+ "Lechia Gdańsk": ("LGD", "#00843D", "#FFFFFF", "hoops"), "Raków Częstochowa": ("RAK", "#E2001A", "#0A5EB0", "plain"), "Arka Gdynia": ("ARK", "#FFD100", "#0A5EB0", "plain"),
+ "Warta Poznań": ("WAR", "#00843D", "#FFFFFF", "plain"), "Piast Gliwice": ("PIA", "#0A5EB0", "#E2001A", "plain"),
 }
+# Cores do equipamento lidas das fichas da Wikipédia (harvest_colors.py): artigo -> [cor 1, cor 2, padrão].
+_colors = os.path.join(here, "club_colors.json")
+COLORS = json.load(open(_colors)) if os.path.exists(_colors) else {}
+NEUTRAL = ["#1B3FC2", "#C8D2E8"]
 
 def norm(s):
     s = unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode().lower()
@@ -178,11 +189,14 @@ def merge(clubs, comps, honours, countries):
                 k = known_by_name.get(target)
                 if k: short, abbr, c1, c2, kit = k
                 elif short in EXTRA_KNOWN: abbr, c1, c2, kit = EXTRA_KNOWN[short]
-                else: abbr, c1, c2, kit = re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", short)[:3].upper(), "#1B3FC2", "#C8D2E8", "plain"
+                elif row.get("link") in COLORS: abbr = re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", short)[:3].upper(); c1, c2, kit = COLORS[row["link"]]
+                else: abbr, c1, c2, kit = re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", short)[:3].upper(), *NEUTRAL, "plain"
                 cid = slug(short)
                 if cid in clubs: cid = f"{cid}-{code.lower()}"
                 club = {"id": cid, "name": name, "shortName": short, "country": code, "colors": [c1, c2], "kit": kit, "abbreviation": abbr}
                 clubs[cid] = club; index.setdefault(target, []).append(club); report["novos"].append(f"{short} ({code})")
+            if club["colors"] == NEUTRAL and row.get("link") in COLORS:   # clube que já existia sem cores
+                c1, c2, kit = COLORS[row["link"]]; club["colors"] = [c1, c2]; club["kit"] = kit
             key = (club["id"], comp_id); seen.add(key)
             h = honours.setdefault(key, {"club": club["id"], "competition": comp_id})
             h["count"] = row["titles"]

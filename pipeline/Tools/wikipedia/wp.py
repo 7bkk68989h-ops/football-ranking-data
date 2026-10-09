@@ -40,6 +40,11 @@ class Tables(HTMLParser):
             if tag == "br": self.cell["text"] += ", "
             if tag == "img" and a.get("alt"): self.cell["flags"].append(a["alt"])
             if tag == "a" and a.get("title") and "flag" in (a.get("class") or ""): self.cell["flags"].append(a["title"])
+            # primeira ligação para um artigo (o do clube), para depois lhe ir buscar as cores
+            if tag == "a" and "link" not in self.cell and (a.get("href") or "").startswith("/wiki/") and ":" not in a["href"] \
+               and "flag" not in (a.get("class") or "") and "new" not in (a.get("class") or ""):
+                self.cell["link"] = urllib.parse.unquote(a["href"][6:]).replace("_", " ").split("#")[0]; self.fresh = True
+            if tag == "img" and getattr(self, "fresh", False): self.cell.pop("link", None)   # era a bandeira, não o clube
     def handle_endtag(self, tag):
         if tag in ("h2", "h3", "h4"): self.inh = False
         if tag in ("sup", "style", "script") and self.skip: self.skip -= 1
@@ -54,7 +59,9 @@ class Tables(HTMLParser):
     def handle_data(self, data):
         if self.skip: return
         if self.inh: self.heading += data
-        if self.cell is not None: self.cell["text"] += data
+        if self.cell is not None:
+            self.cell["text"] += data
+            if data.strip(): self.fresh = False
 
 def tables(title, lang="en"):
     p = Tables(); p.feed(fetch(title, lang)["html"]); return p.tables

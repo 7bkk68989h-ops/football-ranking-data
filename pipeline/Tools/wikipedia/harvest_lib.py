@@ -32,7 +32,7 @@ def split_rows(comp, rows):
             missing = [y for y in years if y not in have]
             if missing: problems.append(f"{comp}: «{name}» sem {missing}"); continue
             have = [y for y in have if y not in years]
-            rows.append({"club": club, "titles": len(years), "years": list(years), "country": row["country"]})
+            rows.append({"club": club, "titles": len(years), "years": list(years), "country": row["country"], "link": None})
             row["titles"] -= len(years)
         row["years"] = have
     rows[:] = sorted((r for r in rows if r["titles"] > 0), key=lambda r: -r["titles"])
@@ -69,7 +69,7 @@ def find(title, pick=None):
                     name = r[ci]["text"].split("(")[0].strip()                  # fica a primeira; SPLIT separa as outras
                 years = r[yi]["text"] if yi is not None and len(r) > yi else ""
                 ys = [y.strip() for y in re.findall(r"\d{4}(?:\s*[–-]\s*\d{2,4})?", years)]
-                rows.append({"club": name, "titles": int(m.group()), "years": ys, "country": (r[ci]["flags"] or [None])[0]})
+                rows.append({"club": name, "titles": int(m.group()), "years": ys, "country": (r[ci]["flags"] or [None])[0], "link": r[ci].get("link")})
             for x in rows:
                 x["years"] = [y for y in x["years"] if y.replace("-", "–") not in REVOKED.get(x["club"], ())]
                 if len(x["years"]) != x["titles"]: x["years"] = []   # coluna com outros anos misturados
