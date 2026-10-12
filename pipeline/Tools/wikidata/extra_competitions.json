@@ -598,5 +598,29 @@
   "country": "EC",
   "confederation": "CONMEBOL",
   "kind": "cup"
+ },
+ "us-liga": {
+  "name": "MLS Cup",
+  "country": "US",
+  "confederation": "CONCACAF",
+  "kind": "league"
+ },
+ "us-taca": {
+  "name": "U.S. Open Cup",
+  "country": "US",
+  "confederation": "CONCACAF",
+  "kind": "cup"
+ },
+ "ca-liga": {
+  "name": "Canadian Premier League",
+  "country": "CA",
+  "confederation": "CONCACAF",
+  "kind": "league"
+ },
+ "ca-taca": {
+  "name": "Canadian Championship",
+  "country": "CA",
+  "confederation": "CONCACAF",
+  "kind": "cup"
  }
 }

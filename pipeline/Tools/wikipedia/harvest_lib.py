@@ -4,7 +4,7 @@ here = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, here)
 from wp import tables, grid, fetch
 
 CLUB = re.compile(r"^(club|team|clubs|teams)$", re.I)
-COUNT = re.compile(r"^(winners?|titles?|title\(s\)|champions?|won|wins|championships?)$", re.I)
+COUNT = re.compile(r"^(winners?|titles?|title\(s\)|champions?|champion\(s\)|won|wins|championships?)$", re.I)
 YEARS = re.compile(r"(winning|won|champion|title).*(years?|seasons?)|(years?|seasons?).*(won|winning|champion)|^(winning )?(seasons|years)$", re.I)
 
 # Quando a página tem várias tabelas "por clube", diz qual: parte do título da secção, ou "menor".

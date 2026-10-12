@@ -479,6 +479,11 @@
 "#0A5EB0",
 "stripes"
 ],
+"Atlanta United FC": [
+"#111111",
+"#FFFFFF",
+"plain"
+],
 "Atlante F.C.": [
 "#1C1C57",
 "#FFFFFF",
@@ -527,6 +532,11 @@
 "Atlético Nacional": [
 "#FFFFFF",
 "#289741",
+"plain"
+],
+"Atlético Ottawa": [
+"#E2001A",
+"#0A2240",
 "plain"
 ],
 "Atlético Petróleos de Luanda": [
@@ -669,6 +679,11 @@
 "#00843D",
 "plain"
 ],
+"Bethlehem Steel F.C. (1907–1930)": [
+"#000066",
+"#FFFFFF",
+"plain"
+],
 "Beşiktaş J.K.": [
 "#FFFFFF",
 "#111111",
@@ -793,6 +808,11 @@
 "#FF6700",
 "#691F5D",
 "plain"
+],
+"Brooklyn Italians": [
+"#000066",
+"#FFFFFF",
+"stripes"
 ],
 "Bryne FK": [
 "#E2001A",
@@ -984,6 +1004,11 @@
 "#FFFFFF",
 "stripes"
 ],
+"CF Montréal": [
+"#0A5EB0",
+"#111111",
+"plain"
+],
 "CFR Cluj": [
 "#780000",
 "#FFFFFF",
@@ -1083,6 +1108,11 @@
 "#0A5EB0",
 "#FFFFFF",
 "plain"
+],
+"Cavalry FC": [
+"#E2001A",
+"#FFFFFF",
+"sash"
 ],
 "Caïman Douala": [
 "#FFFFFF",
@@ -1414,6 +1444,16 @@
 "#111111",
 "plain"
 ],
+"Colorado Rapids": [
+"#111111",
+"#DBE7E7",
+"plain"
+],
+"Columbus Crew": [
+"#FFF200",
+"#111111",
+"plain"
+],
 "Coquimbo Unido": [
 "#FFDE00",
 "#111111",
@@ -1487,6 +1527,11 @@
 "Cúcuta Deportivo": [
 "#111111",
 "#FFFFFF",
+"plain"
+],
+"D.C. United": [
+"#111111",
+"#EBE2D9",
 "plain"
 ],
 "Dalian Shide F.C.": [
@@ -2574,6 +2619,11 @@
 "#E2001A",
 "plain"
 ],
+"Fall River F.C. (1922–1931)": [
+"#E2001A",
+"#FFFFFF",
+"hoops"
+],
 "Fehérvár FC": [
 "#000060",
 "#EF0000",
@@ -2607,6 +2657,11 @@
 "Foolad F.C.": [
 "#E2001A",
 "#111111",
+"plain"
+],
+"Forge FC": [
+"#D3190B",
+"#474747",
 "plain"
 ],
 "Fortuna Düsseldorf": [
@@ -2737,6 +2792,11 @@
 "Great Mariners F.C.": [
 "#0000BB",
 "#E2001A",
+"plain"
+],
+"Greek American AA": [
+"#0000CC",
+"#FFFFFF",
 "plain"
 ],
 "Greenock Morton F.C.": [
@@ -2959,6 +3019,11 @@
 "#FFFFFF",
 "hoops"
 ],
+"Houston Dynamo FC": [
+"#FF6B00",
+"#FFFFFF",
+"plain"
+],
 "Huachipato FC": [
 "#0A5EB0",
 "#111111",
@@ -3052,6 +3117,11 @@
 "Independiente del Valle": [
 "#0040BF",
 "#111111",
+"plain"
+],
+"Inter Miami CF": [
+"#FFB0C0",
+"#191919",
 "plain"
 ],
 "Inter Milan": [
@@ -3329,6 +3399,11 @@
 "#808080",
 "plain"
 ],
+"LA Galaxy": [
+"#FFFFFF",
+"#2A2A4E",
+"plain"
+],
 "LASK": [
 "#FFFFFF",
 "#FFDD00",
@@ -3442,6 +3517,11 @@
 "Longford Town F.C.": [
 "#E2001A",
 "#111111",
+"plain"
+],
+"Los Angeles FC": [
+"#111111",
+"#FFFFFF",
 "plain"
 ],
 "Luis Cruz Martínez de Curicó": [
@@ -3779,6 +3859,16 @@
 "#111111",
 "plain"
 ],
+"New York City FC": [
+"#ABCAE9",
+"#111111",
+"plain"
+],
+"New York Pancyprian-Freedoms": [
+"#0000CC",
+"#FFFFFF",
+"stripes"
+],
 "Newcastle Jets FC": [
 "#B89C5C",
 "#000040",
@@ -4039,6 +4129,11 @@
 "#0A5EB0",
 "plain"
 ],
+"Pacific FC": [
+"#5A0099",
+"#111111",
+"stripes"
+],
 "Pafos FC": [
 "#0042FF",
 "#FFFFFF",
@@ -4089,6 +4184,11 @@
 "#111111",
 "plain"
 ],
+"Philadelphia Ukrainians": [
+"#9DC3FA",
+"#FFFFFF",
+"stripes"
+],
 "Piast Gliwice": [
 "#0A5EB0",
 "#E2001A",
@@ -4128,6 +4228,11 @@
 "#0000CD",
 "#F58113",
 "stripes"
+],
+"Portland Timbers": [
+"#0A4042",
+"#DFDDBA",
+"plain"
 ],
 "Portsmouth F.C.": [
 "#0A5EB0",
@@ -4327,6 +4432,11 @@
 "Real Madrid CF": [
 "#FFFFFF",
 "#162E32",
+"plain"
+],
+"Real Salt Lake": [
+"#DF0000",
+"#000360",
 "plain"
 ],
 "Real Sociedad": [
@@ -4609,6 +4719,11 @@
 "#009150",
 "stripes"
 ],
+"San Jose Earthquakes": [
+"#0079FB",
+"#111111",
+"plain"
+],
 "San Lorenzo de Almagro": [
 "#0A5EB0",
 "#FFFFFF",
@@ -4662,6 +4777,11 @@
 "Schwarz-Weiss Essen": [
 "#FFFFFF",
 "#111111",
+"plain"
+],
+"Seattle Sounders FC": [
+"#00BD62",
+"#97EAE0",
 "plain"
 ],
 "Seinäjoen Jalkapallokerho": [
@@ -4897,6 +5017,11 @@
 "Sporting Fingal F.C.": [
 "#FFFFFF",
 "#D4AF37",
+"plain"
+],
+"Sporting Kansas City": [
+"#A0D0FF",
+"#163051",
 "plain"
 ],
 "Sportivo Barracas": [
@@ -5164,6 +5289,11 @@
 "#FFFFFF",
 "plain"
 ],
+"Toronto FC": [
+"#AA182C",
+"#FFFFFF",
+"plain"
+],
 "Tottenham Hotspur F.C.": [
 "#FFFFFF",
 "#111111",
@@ -5372,6 +5502,11 @@
 "Valencia CF": [
 "#FFFFFF",
 "#111111",
+"plain"
+],
+"Vancouver Whitecaps FC": [
+"#FFFFFF",
+"#001F5E",
 "plain"
 ],
 "Vasa IFK": [

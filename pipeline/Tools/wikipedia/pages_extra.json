@@ -87,5 +87,9 @@
  "il-liga": "List of Israeli football champions",
  "tr-taca": "Turkish Cup",
  "dz-taca": "Algerian Cup",
- "ng-taca": "Nigeria FA Cup"
+ "ng-taca": "Nigeria FA Cup",
+ "us-liga": "MLS Cup",
+ "us-taca": "List of U.S. Open Cup finals",
+ "ca-liga": "Canadian Premier League",
+ "ca-taca": "Canadian Championship"
 }

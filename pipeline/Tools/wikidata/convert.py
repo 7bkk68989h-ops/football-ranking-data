@@ -145,11 +145,16 @@ for key, extra in MANUAL_FINALS.items():
     h = honours[key]; manual = {f["season"] for f in extra}
     h["finals"] = [f for f in h.get("finals", []) if f["season"] not in manual] + extra
 
+# Jogo de cada final (resultado, marcadores, penáltis), dos artigos das finais na Wikipédia.
+from finals_merge import apply as finals_apply
+report["finais"] = finals_apply(clubs, comps, honours)
+for c in clubs.values(): c.pop("_wiki", None)
+
 used_clubs = {k[0] for k in honours}
 used = sorted({c["country"] for c in clubs.values() if c["id"] in used_clubs})
 missing = [u for u in used if not confed.get(u)]; assert not missing, missing
 countries = [{"id": u, "name": u, "confederation": confed[u]} for u in used]
-out = {"source": "Wikidata and Wikipedia.", "updated": datetime.date.today().isoformat(),
+out = {"source": "Wikidata and Wikipedia.", "updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
        "countries": countries, "competitions": [c for c in comps.values() if c["id"] != "pt-campeonato" and (c["id"] in base_ids or c["id"] in {k[1] for k in honours})],
        "clubs": [c for c in clubs.values() if c["id"] in used_clubs], "honours": list(honours.values())}
 json.dump(out, open(os.path.join(root, 'FootballRanking/Resources/football_data.json'), 'w'), ensure_ascii=False, indent=1)
@@ -165,4 +170,5 @@ print(f"{len(out['clubs'])} clubes ({neutral} com escudo neutro), {len(countries
 print("Wikidata, retirados:", dict(dropped))
 print("Wikipédia:", {k: len(v) for k, v in report.items() if isinstance(v, list)}, "| sem país:", report["sem_pais"], "| excluídos:", report["excluidos"])
 print("retirados pela Wikipédia:", report["retirados"])
+print("finais:", {k: (len(v) if isinstance(v, list) else v) for k, v in report["finais"].items()})
 print("treinadores:", report["treinadores"], "| sem época:", len(report["treinadores_sem_epoca"]), report["treinadores_sem_epoca"][:25])

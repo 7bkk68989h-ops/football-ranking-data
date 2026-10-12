@@ -24,6 +24,8 @@ COUNTRIES = {
 # Casos em que a bandeira é de um país que já não existe e o clube é de outro país atual.
 CLUB_COUNTRY = {"Dynamo Kyiv": "UA", "Dinamo Tbilisi": "GE", "Slovan Bratislava": "SK", "Red Star Belgrade": "RS", "1. FC Magdeburg": "DE"}
 EXTRA_COUNTRIES = {"GE": "UEFA"}
+# Clubes que jogam o campeonato de outro país: os canadianos da MLS continuam a ser do Canadá.
+GUEST_CLUBS = {"Toronto FC": "CA", "Vancouver Whitecaps FC": "CA", "CF Montréal": "CA", "Montreal Impact": "CA"}
 EXCLUDED = {"SA"}   # o Pedro pediu para tirar a Arábia Saudita (3 out. 2026)
 SKIP_ROWS = {"Total", "Totals"}
 # Campeonatos jogados em duas metades de ano cuja página só dá o ano final: mostram-se como "2003–04".
@@ -51,6 +53,7 @@ ALIASES = {
  "Busan Daewoo Royals": "Busan IPark", "Kispest-Honvéd": "Budapest Honvéd", "Ebusua Dwarfs": "Mysterious Dwarfs",
  "BSK Beograd": "OFK Beograd", "Royal Thai Air Force": "Air Force United", "Wits University": "Bidvest Wits",
  "SK Admira Wien": "Admira Wien", "FC Wacker Innsbruck": "Wacker Innsbruck",
+ "Los Angeles Galaxy": "LA Galaxy", "Chicago Fire": "Chicago Fire FC", "Montreal Impact": "CF Montréal",
 }
 # Nomes parecidos que são mesmo o mesmo clube ("Red Star" = "Red Star Belgrade"). Só estes se ligam
 # por aproximação; qualquer outro nome parecido fica como clube à parte e vai para o relatório
@@ -154,7 +157,7 @@ def merge(clubs, comps, honours, countries):
         for row in page["rows"]:
             name = re.sub(r"\s*\[\w+\]$", "", row["club"]).strip()
             if name in SKIP_ROWS: continue
-            if comp["level"] == "domestic": code = comp["country"]
+            if comp["level"] == "domestic": code = GUEST_CLUBS.get(name, comp["country"])
             else:
                 code = CLUB_COUNTRY.get(name) or COUNTRIES.get(row["country"] or "", (None,))[0]
             if code is None: report["sem_pais"].append(f"{name} ({comp_id})"); continue
@@ -197,6 +200,7 @@ def merge(clubs, comps, honours, countries):
                 clubs[cid] = club; index.setdefault(target, []).append(club); report["novos"].append(f"{short} ({code})")
             if club["colors"] == NEUTRAL and row.get("link") in COLORS:   # clube que já existia sem cores
                 c1, c2, kit = COLORS[row["link"]]; club["colors"] = [c1, c2]; club["kit"] = kit
+            if row.get("link"): club.setdefault("_wiki", row["link"])   # artigo do clube, para o reconhecer nas finais
             key = (club["id"], comp_id); seen.add(key)
             h = honours.setdefault(key, {"club": club["id"], "competition": comp_id})
             h["count"] = row["titles"]
