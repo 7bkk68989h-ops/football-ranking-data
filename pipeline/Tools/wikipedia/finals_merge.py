@@ -242,7 +242,7 @@ SEASON_ALIASES = {
 
 # Quando dois clubes da app têm o mesmo nome na tabela: (competição, época, nome) -> clube.
 # Totais da tabela por clube da Wikipédia que as outras fontes desmentem: Shakhtyor Soligorsk tem 4 campeonatos
-# (2005, 2020, 2021, 2022) na lista época a época, no Wikidata e no zerozero, e só 3 na tabela por clube.
+# (2005, 2020, 2021, 2022) na lista época a época, e no Wikidata, e só 3 na tabela por clube.
 COUNT_FIX = {("by-liga", "Shakhtyor Soligorsk"): 4}
 # Épocas que só a tabela por clube da Wikipédia dá (a lista época a época atribui-as a outro clube):
 # Donmoon, Taça da Tailândia de 1981 (a lista dá 1981 ao Bangkok Bank, que já tem os seus 3 anos).
