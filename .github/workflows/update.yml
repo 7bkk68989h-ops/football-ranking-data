@@ -32,6 +32,8 @@ jobs:
         run: |
           python3 Tools/wikipedia/harvest.py
           python3 Tools/wikipedia/harvest_managers.py
+          python3 Tools/wikipedia/harvest_pt_taca.py
+          python3 Tools/wikipedia/harvest_seasons.py
           python3 Tools/wikidata/convert.py
       - name: Verificar
         id: verificar

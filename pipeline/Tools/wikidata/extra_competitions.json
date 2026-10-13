@@ -622,5 +622,43 @@
   "country": "CA",
   "confederation": "CONCACAF",
   "kind": "cup"
+ },
+ "gn-liga": {
+  "name": "Guinée Championnat National",
+  "country": "GN",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "cg-liga": {
+  "name": "Congo Ligue 1",
+  "country": "CG",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "cd-liga": {
+  "name": "Linafoot",
+  "country": "CD",
+  "confederation": "CAF",
+  "kind": "league"
+ },
+ "hr-supertaca": {
+  "name": "Croatian Super Cup",
+  "country": "HR",
+  "confederation": "UEFA",
+  "kind": "cup"
+ },
+ "ca-csl": {
+  "name": "Canadian Soccer League (1987–92)",
+  "country": "CA",
+  "confederation": "CONCACAF",
+  "kind": "league",
+  "defunct": true
+ },
+ "ca-cpsl": {
+  "name": "Canadian Professional Soccer League (1983)",
+  "country": "CA",
+  "confederation": "CONCACAF",
+  "kind": "league",
+  "defunct": true
  }
 }

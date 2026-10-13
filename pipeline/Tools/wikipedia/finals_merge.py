@@ -8,6 +8,7 @@ here = os.path.dirname(os.path.abspath(__file__))
 def apply(clubs, comps, honours):
     path = os.path.join(here, "finals_details.json")
     report = {"finais_com_jogo": 0, "finais_com_golos": 0, "sem_o_clube": [], "resultado_nao_bate": []}
+    season_tables(clubs, comps, honours, report)
     if not os.path.exists(path): return report
     details = json.load(open(path))
     by_link = {c["_wiki"]: c for c in clubs.values() if c.get("_wiki")}
@@ -50,7 +51,8 @@ def apply(clubs, comps, honours):
             own = [m["score"][s] for m, s in zip(ms, sides)]; opp = [m["score"][1 - s] for m, s in zip(ms, sides)]
             legs = len(ms) >= 2 and sides[0] != sides[1]
             last = ms[-1]; ls = sides[-1]
-            if legs and len(ms) == 2: a, b = sum(own), sum(opp)
+            two = legs and len(ms) in (2, 4)   # duas mãos; com quatro jogos, a eliminatória repetiu-se (Supertaça de 1984)
+            if two: a, b = sum(own[-2:]), sum(opp[-2:])
             else: a, b = own[-1], opp[-1]
             pens = None
             if last["penscore"]: pens = (last["penscore"][ls], last["penscore"][1 - ls])
@@ -66,9 +68,9 @@ def apply(clubs, comps, honours):
             if comp["level"] != "domestic" and country: final["opponentCountry"] = country
             if last["aet"]: final["extraTime"] = True
             if pens: final["penalties"] = f"{pens[0]}–{pens[1]}"
-            if legs and len(ms) == 2: final["aggregate"] = True
-            elif len(ms) > 1: final["replay"] = True
-            venue = None if legs and len(ms) == 2 else (last["venue"] or old.get("venue"))
+            if two: final["aggregate"] = True
+            if len(ms) > 2 or (len(ms) == 2 and not two): final["replay"] = True
+            venue = None if two else (last["venue"] or old.get("venue"))
             if venue: final["venue"] = venue
             matches = []
             for m, s in zip(ms, sides):
@@ -104,6 +106,7 @@ def apply(clubs, comps, honours):
             report["finais_com_golos"] += any("goals" in d for d in matches)
         if h.get("finals"): h["finals"].sort(key=lambda f: end_year(f["season"]) or 0)
     wikidata(clubs, comps, honours, report)
+    pt_taca(clubs, comps, honours, report)
     return report
 
 FINAL = re.compile(r"final|finale|super|intercontinental|recopa", re.I)
@@ -174,3 +177,152 @@ def wikidata(clubs, comps, honours, report):
                                     for m, (o, p) in zip(ms, pairs)]
             h["finals"] = sorted([f for f in h.get("finals") or [] if end_year(f["season"]) != year] + [final], key=lambda f: end_year(f["season"]) or 0)
             report["wikidata_novas"] += 1
+
+def pt_taca(clubs, comps, honours, report):
+    """Taça de Portugal e Campeonato de Portugal (o Pedro, 13 out. 2026): a época ("1938–39") em vez do ano
+    da final, pela tabela de finais da Wikipédia em português (pt_taca_finals.json). Onde a final já tem o
+    jogo, só muda a época e compara-se o resultado; onde não tem, a tabela dá adversário, resultado e local."""
+    path = os.path.join(here, "pt_taca_finals.json")
+    if not os.path.exists(path): return
+    pt = {}
+    for c in clubs.values():
+        if c["country"] == "PT": pt.setdefault(norm(c["shortName"]), c)
+    def club_of(name): return pt.get(norm(ALIASES.get(name, name)))
+    rep = report["taca_de_portugal"] = {"epocas": 0, "finais_novas": 0, "vencedor_diferente": [], "resultado_diferente": [], "fora_da_tabela": []}
+    for comp_id, rows in json.load(open(path))["finals"].items():
+        seen = set()
+        for row in rows:
+            year = end_year(row["season"]); club = club_of(row["winner"])
+            h = honours.get((club["id"], comp_id)) if club else None
+            if h is None or year not in {end_year(x) for x in (h.get("seasons") or []) + [f["season"] for f in h.get("finals") or []]}:
+                rep["vencedor_diferente"].append(f"{comp_id} {row['season']}: {row['winner']}"); continue
+            seen.add((club["id"], year)); rep["epocas"] += 1
+            if h.get("seasons"): h["seasons"] = [row["season"] if end_year(x) == year else x for x in h["seasons"]]
+            ms = row["matches"]; last = ms[-1]
+            score = f"{last['score'][0]}–{last['score'][1]}"
+            pens = f"{last['penalties'][0]}–{last['penalties'][1]}" if last.get("penalties") else None
+            old = next((f for f in h.get("finals") or [] if end_year(f["season"]) == year), None)
+            other = club_of(row["runnerUp"])
+            if old and old.get("matches"):
+                old["season"] = row["season"]
+                if other: old["opponent"] = other["shortName"]
+                if old["score"] != score or old.get("penalties") != pens:
+                    rep["resultado_diferente"].append(f"{club['shortName']} {comp_id} {row['season']}: tinha {old['score']} {old.get('penalties') or ''}, a tabela diz {score} {pens or ''}".replace("  ", " ").strip())
+                continue
+            final = {k: v for k, v in (old or {}).items() if k in ("date",)}
+            final.update({"season": row["season"], "opponent": other["shortName"] if other else row["runnerUp"], "score": score})
+            if last.get("extraTime"): final["extraTime"] = True
+            if pens: final["penalties"] = pens
+            if last.get("venue"): final["venue"] = last["venue"]
+            if len(ms) > 1:   # final repetida: os dois jogos, para se ver o primeiro resultado
+                final["replay"] = True
+                final["matches"] = [{"score": f"{m['score'][0]}–{m['score'][1]}", **({"extraTime": True} if m.get("extraTime") else {}),
+                                     **({"venue": m["venue"]} if m.get("venue") else {})} for m in ms]
+            h["finals"] = sorted([f for f in h.get("finals") or [] if end_year(f["season"]) != year] + [final], key=lambda f: end_year(f["season"]) or 0)
+            rep["finais_novas"] += 1
+        for (club_id, c), h in honours.items():   # títulos que a app tem e a tabela não
+            if c != comp_id: continue
+            for x in {end_year(x) for x in (h.get("seasons") or []) + [f["season"] for f in h.get("finals") or []]}:
+                if (club_id, x) not in seen: rep["fora_da_tabela"].append(f"{clubs[club_id]['shortName']} {comp_id} {x}")
+
+
+# Nomes das tabelas época a época que não são os do clube na app (nome da época -> nome curto).
+SEASON_ALIASES = {
+ "Dynamo Kiev": "Dynamo Kyiv", "Dnipro Dnipropetrovsk": "Dnipro", "Litex Lovech": "Lovech", "AS 23 Sofia": "AS-23",
+ "Accra Hearts of Oak": "Hearts of Oak", "Accra Hearts of Oak SC": "Hearts of Oak", "Kumasi Cornerstones": "Cornerstones",
+ "Sekondi Eleven Wise": "Eleven Wise", "Thai Port": "Port", "Waterschei": "SV Thor Waterschei", "RC Bruxelles": "Racing de Bruxelles",
+ "RFC Liège": "Liégeois", "Parthenay Lion Yaoundé": "Lion Yaoundé", "Ajax Cape Town": "Cape Town Spurs / Ajax Cape Town",
+ "Shandong Luneng Taishan": "Shandong Taishan", "Jinan Taishan": "Shandong Taishan", "Shanghai Greenland Shenhua": "Shanghai Shenhua",
+ "Shanghai": "Shanghai Shenhua", "Beijing Sinobo Guoan": "Beijing Guoan", "Beijing": "Beijing Guoan", "Tianjin TEDA": "Tianjin Jinmen Tiger",
+ "Guangzhou Evergrande": "Guangzhou", "Guangzhou Evergrande Taobao": "Guangzhou", "Guizhou Renhe": "Beijing Renhe", "Jiangsu Guoxin Sainty": "Jiangsu",
+ "Chongqing Longxin": "Chongqing Liangjiang Athletic", "Qingdao Hademen": "Qingdao Hainiu", "Vladislav Varna": "Vladislav",
+ "Kansas City Wizards": "Sporting Kansas City", "Al Ahli Doha": "Al-Ahli", "Al-Gharafa": "Al-Gharrafa", "Al-Duhail": "Al Duhail", "Lekhwiya": "Al Duhail", "Umm-Salal SC": "Umm-Salal",
+ "Seoul Police Department": "National Police Department", "Ulsan Hyundai Horang-i": "Ulsan HD", "Ulsan Hyundai": "Ulsan HD",
+}
+
+# Quando dois clubes da app têm o mesmo nome na tabela: (competição, época, nome) -> clube.
+# Totais da tabela por clube da Wikipédia que as outras fontes desmentem: Shakhtyor Soligorsk tem 4 campeonatos
+# (2005, 2020, 2021, 2022) na lista época a época, no Wikidata e no zerozero, e só 3 na tabela por clube.
+COUNT_FIX = {("by-liga", "Shakhtyor Soligorsk"): 4}
+# Épocas que só a tabela por clube da Wikipédia dá (a lista época a época atribui-as a outro clube):
+# Donmoon, Taça da Tailândia de 1981 (a lista dá 1981 ao Bangkok Bank, que já tem os seus 3 anos).
+SEASON_EXTRA = {("th-taca", "Donmoon"): ["1981"]}
+SEASON_FIX = {("si-taca", "1994–95", "Mura"): "Mura", ("si-taca", "2019–20", "Mura"): "NŠ Mura"}
+
+def season_tables(clubs, comps, honours, report):
+    """Épocas (e, nas taças, adversário, resultado, penáltis e local) de season_tables.json, lidas por
+    harvest_seasons.py das tabelas época a época da Wikipédia, para os títulos que só tinham o total
+    (o aviso "Details of these titles will come from Wikidata", pedido do Pedro, 13 out. 2026)."""
+    path = os.path.join(here, "season_tables.json")
+    if not os.path.exists(path): return
+    rep = report["epocas_wikipedia"] = {"preenchidas": {}, "titulos_a_mais": [], "sem_clube": [], "sem_epocas": []}
+    for comp_id, rows in json.load(open(path)).items():
+        comp = comps.get(comp_id)
+        if comp is None: continue
+        mine = {k[0]: h for k, h in honours.items() if k[1] == comp_id}
+        cands = [clubs[c] for c in mine]
+        def find(name, link):
+            if name in SEASON_ALIASES: link = None
+            if link:
+                hit = [c for c in cands if c.get("_wiki") == link]
+                if hit: return hit[0]
+            name = SEASON_ALIASES.get(name, name)
+            t = norm(ALIASES.get(name, name))
+            hit = [c for c in cands if t in (norm(c["shortName"]), norm(c["name"]))]
+            if len(hit) == 1: return hit[0]
+            w = core(ALIASES.get(name, name))
+            hit = [c for c in cands if w in (core(c["shortName"]), core(c["name"]))]
+            return hit[0] if len(hit) == 1 else None
+        won = {}; lost = []
+        for r in rows:
+            for i, w in enumerate(r["winners"]):
+                fix = SEASON_FIX.get((comp_id, r["season"], w))
+                c = next((c for c in cands if c["shortName"] == fix), None) if fix else find(w, r["winnerLinks"][0] if len(r["winners"]) == 1 else None)
+                if c is None: lost.append(f"{r['season']} {w}"); continue
+                won.setdefault(c["id"], []).append((r, len(r["winners"]) == 1))
+        rep["sem_clube"] += [f"{comp_id} {x}" for x in lost]
+        filled = 0
+        for club_id, items in won.items():
+            h = mine[club_id]
+            titles = max(len(h.get("finals") or []), len(h.get("seasons") or []), h.get("count") or 0)
+            if h.get("seasons") or h.get("finals"): continue   # já tem épocas: não se mexe
+            if (comp_id, clubs[club_id]["shortName"]) in COUNT_FIX:
+                titles = h["count"] = COUNT_FIX[(comp_id, clubs[club_id]["shortName"])]; rep.setdefault("total_corrigido", []).append(f"{clubs[club_id]['shortName']} {comp_id}: {titles}")
+            seen = {}
+            for r, solo in items: seen.setdefault(r["season"], (r, solo))
+            if 0 < len(seen) - titles <= 2 and comp_id == "pl-liga":
+                # campeonatos de antes da liga (Warta 1913–14) ou do tempo da guerra (Polonia 1942–43) que a tabela
+                # por clube da Wikipédia não conta: ficam os últimos, tantos quantos os títulos
+                dropped = sorted(seen, key=lambda y: end_year(y) or 0)[:len(seen) - titles]
+                rep.setdefault("nao_oficiais", []).append(f"{clubs[club_id]['shortName']} {comp_id}: {dropped}")
+                for y in dropped: del seen[y]
+            if len(seen) > titles:
+                rep["titulos_a_mais"].append(f"{clubs[club_id]['shortName']} {comp_id}: {len(seen)} épocas para {titles} títulos"); continue
+            h["seasons"] = sorted(seen, key=lambda y: end_year(y) or 0)
+            if len(seen) < titles: rep["sem_epocas"].append(f"{clubs[club_id]['shortName']} {comp_id}: {len(seen)} de {titles}")
+            filled += titles
+            if comp["kind"] == "league": continue
+            finals = []
+            for r, solo in seen.values():
+                if "score" not in r and not r.get("runnerUp"): continue
+                opp = r.get("runnerUp"); oc = find(opp, r.get("runnerUpLink")) if opp else None
+                f = {"season": r["season"], "opponent": (oc["shortName"] if oc else opp) or "", "score": ""}
+                if "score" in r:
+                    a, b = r["score"]; f["score"] = f"{a}–{b}"
+                    if a < b and not r.get("penalties"): f["score"] = f"{b}–{a}"   # a tabela às vezes põe o vencido primeiro
+                if r.get("extraTime"): f["extraTime"] = True
+                if r.get("penalties"): f["penalties"] = f"{r['penalties'][0]}–{r['penalties'][1]}"
+                if r.get("replay"): f["replay"] = True
+                if r.get("aggregate"): f["aggregate"] = True   # duas mãos: o local e o jogo seriam só os da primeira
+                if r.get("venue") and (not r.get("aggregate") or comp_id.startswith("hr-")): f["venue"] = r["venue"]   # Croácia: a tabela dá os dois estádios
+                if f["score"]:
+                    m = {"score": f["score"]}
+                    for k in ("extraTime", "penalties", "venue"):
+                        if k in f: m[k] = f[k]
+                    f["matches"] = [m]
+                finals.append(f)
+            if finals: h["finals"] = sorted(finals, key=lambda f: end_year(f["season"]) or 0)
+        for club_id, h in mine.items():
+            extra = SEASON_EXTRA.get((comp_id, clubs[club_id]["shortName"]))
+            if extra and not h.get("seasons") and not h.get("finals"): h["seasons"] = extra; filled += len(extra); rep.setdefault("so_na_tabela_por_clube", []).append(f"{clubs[club_id]['shortName']} {comp_id}: {extra}")
+        rep["preenchidas"][comp_id] = filled

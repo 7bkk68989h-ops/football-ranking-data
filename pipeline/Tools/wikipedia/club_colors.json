@@ -44,6 +44,11 @@
 "#0070DF",
 "plain"
 ],
+"AC Léopards": [
+"#124220",
+"#4DA976",
+"plain"
+],
 "AC Milan": [
 "#111111",
 "#FFFFFF",
@@ -129,6 +134,11 @@
 "#FFFFFF",
 "plain"
 ],
+"AS Kaloum Star": [
+"#FFD100",
+"#00843D",
+"plain"
+],
 "AS Marsa": [
 "#199844",
 "#00800A",
@@ -149,6 +159,11 @@
 "#ECE3DA",
 "plain"
 ],
+"AS Tanda": [
+"#FBFF03",
+"#04397D",
+"plain"
+],
 "AS Trenčín": [
 "#E2001A",
 "#FFFFFF",
@@ -163,6 +178,11 @@
 "#FFD100",
 "#111111",
 "hoops"
+],
+"ASFAG": [
+"#FFD100",
+"#0A5EB0",
+"plain"
 ],
 "ASO Chlef": [
 "#E2001A",
@@ -212,6 +232,16 @@
 "Aduana Stars F.C.": [
 "#228B22",
 "#FFD100",
+"plain"
+],
+"Africa Sports d'Abidjan": [
+"#008633",
+"#E2001A",
+"hoops"
+],
+"Aigles du Congo": [
+"#011F5B",
+"#FFFFFF",
 "plain"
 ],
 "Air Force United F.C.": [
@@ -1074,6 +1104,11 @@
 "#111111",
 "plain"
 ],
+"CSMD Diables Noirs": [
+"#FFDC51",
+"#111111",
+"plain"
+],
 "Cagliari Calcio": [
 "#022249",
 "#FFFFFF",
@@ -1532,6 +1567,11 @@
 "D.C. United": [
 "#111111",
 "#EBE2D9",
+"plain"
+],
+"DC Motema Pembe": [
+"#59A276",
+"#FFFFFF",
 "plain"
 ],
 "Dalian Shide F.C.": [
@@ -2289,6 +2329,11 @@
 "#F1EBDB",
 "plain"
 ],
+"FC Saint Eloi Lupopo": [
+"#FFD100",
+"#0A5EB0",
+"plain"
+],
 "FC Samtredia": [
 "#FFFFFF",
 "#0A5EB0",
@@ -2629,6 +2674,11 @@
 "#EF0000",
 "plain"
 ],
+"Fello Star": [
+"#110099",
+"#FFFFFF",
+"plain"
+],
 "Ferencvárosi TC": [
 "#FFFFFF",
 "#111111",
@@ -2884,6 +2934,11 @@
 "#FFFFFF",
 "plain"
 ],
+"Hafia Football Club": [
+"#198042",
+"#FFFFFF",
+"plain"
+],
 "Hakoah Amidar Ramat Gan F.C.": [
 "#54008B",
 "#FFFFFF",
@@ -3019,6 +3074,11 @@
 "#FFFFFF",
 "hoops"
 ],
+"Horoya Athlétique Club": [
+"#E2001A",
+"#FFFFFF",
+"plain"
+],
 "Houston Dynamo FC": [
 "#FF6B00",
 "#FFFFFF",
@@ -3117,6 +3177,11 @@
 "Independiente del Valle": [
 "#0040BF",
 "#111111",
+"plain"
+],
+"Inter Club Brazzaville": [
+"#FFD100",
+"#FF0022",
 "plain"
 ],
 "Inter Miami CF": [
@@ -3699,6 +3764,11 @@
 "#CFC5D9",
 "plain"
 ],
+"Milo FC": [
+"#FFFFFF",
+"#0A5EB0",
+"plain"
+],
 "Mineros de Guayana": [
 "#111111",
 "#0A5EB0",
@@ -3807,6 +3877,11 @@
 "NK IB 1975 Ljubljana": [
 "#FF1A1A",
 "#FFFFFF",
+"plain"
+],
+"NK Inter Zaprešić": [
+"#FFFFFF",
+"#FFD100",
 "plain"
 ],
 "NK Maribor": [
@@ -4339,6 +4414,11 @@
 "#E2001A",
 "plain"
 ],
+"RC Abidjan": [
+"#0A5EB0",
+"#B03B9F",
+"plain"
+],
 "RC Strasbourg": [
 "#0000DD",
 "#FFFFFF",
@@ -4599,6 +4679,11 @@
 "#111111",
 "plain"
 ],
+"SC Gagnoa": [
+"#FFF000",
+"#0A5EB0",
+"stripes"
+],
 "SC Heerenveen": [
 "#FFFFFF",
 "#111111",
@@ -4674,6 +4759,16 @@
 "#FFFFFF",
 "stripes"
 ],
+"SM Sanga Balende": [
+"#E2001A",
+"#FFD100",
+"plain"
+],
+"SO de l'Armée": [
+"#FF8800",
+"#FFFFFF",
+"sash"
+],
 "SS Lazio": [
 "#88BFF7",
 "#FFFFFF",
@@ -4707,6 +4802,11 @@
 "Sable FC (Cameroon)": [
 "#FFD100",
 "#0A5EB0",
+"plain"
+],
+"Saint Michel d'Ouenzé": [
+"#E2001A",
+"#FFFFFF",
 "plain"
 ],
 "Saipa F.C.": [
@@ -4768,6 +4868,11 @@
 "#FFFFFF",
 "#0A5EB0",
 "stripes"
+],
+"Satellite FC": [
+"#FFD100",
+"#0A5EB0",
+"plain"
 ],
 "Schiedamse Voetbal Vereniging": [
 "#00843D",
@@ -5119,6 +5224,11 @@
 "#E2001A",
 "sash"
 ],
+"Stella Club d'Adjamé": [
+"#008633",
+"#FFFFFF",
+"plain"
+],
 "Stoke City F.C.": [
 "#FFFFFF",
 "#E2001A",
@@ -5182,6 +5292,11 @@
 "São Paulo FC": [
 "#FFFFFF",
 "#E2001A",
+"plain"
+],
+"Séwé Sport de San-Pédro": [
+"#3E8FDE",
+"#FFFFFF",
 "plain"
 ],
 "TAS Casablanca": [
@@ -5504,6 +5619,11 @@
 "#111111",
 "plain"
 ],
+"Vancouver 86ers": [
+"#214F9C",
+"#FFFFFF",
+"plain"
+],
 "Vancouver Whitecaps FC": [
 "#FFFFFF",
 "#001F5E",
@@ -5573,6 +5693,11 @@
 "#5F0101",
 "#111111",
 "plain"
+],
+"Vita Club Mokanda": [
+"#199619",
+"#111111",
+"stripes"
 ],
 "Vitória F.C.": [
 "#FFFFFF",

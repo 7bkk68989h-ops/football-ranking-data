@@ -1,0 +1,1734 @@
+{
+ "lang": "pt",
+ "page": "Taça de Portugal",
+ "revid": 72769406,
+ "finals": {
+  "pt-campeonato": [
+   {
+    "season": "1921–22",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Campo do Bessa, Porto"
+     }
+    ]
+   },
+   {
+    "season": "1922–23",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Académica",
+    "runnerUpLink": "Académica de Coimbra",
+    "matches": [
+     {
+      "score": [
+       3,
+       0
+      ],
+      "venue": "Campo da Senhora da Saúde, Faro"
+     }
+    ]
+   },
+   {
+    "season": "1923–24",
+    "winner": "Olhanense",
+    "winnerLink": "Sporting Clube Olhanense",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       4,
+       2
+      ],
+      "venue": "Estádio do Campo Grande, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1924–25",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Campo de Monserrate, Viana do Castelo"
+     }
+    ]
+   },
+   {
+    "season": "1925–26",
+    "winner": "Marítimo",
+    "winnerLink": "Club Sport Marítimo",
+    "runnerUp": "Belenenses",
+    "runnerUpLink": "Clube de Futebol Os Belenenses",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Campo do Ameal, Porto"
+     }
+    ]
+   },
+   {
+    "season": "1926–27",
+    "winner": "Belenenses",
+    "winnerLink": "Clube de Futebol Os Belenenses",
+    "runnerUp": "Vitória de Setúbal",
+    "runnerUpLink": "Vitória Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       3,
+       0
+      ],
+      "venue": "Estádio do Lumiar, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1927–28",
+    "winner": "Carcavelinhos",
+    "winnerLink": "Carcavelinhos Football Club",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Campo do Palhavã, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1928–29",
+    "winner": "Belenenses",
+    "winnerLink": "Clube de Futebol Os Belenenses",
+    "runnerUp": "União de Lisboa",
+    "runnerUpLink": "União Foot-Ball Lisboa",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Campo do Palhavã, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1929–30",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Barreirense",
+    "runnerUpLink": "Futebol Clube Barreirense",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio do Campo Grande, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1930–31",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       3,
+       0
+      ],
+      "venue": "Campo do Arnado, Coimbra"
+     }
+    ]
+   },
+   {
+    "season": "1931–32",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Belenenses",
+    "runnerUpLink": "Clube de Futebol Os Belenenses",
+    "matches": [
+     {
+      "score": [
+       4,
+       4
+      ],
+      "extraTime": true,
+      "venue": "Campo do Arnado, Coimbra"
+     },
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Campo do Arnado, Coimbra"
+     }
+    ]
+   },
+   {
+    "season": "1932–33",
+    "winner": "Belenenses",
+    "winnerLink": "Clube de Futebol Os Belenenses",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio do Lumiar, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1933–34",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Barreirense",
+    "runnerUpLink": "Futebol Clube Barreirense",
+    "matches": [
+     {
+      "score": [
+       4,
+       3
+      ],
+      "extraTime": true,
+      "venue": "Estádio do Lumiar, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1934–35",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio do Lumiar, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1935–36",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Belenenses",
+    "runnerUpLink": "Clube de Futebol Os Belenenses",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio do Lumiar, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1936–37",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       3,
+       2
+      ],
+      "venue": "Campo do Arnado, Coimbra"
+     }
+    ]
+   },
+   {
+    "season": "1937–38",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio do Lumiar, Lisboa"
+     }
+    ]
+   }
+  ],
+  "pt-taca": [
+   {
+    "season": "1938–39",
+    "winner": "Académica",
+    "winnerLink": "Académica de Coimbra",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       4,
+       3
+      ],
+      "venue": "Campo das Salésias, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1939–40",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Belenenses",
+    "runnerUpLink": "Clube de Futebol Os Belenenses",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio do Lumiar, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1940–41",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Belenenses",
+    "runnerUpLink": "Clube de Futebol Os Belenenses",
+    "matches": [
+     {
+      "score": [
+       4,
+       1
+      ],
+      "venue": "Campo das Salésias, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1941–42",
+    "winner": "Belenenses",
+    "winnerLink": "Clube de Futebol Os Belenenses",
+    "runnerUp": "Vitória de Guimarães",
+    "runnerUpLink": "Vitória Sport Clube",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio do Lumiar, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1942–43",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Vitória de Setúbal",
+    "runnerUpLink": "Vitória Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       5,
+       1
+      ],
+      "venue": "Campo das Salésias, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1943–44",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Estoril Praia",
+    "runnerUpLink": "Grupo Desportivo Estoril Praia",
+    "matches": [
+     {
+      "score": [
+       8,
+       0
+      ],
+      "venue": "Campo das Salésias, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1944–45",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Olhanense",
+    "runnerUpLink": "Sporting Clube Olhanense",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Campo das Salésias, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1945–46",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Atlético CP",
+    "runnerUpLink": "Atlético Clube de Portugal",
+    "matches": [
+     {
+      "score": [
+       4,
+       2
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1947–48",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Belenenses",
+    "runnerUpLink": "Clube de Futebol Os Belenenses",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1948–49",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Atlético CP",
+    "runnerUpLink": "Atlético Clube de Portugal",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1950–51",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Académica",
+    "runnerUpLink": "Académica de Coimbra",
+    "matches": [
+     {
+      "score": [
+       5,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1951–52",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       5,
+       4
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1952–53",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       5,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1953–54",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Vitória de Setúbal",
+    "runnerUpLink": "Vitória Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       3,
+       2
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1954–55",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1955–56",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Torreense",
+    "runnerUpLink": "Sport Clube União Torreense",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1956–57",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Sporting da Covilhã",
+    "runnerUpLink": "Sporting Clube da Covilhã",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1957–58",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1958–59",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1959–60",
+    "winner": "Belenenses",
+    "winnerLink": "Clube de Futebol Os Belenenses",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1960–61",
+    "winner": "Leixões",
+    "winnerLink": "Leixões Sport Club",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio das Antas, Porto"
+     }
+    ]
+   },
+   {
+    "season": "1961–62",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Vitória de Setúbal",
+    "runnerUpLink": "Vitória Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       3,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1962–63",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Vitória de Guimarães",
+    "runnerUpLink": "Vitória Sport Clube",
+    "matches": [
+     {
+      "score": [
+       4,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1963–64",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       6,
+       2
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1964–65",
+    "winner": "Vitória de Setúbal",
+    "winnerLink": "Vitória Futebol Clube",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1965–66",
+    "winner": "SC Braga",
+    "winnerLink": "Sporting Clube de Braga",
+    "runnerUp": "Vitória de Setúbal",
+    "runnerUpLink": "Vitória Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1966–67",
+    "winner": "Vitória de Setúbal",
+    "winnerLink": "Vitória Futebol Clube",
+    "runnerUp": "Académica",
+    "runnerUpLink": "Académica de Coimbra",
+    "matches": [
+     {
+      "score": [
+       3,
+       2
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1967–68",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Vitória de Setúbal",
+    "runnerUpLink": "Vitória Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1968–69",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Académica",
+    "runnerUpLink": "Académica de Coimbra",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1969–70",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1970–71",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       4,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1971–72",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       3,
+       2
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1972–73",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Vitória de Setúbal",
+    "runnerUpLink": "Vitória Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       3,
+       2
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1973–74",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1974–75",
+    "winner": "Boavista",
+    "winnerLink": "Boavista Futebol Clube",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio José Alvalade, Lisboa"
+     }
+    ]
+   },
+   {
+    "season": "1975–76",
+    "winner": "Boavista",
+    "winnerLink": "Boavista Futebol Clube",
+    "runnerUp": "Vitória de Guimarães",
+    "runnerUpLink": "Vitória Sport Clube",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio das Antas, Porto"
+     }
+    ]
+   },
+   {
+    "season": "1976–77",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "SC Braga",
+    "runnerUpLink": "Sporting Clube de Braga",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio das Antas, Porto"
+     }
+    ]
+   },
+   {
+    "season": "1977–78",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       1,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     },
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1978–79",
+    "winner": "Boavista",
+    "winnerLink": "Boavista Futebol Clube",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       1,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     },
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1979–80",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1980–81",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1981–82",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "SC Braga",
+    "runnerUpLink": "SC Braga",
+    "matches": [
+     {
+      "score": [
+       4,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1982–83",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio das Antas, Porto"
+     }
+    ]
+   },
+   {
+    "season": "1983–84",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Rio Ave",
+    "runnerUpLink": "Rio Ave Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       4,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1984–85",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1985–86",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Belenenses",
+    "runnerUpLink": "Os Belenenses",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1986–87",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1987–88",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Vitória de Guimarães",
+    "runnerUpLink": "Vitória Sport Clube",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1988–89",
+    "winner": "Belenenses",
+    "winnerLink": "Clube de Futebol Os Belenenses",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1989–90",
+    "winner": "Estrela da Amadora",
+    "winnerLink": "Clube de Futebol Estrela da Amadora",
+    "runnerUp": "Farense",
+    "runnerUpLink": "Sporting Clube Farense",
+    "matches": [
+     {
+      "score": [
+       1,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     },
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1990–91",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Beira-Mar",
+    "runnerUpLink": "Sport Clube Beira-Mar",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1991–92",
+    "winner": "Boavista",
+    "winnerLink": "Boavista Futebol Clube",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1992–93",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Boavista",
+    "runnerUpLink": "Boavista Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       5,
+       2
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1993–94",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       0,
+       0
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     },
+     {
+      "score": [
+       2,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1994–95",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Marítimo",
+    "runnerUpLink": "Club Sport Marítimo",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1995–96",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1996–97",
+    "winner": "Boavista",
+    "winnerLink": "Boavista Futebol Clube",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       3,
+       2
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1997–98",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Braga",
+    "runnerUpLink": "SC Braga",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1998–99",
+    "winner": "Beira-Mar",
+    "winnerLink": "Sport Clube Beira-Mar",
+    "runnerUp": "Campomaiorense",
+    "runnerUpLink": "Sporting Clube Campomaiorense",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "1999–00",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       1,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     },
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2000–01",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Marítimo",
+    "runnerUpLink": "Club Sport Marítimo",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2001–02",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Leixões",
+    "runnerUpLink": "Leixões Sport Club",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2002–03",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "União de Leiria",
+    "runnerUpLink": "União Desportiva de Leiria",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2003–04",
+    "winner": "Benfica",
+    "winnerLink": "SL Benfica",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2004–05",
+    "winner": "Vitória de Setúbal",
+    "winnerLink": "Vitória Futebol Clube",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "SL Benfica",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2005–06",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Vitória de Setúbal",
+    "runnerUpLink": "Vitória Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2006–07",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "Belenenses",
+    "runnerUpLink": "Clube de Futebol Os Belenenses",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2007–08",
+    "winner": "Sporting",
+    "winnerLink": "Sporting CP",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2008–09",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Paços de Ferreira",
+    "runnerUpLink": "Futebol Clube Paços de Ferreira",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2009–10",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "GD Chaves",
+    "runnerUpLink": "Grupo Desportivo de Chaves",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2010–11",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Vitória de Guimarães",
+    "runnerUpLink": "Vitória Sport Clube",
+    "matches": [
+     {
+      "score": [
+       6,
+       2
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2011–12",
+    "winner": "Académica",
+    "winnerLink": "Académica de Coimbra",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting CP",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2012–13",
+    "winner": "Vitória de Guimarães",
+    "winnerLink": "Vitória Sport Clube",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "Sport Lisboa e Benfica",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2013–14",
+    "winner": "Benfica",
+    "winnerLink": "Sport Lisboa e Benfica",
+    "runnerUp": "Rio Ave",
+    "runnerUpLink": "Rio Ave Futebol Clube",
+    "matches": [
+     {
+      "score": [
+       1,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2014–15",
+    "winner": "Sporting",
+    "winnerLink": "Sporting Clube de Portugal",
+    "runnerUp": "SC Braga",
+    "runnerUpLink": "Sporting Clube de Braga",
+    "matches": [
+     {
+      "score": [
+       2,
+       2
+      ],
+      "extraTime": true,
+      "penalties": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2015–16",
+    "winner": "SC Braga",
+    "winnerLink": "Sporting Clube de Braga",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "Futebol Clube do Porto",
+    "matches": [
+     {
+      "score": [
+       2,
+       2
+      ],
+      "extraTime": true,
+      "penalties": [
+       4,
+       2
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2016–17",
+    "winner": "Benfica",
+    "winnerLink": "Sport Lisboa e Benfica",
+    "runnerUp": "Vitória de Guimarães",
+    "runnerUpLink": "Vitória Sport Clube",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2017–18",
+    "winner": "Desportivo das Aves",
+    "winnerLink": "Clube Desportivo das Aves",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting Clube de Portugal",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2018–19",
+    "winner": "Sporting",
+    "winnerLink": "Sporting Clube de Portugal",
+    "runnerUp": "FC Porto",
+    "runnerUpLink": "FC Porto",
+    "matches": [
+     {
+      "score": [
+       2,
+       2
+      ],
+      "extraTime": true,
+      "penalties": [
+       5,
+       4
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2019–20",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "Sport Lisboa e Benfica",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "venue": "Estádio Cidade de Coimbra, Coimbra"
+     }
+    ]
+   },
+   {
+    "season": "2020–21",
+    "winner": "SC Braga",
+    "winnerLink": "SC Braga",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "Sport Lisboa e Benfica",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio Cidade de Coimbra, Coimbra"
+     }
+    ]
+   },
+   {
+    "season": "2021–22",
+    "winner": "FC Porto",
+    "winnerLink": "Futebol Clube do Porto",
+    "runnerUp": "CD Tondela",
+    "runnerUpLink": "Clube Desportivo de Tondela",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2022–23",
+    "winner": "FC Porto",
+    "winnerLink": "Futebol Clube do Porto",
+    "runnerUp": "SC Braga",
+    "runnerUpLink": "SC Braga",
+    "matches": [
+     {
+      "score": [
+       2,
+       0
+      ],
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2023–24",
+    "winner": "FC Porto",
+    "winnerLink": "FC Porto",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting Clube de Portugal",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2024–25",
+    "winner": "Sporting",
+    "winnerLink": "Sporting Clube de Portugal",
+    "runnerUp": "Benfica",
+    "runnerUpLink": "Sport Lisboa e Benfica",
+    "matches": [
+     {
+      "score": [
+       3,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   },
+   {
+    "season": "2025–26",
+    "winner": "Torreense",
+    "winnerLink": "Sport Clube União Torreense",
+    "runnerUp": "Sporting",
+    "runnerUpLink": "Sporting Clube de Portugal",
+    "matches": [
+     {
+      "score": [
+       2,
+       1
+      ],
+      "extraTime": true,
+      "venue": "Estádio Nacional, Jamor"
+     }
+    ]
+   }
+  ]
+ }
+}

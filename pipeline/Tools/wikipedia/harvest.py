@@ -40,6 +40,11 @@ for comp, title in PAGES.items():
     bad = [r["club"] for r in rows if not r["years"]]
     out[comp] = {"page": page["title"], "revid": page["revid"], "rows": rows}
     print(f"{comp:14} {len(rows):3} clubes {sum(r['titles'] for r in rows):4} títulos | «{heading[:28]}» | topo: {rows[0]['club']} {rows[0]['titles']} | sem anos: {len(bad)} {bad[:3]}")
+# Competições extintas do Canadá, sem tabela por clube: o campeão de cada edição (harvest_canada_old.py)
+import harvest_canada_old
+for comp, entry in harvest_canada_old.harvest().items():
+    out[comp] = entry
+    print(f"{comp:14} {len(entry['rows'])} clubes {sum(r['titles'] for r in entry['rows']):4} títulos | topo: {entry['rows'][0]['club']} {entry['rows'][0]['titles']}")
 print("PROBLEMAS:", problems)
 if not problems: json.dump(out, open(os.path.join(here, "wikipedia_titles.json"), "w"), ensure_ascii=False, indent=1)
 if problems: sys.exit(1)   # a tarefa automática pára e não publica

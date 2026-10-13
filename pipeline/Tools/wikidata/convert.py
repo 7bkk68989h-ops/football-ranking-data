@@ -131,7 +131,7 @@ confed = {"PT": "UEFA", "ES": "UEFA", "GB-ENG": "UEFA", "GB-SCT": "UEFA", "IT": 
           "CL": "CONMEBOL", "PE": "CONMEBOL", "MX": "CONCACAF", "EG": "CAF"}
 # Campeonatos e taças de outros países (pedido do Pedro, 6 out. 2026): só existem na Wikipédia.
 for cid, c in json.load(open(os.path.join(here, "extra_competitions.json"))).items():
-    comps[cid] = {"id": cid, "name": c["name"], "level": "domestic", "kind": c["kind"], "country": c["country"]}
+    comps[cid] = {"id": cid, "name": c["name"], "level": "domestic", "kind": c["kind"], "country": c["country"], **({"defunct": True} if c.get("defunct") else {})}
     confed.setdefault(c["country"], c["confederation"])
 report, sources = wikipedia_merge(clubs, comps, honours, confed)
 
@@ -149,6 +149,9 @@ for key, extra in MANUAL_FINALS.items():
 from finals_merge import apply as finals_apply
 report["finais"] = finals_apply(clubs, comps, honours)
 for c in clubs.values(): c.pop("_wiki", None)
+# Países retirados a pedido do Pedro (Arábia Saudita): clubes e troféus saem, venham de onde vierem.
+from merge import EXCLUDED
+for k in [k for k in honours if clubs[k[0]]["country"] in EXCLUDED]: del honours[k]
 
 used_clubs = {k[0] for k in honours}
 used = sorted({c["country"] for c in clubs.values() if c["id"] in used_clubs})
