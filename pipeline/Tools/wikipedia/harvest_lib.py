@@ -41,6 +41,20 @@ def split_rows(comp, rows):
 # Títulos retirados que a página ainda lista entre os anos (não contam no total).
 REVOKED = {"Juventus": ("2004–05",), "Torino": ("1926–27",)}
 
+# Torneios curtos da Liga MX ("Ape–2014"): o ano fica à frente e o nome a seguir ("2014 Apertura"),
+# para a ordem e os anos continuarem a funcionar (pedido do Pedro, 2 nov. 2026).
+SHORT_TOURNAMENTS = {"Ape": "Apertura", "Cla": "Clausura", "Ver": "Verano", "Inv": "Invierno", "Prode": "Prode",
+                     "Mex": "México", "Guard": "Guardianes", "Bic": "Bicentenario"}
+TOURNAMENT = r"(?:\b(" + "|".join(SHORT_TOURNAMENTS) + r")\s*[–-]\s*)?"
+
+def season_label(m):
+    y = m.group(2).strip()
+    a, b = (re.split(r"\s*[–-]\s*", y) + [None])[:2]
+    if b and len(b) == 2 and int(b) == int(a) % 100: y = f"{a}–{(int(a) + 1) % 100:02d}"   # gralha "1966–66"
+    if not m.group(1): return y
+    name = SHORT_TOURNAMENTS[m.group(1)]
+    return f"{y} {name} {y[2:]}" if name == "México" else f"{y} {name}"   # México 70 e México 86
+
 def find(title, pick=None):
     best = None
     for t in tables(title):
@@ -68,7 +82,7 @@ def find(title, pick=None):
                     if joined >= 3: rows = []; break
                     name = r[ci]["text"].split("(")[0].strip()                  # fica a primeira; SPLIT separa as outras
                 years = r[yi]["text"] if yi is not None and len(r) > yi else ""
-                ys = [y.strip() for y in re.findall(r"\d{4}(?:\s*[–-]\s*\d{2,4})?", years)]
+                ys = [season_label(m) for m in re.finditer(TOURNAMENT + r"(\d{4}(?:\s*[–-]\s*\d{2,4})?)", years)]
                 rows.append({"club": name, "titles": int(m.group()), "years": ys, "country": (r[ci]["flags"] or [None])[0], "link": r[ci].get("link")})
             for x in rows:
                 x["years"] = [y for y in x["years"] if y.replace("-", "–") not in REVOKED.get(x["club"], ())]

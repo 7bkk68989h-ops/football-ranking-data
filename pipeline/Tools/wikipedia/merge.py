@@ -55,6 +55,10 @@ ALIASES = {
  "SK Admira Wien": "Admira Wien", "FC Wacker Innsbruck": "Wacker Innsbruck",
  "Los Angeles Galaxy": "LA Galaxy", "Chicago Fire": "Chicago Fire FC", "Montreal Impact": "CF Montréal",
 }
+# Clubes a que a Wikipédia mudou o nome na tabela por clube: ficam com o nome (e o id) que já tinham na app.
+# Liga MX e Copa MX, 2 nov. 2026: os mesmos artigos e anos; no Wikidata os nomes novos são aliases do mesmo item.
+RENAMED = {"Monarcas Morelia": "Morelia", "Real Club España": "Real España", "Tecos UAG": "Tecos"}
+ALIASES.update(RENAMED)
 # Nomes parecidos que são mesmo o mesmo clube ("Red Star" = "Red Star Belgrade"). Só estes se ligam
 # por aproximação; qualquer outro nome parecido fica como clube à parte e vai para o relatório
 # (`parecidos_recusados`), porque "US Tunis" não é o "ES Tunis" nem o "Sydney FC" os "Wanderers".
@@ -170,7 +174,7 @@ def merge(clubs, comps, honours, countries):
             # segunda linha do mesmo clube na mesma tabela ("Steaua București" e "FCSB"): soma-se à primeira
             again = next((c for c in found if c["country"] == code and (c["id"], comp_id) in seen), None) if not match else None
             if again:
-                h = honours[(again["id"], comp_id)]; more = [y.replace("-", "–").replace(" ", "") for y in row["years"]]
+                h = honours[(again["id"], comp_id)]; more = [re.sub(r"\s*[–-]\s*", "–", y) for y in row["years"]]
                 h["count"] += row["titles"]
                 if "seasons" in h and len(more) == row["titles"]: h["seasons"] = sorted(h["seasons"] + more, key=lambda y: end_year(y) or 0)
                 else: h.pop("seasons", None)
@@ -196,7 +200,7 @@ def merge(clubs, comps, honours, countries):
                 else: abbr, c1, c2, kit = re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", short)[:3].upper(), *NEUTRAL, "plain"
                 cid = slug(short)
                 if cid in clubs: cid = f"{cid}-{code.lower()}"
-                club = {"id": cid, "name": name, "shortName": short, "country": code, "colors": [c1, c2], "kit": kit, "abbreviation": abbr}
+                club = {"id": cid, "name": short if name in RENAMED else name, "shortName": short, "country": code, "colors": [c1, c2], "kit": kit, "abbreviation": abbr}
                 clubs[cid] = club; index.setdefault(target, []).append(club); report["novos"].append(f"{short} ({code})")
             if club["colors"] == NEUTRAL and row.get("link") in COLORS:   # clube que já existia sem cores
                 c1, c2, kit = COLORS[row["link"]]; club["colors"] = [c1, c2]; club["kit"] = kit
@@ -204,7 +208,7 @@ def merge(clubs, comps, honours, countries):
             key = (club["id"], comp_id); seen.add(key)
             h = honours.setdefault(key, {"club": club["id"], "competition": comp_id})
             h["count"] = row["titles"]
-            years = [y.replace("-", "–").replace(" ", "") for y in row["years"]]
+            years = [re.sub(r"\s*[–-]\s*", "–", y) for y in row["years"]]
             if comp_id in END_YEAR_LEAGUES:   # a página dá o ano em que a época acaba
                 years = [f"{int(y) - 1}–{int(y) % 100:02d}" if re.fullmatch(r"\d{4}", y) else y for y in years]
             if years: h["seasons"] = years

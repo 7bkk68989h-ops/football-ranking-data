@@ -148,6 +148,9 @@ for key, extra in MANUAL_FINALS.items():
 # Jogo de cada final (resultado, marcadores, penáltis), dos artigos das finais na Wikipédia.
 from finals_merge import apply as finals_apply
 report["finais"] = finals_apply(clubs, comps, honours)
+# Artigo de cada clube na Wikipédia, para Tools/crests/harvest.py (símbolos só em Debug; fora do git).
+json.dump({c["id"]: c["_wiki"] for c in clubs.values() if c.get("_wiki")},
+          open(os.path.join(root, 'Tools/crests/club_articles.json'), 'w'), ensure_ascii=False, indent=1, sort_keys=True)
 for c in clubs.values(): c.pop("_wiki", None)
 # Países retirados a pedido do Pedro (Arábia Saudita): clubes e troféus saem, venham de onde vierem.
 from merge import EXCLUDED
