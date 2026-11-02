@@ -57,7 +57,12 @@ ALIASES = {
 }
 # Clubes a que a Wikipédia mudou o nome na tabela por clube: ficam com o nome (e o id) que já tinham na app.
 # Liga MX e Copa MX, 2 nov. 2026: os mesmos artigos e anos; no Wikidata os nomes novos são aliases do mesmo item.
-RENAMED = {"Monarcas Morelia": "Morelia", "Real Club España": "Real España", "Tecos UAG": "Tecos"}
+RENAMED = {"Monarcas Morelia": "Morelia", "Real Club España": "Real España", "Tecos UAG": "Tecos",
+ # o mesmo clube com outro nome no campeonato e na taça (mesmo artigo e mesmo item do Wikidata); o Pedro pediu para os juntar (2 nov. 2026)
+ "Larissa": "AEL", "ASA": "AS Aviação", "Metalul Reșița": "CSM Reșița", "Progresul Oradea": "Club Atletic Oradea",
+ "Artmedia Bratislava": "Petržalka", "Seinäjoen Jalkapallokerho": "SJK", "TamU": "Tampere United",
+ # o campeão de 2020–21 é o NŠ Mura (fundado em 2012); a taça de 1994–95 é do NK Mura antigo, que fica clube à parte
+ "Mura": "NŠ Mura"}
 ALIASES.update(RENAMED)
 # Nomes parecidos que são mesmo o mesmo clube ("Red Star" = "Red Star Belgrade"). Só estes se ligam
 # por aproximação; qualquer outro nome parecido fica como clube à parte e vai para o relatório
@@ -108,6 +113,7 @@ EXTRA_KNOWN = {
  "Polonia Warsaw": ("POL", "#111111", "#FFFFFF", "plain"), "Zagłębie Lubin": ("ZAG", "#F58113", "#FFFFFF", "plain"), "Jagiellonia Białystok": ("JAG", "#FFD100", "#E2001A", "stripes"),
  "Lechia Gdańsk": ("LGD", "#00843D", "#FFFFFF", "hoops"), "Raków Częstochowa": ("RAK", "#E2001A", "#0A5EB0", "plain"), "Arka Gdynia": ("ARK", "#FFD100", "#0A5EB0", "plain"),
  "Warta Poznań": ("WAR", "#00843D", "#FFFFFF", "plain"), "Piast Gliwice": ("PIA", "#0A5EB0", "#E2001A", "plain"),
+ "NŠ Mura": ("MUR", "#111111", "#FFFFFF", "plain"),
 }
 # Cores do equipamento lidas das fichas da Wikipédia (harvest_colors.py): artigo -> [cor 1, cor 2, padrão].
 _colors = os.path.join(here, "club_colors.json")

@@ -247,7 +247,7 @@ COUNT_FIX = {("by-liga", "Shakhtyor Soligorsk"): 4}
 # Épocas que só a tabela por clube da Wikipédia dá (a lista época a época atribui-as a outro clube):
 # Donmoon, Taça da Tailândia de 1981 (a lista dá 1981 ao Bangkok Bank, que já tem os seus 3 anos).
 SEASON_EXTRA = {("th-taca", "Donmoon"): ["1981"]}
-SEASON_FIX = {("si-taca", "1994–95", "Mura"): "Mura", ("si-taca", "2019–20", "Mura"): "NŠ Mura"}
+SEASON_FIX = {("si-taca", "1994–95", "Mura"): "NK Mura", ("si-taca", "2019–20", "Mura"): "NŠ Mura"}
 
 def season_tables(clubs, comps, honours, report):
     """Épocas (e, nas taças, adversário, resultado, penáltis e local) de season_tables.json, lidas por
