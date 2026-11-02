@@ -149,6 +149,8 @@ for key, extra in MANUAL_FINALS.items():
 from finals_merge import apply as finals_apply
 report["finais"] = finals_apply(clubs, comps, honours)
 # Artigo de cada clube na Wikipédia, para Tools/crests/harvest.py (símbolos só em Debug; fora do git).
+# A pasta não existe na tarefa automática do GitHub.
+os.makedirs(os.path.join(root, 'Tools/crests'), exist_ok=True)
 json.dump({c["id"]: c["_wiki"] for c in clubs.values() if c.get("_wiki")},
           open(os.path.join(root, 'Tools/crests/club_articles.json'), 'w'), ensure_ascii=False, indent=1, sort_keys=True)
 for c in clubs.values(): c.pop("_wiki", None)
