@@ -62,7 +62,9 @@ RENAMED = {"Monarcas Morelia": "Morelia", "Real Club España": "Real España", "
  "Larissa": "AEL", "ASA": "AS Aviação", "Metalul Reșița": "CSM Reșița", "Progresul Oradea": "Club Atletic Oradea",
  "Artmedia Bratislava": "Petržalka", "Seinäjoen Jalkapallokerho": "SJK", "TamU": "Tampere United",
  # o campeão de 2020–21 é o NŠ Mura (fundado em 2012); a taça de 1994–95 é do NK Mura antigo, que fica clube à parte
- "Mura": "NŠ Mura"}
+ "Mura": "NŠ Mura",
+ # o artigo "FC Ilves" passou a "Ilves (football)" e as tabelas escrevem "Ilves"; mesmo item do Wikidata (Q2608062), 9 nov. 2026
+ "Ilves": "FC Ilves"}
 ALIASES.update(RENAMED)
 # Nomes parecidos que são mesmo o mesmo clube ("Red Star" = "Red Star Belgrade"). Só estes se ligam
 # por aproximação; qualquer outro nome parecido fica como clube à parte e vai para o relatório
