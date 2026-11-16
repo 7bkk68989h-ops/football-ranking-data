@@ -16555,6 +16555,26 @@
    "runnerUp": "Austin FC",
    "runnerUpLink": "Austin FC",
    "venue": "Q2 Stadium"
+  },
+  {
+   "season": "2026",
+   "winners": [
+    "St. Louis City SC"
+   ],
+   "winnerLinks": [
+    "St. Louis City SC"
+   ],
+   "score": [
+    0,
+    0
+   ],
+   "penalties": [
+    5,
+    3
+   ],
+   "runnerUp": "Columbus Crew",
+   "runnerUpLink": "Columbus Crew",
+   "venue": "ScottsMiracle-Gro Field"
   }
  ],
  "bg-liga": [

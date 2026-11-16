@@ -64,7 +64,9 @@ RENAMED = {"Monarcas Morelia": "Morelia", "Real Club España": "Real España", "
  # o campeão de 2020–21 é o NŠ Mura (fundado em 2012); a taça de 1994–95 é do NK Mura antigo, que fica clube à parte
  "Mura": "NŠ Mura",
  # o artigo "FC Ilves" passou a "Ilves (football)" e as tabelas escrevem "Ilves"; mesmo item do Wikidata (Q2608062), 9 nov. 2026
- "Ilves": "FC Ilves"}
+ "Ilves": "FC Ilves",
+ # a tabela por clube da Taça KNVB passou a usar os nomes curtos (issue #8, 16 nov. 2026); ficam os nomes e ids que já tinham
+ "HVV": "HVV Den Haag", "NAC": "NAC Breda", "VOC": "VOC Rotterdam", "VSV": "VSV Velsen"}
 ALIASES.update(RENAMED)
 # Nomes parecidos que são mesmo o mesmo clube ("Red Star" = "Red Star Belgrade"). Só estes se ligam
 # por aproximação; qualquer outro nome parecido fica como clube à parte e vai para o relatório
@@ -76,6 +78,8 @@ SAME_CLUB = {
  ("Sekondi Eleven Wise", "Eleven Wise"), ("Atlético Zamora", "Zamora"), ("Jugoslavija", "Jugoslavija Beograd"),
  ("Ankaragücü", "MKE Ankaragücü"), ("Shooting Stars (Ibadan)", "Shooting Stars"), ("Dolphins FC (Port-Harcourt)", "Dolphins"),
  ("Iwuanyanwu Nationale/Heartland", "Heartland F.C."),
+ # Taça KNVB (issue #8): "Sparta" fica no Sparta Rotterdam só nos Países Baixos; o Sparta da Noruega continua à parte
+ ("Sparta", "Sparta Rotterdam"),
 }
 # Clubes austríacos que ganharam provas alemãs entre 1938 e 1943: são o mesmo clube, não um clube alemão.
 FOREIGN_WINNERS = {"Rapid Wien", "First Vienna"}
