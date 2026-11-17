@@ -163,10 +163,10 @@ for (club, comp), h in honours.items():
         # Qual dos torneios da época ("Torneo Apertura", "Campeón de Liga"), quando há vários campeões com o mesmo rótulo.
         if entry.get("tournaments", {}).get(club):
             h.setdefault("tournaments", {})[s] = entry["tournaments"][club]
-# Argentina desde 2025 (pedido do Pedro, 17 nov. 2026): a época tem três campeões (Torneo Apertura, Torneo Clausura e "Campeón de
-# Liga", o primeiro da tabela anual) e só conta o Campeón de Liga. Os vencedores do Apertura e do Clausura dessas épocas saem.
-# As épocas antigas com Apertura e Clausura (1990–2015) ficam como estão.
-ONLY_LEAGUE_CHAMPION = {"ar-liga"}
+# Campeonatos em que, numa época com vários campeões (Torneo Apertura, Torneo Clausura e "Campeón de Liga"), só conta o Campeón
+# de Liga: os vencedores do Apertura e do Clausura dessas épocas saem. Vazio: o Pedro decidiu (17 nov. 2026) que na Argentina os
+# três contam como títulos distintos.
+ONLY_LEAGUE_CHAMPION = set()
 report["so_campeon_de_liga"] = []
 for comp in ONLY_LEAGUE_CHAMPION:
     champions = {s for (club, c), h in honours.items() if c == comp for s, t in (h.get("tournaments") or {}).items() if t == "Campeón de Liga"}
