@@ -163,6 +163,23 @@ for (club, comp), h in honours.items():
         # Qual dos torneios da época ("Torneo Apertura", "Campeón de Liga"), quando há vários campeões com o mesmo rótulo.
         if entry.get("tournaments", {}).get(club):
             h.setdefault("tournaments", {})[s] = entry["tournaments"][club]
+# Argentina desde 2025 (pedido do Pedro, 17 nov. 2026): a época tem três campeões (Torneo Apertura, Torneo Clausura e "Campeón de
+# Liga", o primeiro da tabela anual) e só conta o Campeón de Liga. Os vencedores do Apertura e do Clausura dessas épocas saem.
+# As épocas antigas com Apertura e Clausura (1990–2015) ficam como estão.
+ONLY_LEAGUE_CHAMPION = {"ar-liga"}
+report["so_campeon_de_liga"] = []
+for comp in ONLY_LEAGUE_CHAMPION:
+    champions = {s for (club, c), h in honours.items() if c == comp for s, t in (h.get("tournaments") or {}).items() if t == "Campeón de Liga"}
+    for key in [k for k in honours if k[1] == comp]:
+        h = honours[key]
+        drop = [s for s in h.get("seasons") or [] if s in champions and (h.get("tournaments") or {}).get(s) != "Campeón de Liga"]
+        for s in drop:
+            h["seasons"] = [x for x in h.get("seasons") or [] if x != s]
+            if h.get("count"): h["count"] -= 1
+            for f in ("dates", "tournaments"):
+                (h.get(f) or {}).pop(s, None)
+            report["so_campeon_de_liga"].append(f"{key[0]} {s}")
+        if drop and not h.get("seasons") and not h.get("count") and not h.get("finals"): del honours[key]
 # Artigo de cada clube na Wikipédia, para Tools/crests/harvest.py (símbolos só em Debug; fora do git).
 # A pasta não existe na tarefa automática do GitHub.
 os.makedirs(os.path.join(root, 'Tools/crests'), exist_ok=True)

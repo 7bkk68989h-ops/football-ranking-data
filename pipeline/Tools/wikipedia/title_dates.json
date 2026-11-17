@@ -38,30 +38,27 @@
  "ar-liga": {
   "2024": {
    "article": "2024 AFA Liga Profesional de Fútbol",
-   "date": "2024-12-16",
-   "source": "Wikipedia"
+   "clubs": {
+    "velez-sarsfield": "2024-12-16"
+   },
+   "source": "Wikipedia",
+   "tournaments": {}
   },
   "2025": {
    "article": "2025 AFA Liga Profesional de Fútbol",
    "clubs": {
-    "estudiantes": "2025-12-13",
-    "platense": "2025-06-01"
+    "rosario-central": "2025-12-13"
    },
    "source": "Wikipedia",
    "tournaments": {
-    "estudiantes": "Torneo Clausura",
-    "platense": "Torneo Apertura",
     "rosario-central": "Campeón de Liga"
    }
   },
   "2026": {
    "article": "2026 AFA Liga Profesional de Fútbol",
-   "clubs": {
-    "belgrano": "2026-05-24"
-   },
+   "clubs": {},
    "source": "Wikipedia",
    "tournaments": {
-    "belgrano": "Torneo Apertura",
     "boca": "Campeón de Liga"
    }
   }
@@ -409,6 +406,14 @@
    "tournaments": {
     "junior": "Torneo Finalización",
     "santa-fe": "Torneo Apertura"
+   }
+  },
+  "2026": {
+   "article": "2026 Liga DIMAYOR",
+   "clubs": {},
+   "source": "Wikipedia",
+   "tournaments": {
+    "junior": "Torneo Apertura"
    }
   }
  },
@@ -1100,8 +1105,13 @@
   },
   "2026": {
    "article": "2026 Copa de Primera",
-   "date": "2026-05-03",
-   "source": "Wikipedia"
+   "clubs": {
+    "olimpia": "2026-05-03"
+   },
+   "source": "Wikipedia",
+   "tournaments": {
+    "olimpia": "Torneo Apertura"
+   }
   }
  },
  "qa-liga": {

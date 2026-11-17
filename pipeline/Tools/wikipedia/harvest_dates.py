@@ -145,6 +145,8 @@ def won_on(wikitext, names, season):
         if found: return found[0].isoformat()
     return None
 
+# Campeonatos com vários títulos na mesma época (Torneo Apertura, Torneo Clausura, Campeón de Liga).
+SEVERAL_TITLES = {"ar-liga", "co-liga", "py-liga"}
 TOURNAMENT = r"Torneo\s+(?:Apertura|Clausura)|Campe[oó]n de Liga|\bApertura\b|\bClausura\b|Finalizaci[oó]n|Inicial|\bFinal\b(?=\s+tournament)"
 def tournament_of(wikitext, names):
     """Que torneio ganhou um dos campeões de uma época com vários ("Torneo Apertura", "Campeón de Liga"): o nome de
@@ -294,13 +296,18 @@ def main():
         elif wp: report["so_wikipedia"].append(f"{key} ({page[0]})")
         elif wdd: report["so_wikidata"].append(f"{key} ({w['item']})")
         else: report["sem_data"].append(f"{key}" + (f" ({page[0]})" if page else ""))
-        if len(need[c][s]) > 1:   # dois torneios na mesma época (Apertura e Clausura): o dia de cada um pela frase que o nomeia
+        # Dois torneios na mesma época (Apertura e Clausura): o dia de cada um pela frase que o nomeia. Nos campeonatos com
+        # vários títulos por época (SEVERAL_TITLES) o torneio também se guarda com um só vencedor, porque o conversor tira os
+        # vencedores do Apertura e do Clausura da Argentina e o que fica tem de continuar marcado como "Campeón de Liga".
+        if len(need[c][s]) > 1 or (c in SEVERAL_TITLES and page):
             per_club, tournaments = {}, {}
+            ok = lambda d: d and d <= today and end_year(s) <= int(d[:4]) <= end_year(s) + (0 if "–" in s else 1)
             for club in need[c][s]:
                 t = page and tournament_of(page[1], club_names[club])
                 if t: tournaments[club] = t
                 d = page and won_on(page[1], club_names[club], s)
-                if d and d <= today and end_year(s) <= int(d[:4]) <= end_year(s) + (0 if "–" in s else 1): per_club[club] = d
+                if ok(d): per_club[club] = d
+                elif len(need[c][s]) == 1 and ok(date): per_club[club] = date
             if per_club or tournaments:
                 out.setdefault(c, {})[s] = {"clubs": per_club, "tournaments": tournaments, "source": "Wikipedia", "article": page[0]}
             report["varios_campeoes"].append(f"{key}: " + ", ".join(f"{k} {per_club.get(k, 'sem data')} {tournaments.get(k, '?')}" for k in need[c][s]))
