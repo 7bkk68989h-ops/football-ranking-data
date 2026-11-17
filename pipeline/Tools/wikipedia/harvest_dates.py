@@ -274,7 +274,7 @@ def main():
             if not d and main_final(page) and text.get(main_final(page)):
                 d = infobox_end(text[main_final(page)][1], s, single_ok=True)
             if d: return d
-        end = infobox_end(page[1], s, single_ok=bool(re.search(r"MLS Cup \d{4}|\bfinal(?: phase)?$", page[0], re.I)))
+        end = infobox_end(page[1], s, single_ok=comps[c]["kind"] == "superCup" or bool(re.search(r"MLS Cup \d{4}|\bfinal(?: phase)?$", page[0], re.I)))
         if comps[c]["kind"] == "league":
             won = clinched(page[1], s)
             if won and (not end or won <= end) and won >= f"{end_year(s) - 1}-07-01": return won

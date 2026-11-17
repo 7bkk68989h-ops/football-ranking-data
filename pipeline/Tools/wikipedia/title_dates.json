@@ -66,6 +66,30 @@
    }
   }
  },
+ "ar-supertaca": {
+  "2024": {
+   "article": "2024 Supercopa Argentina",
+   "date": "2025-09-06",
+   "source": "Wikipedia"
+  },
+  "2025": {
+   "article": "2025 Supercopa Argentina",
+   "date": "2026-11-12",
+   "source": "Wikipedia"
+  }
+ },
+ "ar-taca": {
+  "2024": {
+   "article": "2024 Copa Argentina",
+   "date": "2024-12-11",
+   "source": "Wikipedia"
+  },
+  "2025": {
+   "article": "2025 Copa Argentina",
+   "date": "2025-11-05",
+   "source": "Wikipedia"
+  }
+ },
  "at-liga": {
   "2023–24": {
    "article": "2023–24 Austrian Football Bundesliga",

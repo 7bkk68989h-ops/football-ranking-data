@@ -660,5 +660,17 @@
   "confederation": "CONCACAF",
   "kind": "league",
   "defunct": true
+ },
+ "ar-taca": {
+  "name": "Copa Argentina",
+  "country": "AR",
+  "confederation": "CONMEBOL",
+  "kind": "cup"
+ },
+ "ar-supertaca": {
+  "name": "Supercopa Argentina",
+  "country": "AR",
+  "confederation": "CONMEBOL",
+  "kind": "superCup"
  }
 }
