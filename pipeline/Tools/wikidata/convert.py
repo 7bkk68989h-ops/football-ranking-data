@@ -148,6 +148,16 @@ for key, extra in MANUAL_FINALS.items():
 # Jogo de cada final (resultado, marcadores, penáltis), dos artigos das finais na Wikipédia.
 from finals_merge import apply as finals_apply
 report["finais"] = finals_apply(clubs, comps, honours)
+# Dia em que cada título recente ficou decidido, para os campeonatos e as taças sem final datada
+# (Tools/wikipedia/harvest_dates.py; a app mostra-os em "Títulos recentes"). Fica em `dates` (época -> dia).
+_td = os.path.join(root, 'Tools/wikipedia/title_dates.json')
+td = json.load(open(_td)) if os.path.exists(_td) else {}
+report["datas_titulos"] = 0
+for (club, comp), h in honours.items():
+    dated = {f["season"] for f in h.get("finals") or [] if f.get("date") or any(m.get("date") for m in f.get("matches") or [])}
+    for s in sorted(set(h.get("seasons") or []) | {f["season"] for f in h.get("finals") or []}):
+        if s in td.get(comp, {}) and s not in dated:
+            h.setdefault("dates", {})[s] = td[comp][s]["date"]; report["datas_titulos"] += 1
 # Artigo de cada clube na Wikipédia, para Tools/crests/harvest.py (símbolos só em Debug; fora do git).
 # A pasta não existe na tarefa automática do GitHub.
 os.makedirs(os.path.join(root, 'Tools/crests'), exist_ok=True)
