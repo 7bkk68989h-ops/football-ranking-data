@@ -131,6 +131,20 @@ def clinched(wikitext, season):
         if found: return found[0].isoformat()
     return None
 
+def won_on(wikitext, names, season):
+    """Numa época com dois campeões (Apertura e Clausura com o mesmo rótulo), o dia em que um deles ganhou,
+    pela frase do artigo que o nomeia: "Belgrano won their first national league championship on 24 May 2026"."""
+    body = clean(re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", re.sub(r"<!--.*?-->", "", wikitext, flags=re.S)))
+    for sentence in re.split(r"(?<=[.!?])\s+|\n", body):
+        if not re.search(r"\bwon\s+(?:their|its)\b[^.]{0,60}\b(?:title|championship)|\bwere\s+(?:crowned\s+)?champions", sentence, re.I):
+            continue
+        before = re.split(r"\bwon\b|\bwere\b", sentence, 1)[0]
+        if not any(re.search(r"\b" + re.escape(n) + r"\b", before) for n in names): continue
+        m = re.search(r"\bon\s+(\d{1,2}\s+[A-Z][a-z]+\s+\d{4}|[A-Z][a-z]+\s+\d{1,2},\s*\d{4})", sentence)
+        found = dates_in(m.group(1)) if m else []
+        if found: return found[0].isoformat()
+    return None
+
 def label_key(label):
     """Época de um rótulo do Wikidata ou de um título: "2025–26", "2025", "2025 Apertura"."""
     m = re.search(r"\b(\d{4})(?:\s*[–\-/]\s*(\d{2,4}))?\b", label)
@@ -153,6 +167,7 @@ def main():
     data = json.load(open(os.path.join(root, "FootballRanking/Resources/football_data.json")))
     extra = json.load(open(os.path.join(root, "Tools/wikidata/extra_competitions.json")))
     comps = {c["id"]: c for c in data["competitions"]}
+    club_names = {c["id"]: {c["name"], c["shortName"]} for c in data["clubs"]}
     articles = {cid: ARTICLES.get(cid) or (extra.get(cid) or {}).get("name") or c["name"] for cid, c in comps.items()}
 
     # Épocas recentes que precisam de data: sem final datada.
@@ -262,8 +277,14 @@ def main():
         elif wp: report["so_wikipedia"].append(f"{key} ({page[0]})")
         elif wdd: report["so_wikidata"].append(f"{key} ({w['item']})")
         else: report["sem_data"].append(f"{key}" + (f" ({page[0]})" if page else ""))
-        if len(need[c][s]) > 1:   # dois torneios na mesma época (Apertura e Clausura): não se sabe qual é qual
-            report["varios_campeoes"].append(f"{key}: {', '.join(need[c][s])}"); continue
+        if len(need[c][s]) > 1:   # dois torneios na mesma época (Apertura e Clausura): o dia de cada um pela frase que o nomeia
+            per_club = {}
+            for club in need[c][s]:
+                d = page and won_on(page[1], club_names[club], s)
+                if d and d <= today and end_year(s) <= int(d[:4]) <= end_year(s) + (0 if "–" in s else 1): per_club[club] = d
+            if per_club: out.setdefault(c, {})[s] = {"clubs": per_club, "source": "Wikipedia", "article": page[0]}
+            report["varios_campeoes"].append(f"{key}: " + ", ".join(f"{k} {per_club.get(k, 'sem data')}" for k in need[c][s]))
+            continue
         if date and date > today:   # o fim da época ainda não chegou e o artigo não diz quando o título ficou decidido
             report["data_futura"].append(f"{key}: {date}"); continue
         if date and end_year(s) <= int(date[:4]) <= end_year(s) + (0 if "–" in s else 1):
