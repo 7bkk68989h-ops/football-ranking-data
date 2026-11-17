@@ -145,6 +145,23 @@ def won_on(wikitext, names, season):
         if found: return found[0].isoformat()
     return None
 
+TOURNAMENT = r"Torneo\s+(?:Apertura|Clausura)|Campe[oó]n de Liga|\bApertura\b|\bClausura\b|Finalizaci[oó]n|Inicial|\bFinal\b(?=\s+tournament)"
+def tournament_of(wikitext, names):
+    """Que torneio ganhou um dos campeões de uma época com vários ("Torneo Apertura", "Campeón de Liga"): o nome de
+    torneio mais perto do clube nas frases que o dão como vencedor (prosa ou "winners = Apertura: Belgrano")."""
+    body = clean(re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", re.sub(r"<!--.*?-->", "", wikitext, flags=re.S)))
+    best = None
+    for sentence in re.split(r"(?<=[.!?])\s+|\n", body):
+        if not re.search(r"\bwon\b|\bearned\b|\bwere\s+(?:crowned\s+)?champions|\bwinners?\s*=", sentence, re.I): continue
+        spots = [m.start() for n in names for m in re.finditer(r"\b" + re.escape(n) + r"\b", sentence)]
+        if not spots: continue
+        for m in re.finditer(TOURNAMENT, sentence):
+            d = min(abs(m.start() - p) for p in spots)
+            if best is None or d < best[0]: best = (d, m.group(0))
+    if not best: return None
+    t = best[1].replace("Campeon", "Campeón")
+    return "Torneo " + t if t in ("Apertura", "Clausura", "Finalización", "Finalizacion") else t
+
 def label_key(label):
     """Época de um rótulo do Wikidata ou de um título: "2025–26", "2025", "2025 Apertura"."""
     m = re.search(r"\b(\d{4})(?:\s*[–\-/]\s*(\d{2,4}))?\b", label)
@@ -278,12 +295,15 @@ def main():
         elif wdd: report["so_wikidata"].append(f"{key} ({w['item']})")
         else: report["sem_data"].append(f"{key}" + (f" ({page[0]})" if page else ""))
         if len(need[c][s]) > 1:   # dois torneios na mesma época (Apertura e Clausura): o dia de cada um pela frase que o nomeia
-            per_club = {}
+            per_club, tournaments = {}, {}
             for club in need[c][s]:
+                t = page and tournament_of(page[1], club_names[club])
+                if t: tournaments[club] = t
                 d = page and won_on(page[1], club_names[club], s)
                 if d and d <= today and end_year(s) <= int(d[:4]) <= end_year(s) + (0 if "–" in s else 1): per_club[club] = d
-            if per_club: out.setdefault(c, {})[s] = {"clubs": per_club, "source": "Wikipedia", "article": page[0]}
-            report["varios_campeoes"].append(f"{key}: " + ", ".join(f"{k} {per_club.get(k, 'sem data')}" for k in need[c][s]))
+            if per_club or tournaments:
+                out.setdefault(c, {})[s] = {"clubs": per_club, "tournaments": tournaments, "source": "Wikipedia", "article": page[0]}
+            report["varios_campeoes"].append(f"{key}: " + ", ".join(f"{k} {per_club.get(k, 'sem data')} {tournaments.get(k, '?')}" for k in need[c][s]))
             continue
         if date and date > today:   # o fim da época ainda não chegou e o artigo não diz quando o título ficou decidido
             report["data_futura"].append(f"{key}: {date}"); continue

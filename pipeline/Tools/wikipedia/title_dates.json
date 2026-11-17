@@ -47,14 +47,23 @@
     "estudiantes": "2025-12-13",
     "platense": "2025-06-01"
    },
-   "source": "Wikipedia"
+   "source": "Wikipedia",
+   "tournaments": {
+    "estudiantes": "Torneo Clausura",
+    "platense": "Torneo Apertura",
+    "rosario-central": "Campeón de Liga"
+   }
   },
   "2026": {
    "article": "2026 AFA Liga Profesional de Fútbol",
    "clubs": {
     "belgrano": "2026-05-24"
    },
-   "source": "Wikipedia"
+   "source": "Wikipedia",
+   "tournaments": {
+    "belgrano": "Torneo Apertura",
+    "boca": "Campeón de Liga"
+   }
   }
  },
  "at-liga": {
@@ -357,6 +366,26 @@
    "article": "2025 Chinese FA Cup",
    "date": "2025-12-06",
    "source": "Wikipedia"
+  }
+ },
+ "co-liga": {
+  "2024": {
+   "article": "2024 Liga DIMAYOR",
+   "clubs": {},
+   "source": "Wikipedia",
+   "tournaments": {
+    "atletico-bucaramanga": "Torneo Apertura",
+    "atletico-nacional": "Torneo Finalización"
+   }
+  },
+  "2025": {
+   "article": "2025 Liga DIMAYOR",
+   "clubs": {},
+   "source": "Wikipedia",
+   "tournaments": {
+    "junior": "Torneo Finalización",
+    "santa-fe": "Torneo Apertura"
+   }
   }
  },
  "co-taca": {
@@ -1036,6 +1065,15 @@
   }
  },
  "py-liga": {
+  "2025": {
+   "article": "2025 Copa de Primera",
+   "clubs": {},
+   "source": "Wikipedia",
+   "tournaments": {
+    "cerro-porteno": "Torneo Clausura",
+    "libertad": "Torneo Apertura"
+   }
+  },
   "2026": {
    "article": "2026 Copa de Primera",
    "date": "2026-05-03",

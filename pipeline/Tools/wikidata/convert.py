@@ -160,6 +160,9 @@ for (club, comp), h in honours.items():
         day = entry.get("date") or entry.get("clubs", {}).get(club)   # "clubs": épocas com dois campeões
         if day and s not in dated:
             h.setdefault("dates", {})[s] = day; report["datas_titulos"] += 1
+        # Qual dos torneios da época ("Torneo Apertura", "Campeón de Liga"), quando há vários campeões com o mesmo rótulo.
+        if entry.get("tournaments", {}).get(club):
+            h.setdefault("tournaments", {})[s] = entry["tournaments"][club]
 # Artigo de cada clube na Wikipédia, para Tools/crests/harvest.py (símbolos só em Debug; fora do git).
 # A pasta não existe na tarefa automática do GitHub.
 os.makedirs(os.path.join(root, 'Tools/crests'), exist_ok=True)
