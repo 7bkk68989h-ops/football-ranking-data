@@ -79,19 +79,19 @@ def apply(clubs, comps, honours):
                 if m["venue"]: d["venue"] = m["venue"]
                 if m["aet"]: d["extraTime"] = True
                 if m["penscore"]: d["penalties"] = f"{m['penscore'][s]}–{m['penscore'][1 - s]}"
-                goals = [{"minute": g["minute"], "player": g["player"], "own": side == s, **({"note": g["note"]} if g.get("note") else {})}
+                goals = [{"minute": g["minute"], "player": g["player"], "own": side == s, **({"note": g["note"]} if g.get("note") else {}), **({"wiki": g["wiki"]} if "wiki" in g else {})}
                          for side, key in ((0, "goals1"), (1, "goals2")) for g in m[key]]
                 # só se os marcadores batem com o resultado; uma lista incompleta enganava
                 if goals and len(goals) == sum(m["score"]): d["goals"] = goals
                 # pela ordem em que foram batidos: um de cada equipa, alternadamente
-                kicks = [{"player": k["player"], "own": side == s, "scored": k["scored"]}
+                kicks = [{"player": k["player"], "own": side == s, "scored": k["scored"], **({"wiki": k["wiki"]} if "wiki" in k else {})}
                          for i in range(max(len(m["pens1"]), len(m["pens2"]))) for side, key in ((0, "pens1"), (1, "pens2")) for k in m[key][i:i + 1]]
                 if kicks and m["penscore"] and sum(1 for k in kicks if k["scored"]) == sum(m["penscore"]): d["shootout"] = kicks
                 if m.get("attendance"): d["attendance"] = m["attendance"]
                 if m.get("referee"): d["referee"] = m["referee"]
                 if m.get("lineup1"):   # onzes: titulares e só os suplentes que entraram
                     def sheet(t):
-                        keep = ("name", "number", "captain", "yellow", "red", "off", "on")
+                        keep = ("name", "wiki", "number", "captain", "yellow", "red", "off", "on")   # wiki: artigo do jogador ("" = sem artigo)
                         out = {"starters": [{k: p[k] for k in keep if k in p} for p in t["start"]]}
                         used = [{k: p[k] for k in keep if k in p} for p in t["sub"] if "on" in p]
                         if used: out["substitutes"] = used
