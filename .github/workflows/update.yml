@@ -35,9 +35,6 @@ jobs:
           python3 Tools/wikipedia/harvest_pt_taca.py
           python3 Tools/wikipedia/harvest_seasons.py
           python3 Tools/wikidata/convert.py
-          # Dia em que cada título recente ficou decidido; se falhar, ficam as datas da última publicação.
-          python3 Tools/wikipedia/harvest_dates.py || echo "Datas dos títulos: sem resposta, ficam as anteriores."
-          python3 Tools/wikidata/convert.py
       - name: Verificar
         id: verificar
         run: |
