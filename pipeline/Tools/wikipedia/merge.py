@@ -33,6 +33,8 @@ END_YEAR_LEAGUES = {"pt-liga"}
 
 # nome na Wikipédia -> nome curto que o clube já tem na app
 ALIASES = {
+ # supertaças (18 nov. 2026): nomes antigos do mesmo clube
+ "Seongnam Ilhwa Chunma": "Seongnam FC", "Ulsan Hyundai Horang-i": "Ulsan HD", "Lekhwiya": "Al Duhail", "Artmedia Petržalka": "Petržalka",
  "Bayern Munich": "Bayern", "Inter Milan": "Inter", "Internazionale": "Inter", "Vitória de Guimarães": "Vitória SC", "Athletic Bilbao": "Athletic",
  "Zaragoza": "Real Zaragoza", "Wolverhampton Wanderers": "Wolves", "Borussia Mönchengladbach": "Mönchengladbach", "1860 Munich": "1860 München",
  "Reims": "Stade de Reims", "Steaua București": "FCSB", "Oxford University": "Oxford University A.", "1. FC Lokomotive Leipzig": "Lokomotive Leipzig",
@@ -191,6 +193,12 @@ def merge(clubs, comps, honours, countries):
                 if "seasons" in h and len(more) == row["titles"]: h["seasons"] = sorted(h["seasons"] + more, key=lambda y: end_year(y) or 0)
                 else: h.pop("seasons", None)
                 h.pop("finals", None); report["somados"].append(f"{name} + {again['shortName']} ({comp_id})"); continue
+            if not match and row.get("link"):
+                # o mesmo artigo da Wikipédia que um clube já existente ("Union SG" = "Union Saint-Gilloise", 18 nov. 2026)
+                by_link = [c for c in clubs.values() if c.get("_wiki") == row["link"] and c["country"] == code
+                           and c["id"] in before and (c["id"], comp_id) not in seen]
+                if len(by_link) == 1:
+                    match = by_link; report["aproximados"].append(f"{name} -> {by_link[0]['shortName']} ({comp_id}, mesmo artigo)")
             if not match:
                 # só contra clubes que já existiam antes desta competição e ainda não usados nela,
                 # para dois clubes da mesma tabela (Club Brugge e Cercle Brugge) nunca se fundirem
@@ -232,7 +240,12 @@ def merge(clubs, comps, honours, countries):
                 if len(h["finals"]) > row["titles"] or not h["finals"]: h.pop("finals")
         for key in [k for k in honours if k[1] == comp_id and k not in seen]:
             report["retirados"].append(f"{clubs[key[0]]['shortName']} ({comp_id})"); del honours[key]
-    # Treinador campeão de cada época (só campeonatos): fica em "coaches", época -> nome.
+    sources = {c: {"page": p["page"], "revid": p["revid"]} for c, p in wiki.items()}
+    return report, sources
+
+def apply_managers(clubs, comps, honours, report):
+    """Treinador campeão de cada época (só campeonatos): fica em "coaches", época -> nome. O conversor chama-a outra vez depois de
+    finals_merge, porque alguns campeonatos (Escócia, Croácia, Rússia, MLS…) só recebem as épocas aí."""
     managers = json.load(open(os.path.join(here, "wikipedia_managers.json")))
     report["treinadores"] = {}; report["treinadores_sem_epoca"] = []
     for comp_id, page in managers.items():
@@ -242,14 +255,17 @@ def merge(clubs, comps, honours, countries):
         for c in clubs.values():
             if c["country"] == comp["country"]:
                 for nm in (c["shortName"], c["name"]): by_club.setdefault(norm(nm), c)
+        by_article = {norm(c["_wiki"]): c for c in clubs.values() if c.get("_wiki") and c["country"] == comp["country"]}
         for row in page["rows"]:
-            club = by_club.get(norm(ALIASES.get(row["club"], row["club"])))
+            # Pelo artigo do clube (as tabelas da Wikipédia em espanhol dão "Club Brujas"), senão pelo nome.
+            club = by_article.get(norm(row.get("en", ""))) or by_club.get(norm(ALIASES.get(row["club"], row["club"])))
             h = honours.get((club["id"], comp_id)) if club else None
             start = row["season"][:4]
-            label = next((x for x in (h or {}).get("seasons", []) if x[:4] == start
+            have = (h or {}).get("seasons", [])
+            # A época exata primeiro ("2024 Apertura" no México, "1991" para o Clausura 1990–91), depois a regra antiga.
+            exact = [row["season"]] + ([f"{row['season']} {t}" for t in re.findall(r"Apertura|Clausura|Verano|Invierno", row.get("tournament", ""))])
+            label = next((x for x in exact if x in have), None) or next((x for x in have if x[:4] == start
                           or (len(x) == 4 and "–" in row["season"] and int(x) == int(start) + 1)), None)
             if label is None: report["treinadores_sem_epoca"].append(f"{comp_id} {row['season']} {row['club']}"); continue
             h.setdefault("coaches", {})[label] = row["manager"]; n += 1
         report["treinadores"][comp_id] = f"{n} de {len(page['rows'])}"
-    sources = {c: {"page": p["page"], "revid": p["revid"]} for c, p in wiki.items()}
-    return report, sources

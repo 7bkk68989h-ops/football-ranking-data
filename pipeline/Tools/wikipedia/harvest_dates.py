@@ -147,6 +147,9 @@ def won_on(wikitext, names, season):
 
 # Campeonatos com vários títulos na mesma época (Torneo Apertura, Torneo Clausura, Campeón de Liga).
 SEVERAL_TITLES = {"ar-liga", "co-liga", "py-liga"}
+# Provas que o conversor separou do campeonato (Torneo Apertura e Clausura da Argentina desde 2025): lidas como o campeonato,
+# para o torneio de cada vencedor continuar a ser encontrado no artigo da época.
+SPLIT_INTO = {"ar-apertura": "ar-liga", "ar-clausura": "ar-liga"}
 TOURNAMENT = r"Torneo\s+(?:Apertura|Clausura)|Campe[oó]n de Liga|\bApertura\b|\bClausura\b|Finalizaci[oó]n|Inicial|\bFinal\b(?=\s+tournament)"
 def tournament_of(wikitext, names):
     """Que torneio ganhou um dos campeões de uma época com vários ("Torneo Apertura", "Campeón de Liga"): o nome de
@@ -194,8 +197,8 @@ def main():
     for h in data["honours"]:
         dated = {f["season"] for f in h.get("finals") or [] if f.get("date") or any(m.get("date") for m in f.get("matches") or [])}
         for s in set(h.get("seasons") or []) | {f["season"] for f in h.get("finals") or []}:
-            if end_year(s) >= RECENT and s not in dated and h["competition"] in comps:
-                need.setdefault(h["competition"], {}).setdefault(s, []).append(h["club"])
+            if end_year(s) >= RECENT and s not in dated and SPLIT_INTO.get(h["competition"], h["competition"]) in comps:
+                need.setdefault(SPLIT_INTO.get(h["competition"], h["competition"]), {}).setdefault(s, []).append(h["club"])
     print(f"{sum(map(len, need.values()))} épocas recentes sem data, em {len(need)} competições", flush=True)
 
     # Item do Wikidata de cada competição, pelo artigo.
@@ -324,3 +327,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # Os vencedores mais recentes que as tabelas por clube ainda não têm (a tarefa automática só chama este script).
+    import harvest_latest
+    harvest_latest.main()

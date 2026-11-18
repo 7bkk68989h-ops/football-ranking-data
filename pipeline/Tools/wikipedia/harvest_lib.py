@@ -4,11 +4,13 @@ here = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, here)
 from wp import tables, grid, fetch
 
 CLUB = re.compile(r"^(club|team|clubs|teams)$", re.I)
-COUNT = re.compile(r"^(winners?|titles?|title\(s\)|champions?|champion\(s\)|won|wins|championships?)$", re.I)
-YEARS = re.compile(r"(winning|won|champion|title).*(years?|seasons?)|(years?|seasons?).*(won|winning|champion)|^(winning )?(seasons|years)$", re.I)
+COUNT = re.compile(r"^(winners?|titles?|title\(s\)|champions?|champion\(s\)|won|wins|wins\s*,\s*\(outright wins.*|championships?|gold)$", re.I)
+YEARS = re.compile(r"(winning|won|champion|title).*(years?|seasons?)|(years?|seasons?).*(won|winning|champion)|^(winning )?(seasons|years)$|^years \(\* title was shared\)$", re.I)
 
 # Quando a página tem várias tabelas "por clube", diz qual: parte do título da secção, ou "menor".
-PICK = {"fr-liga": "club in professional era", "pt-campeonato": "menor"}
+PICK = {"fr-liga": "club in professional era", "pt-campeonato": "menor",
+        # supertaças (18 nov. 2026): a tabela certa da página
+        "gb-supertaca": "by number of wins (clubs)", "ua-supertaca": "first", "ru-supertaca": "statistics by team", "no-liga": "by club"}
 
 # Linhas da Wikipédia que juntam vários clubes (fusões): a tabela por clube dá tudo ao clube atual,
 # mas a lista época a época da mesma página diz quem ganhou. Competição -> linha -> clube -> épocas.
@@ -55,16 +57,21 @@ def season_label(m):
     name = SHORT_TOURNAMENTS[m.group(1)]
     return f"{y} {name} {y[2:]}" if name == "México" else f"{y} {name}"   # México 70 e México 86
 
+COUNT_YEARS_PICKS = {"statistics by team"}
+
 def find(title, pick=None):
     best = None
     for t in tables(title):
-        if pick and pick != "menor" and pick not in t["heading"].lower(): continue
+        if pick and pick not in ("menor", "first") and pick not in t["heading"].lower(): continue
         g = grid(t)
         if len(g) < 3: continue
         for hi in range(min(2, len(g))):
             head = [re.sub(r"^vte\s+", "", c["text"].strip()) for c in g[hi]]
             ci = next((i for i, h in enumerate(head) if CLUB.match(h)), None)
             ni = next((i for i, h in enumerate(head) if COUNT.match(h)), None)
+            # Sem coluna de total ("Team | Years won", Supertaça da Rússia): conta-se os anos, só quando a página o pede (COUNT_YEARS)
+            count_years = ni is None and pick in COUNT_YEARS_PICKS
+            if count_years: ni = next((i for i, h in enumerate(head) if re.match(r"^years? won$", h, re.I)), None)
             yi = next((i for i, h in enumerate(head) if YEARS.search(h) and "runner" not in h.lower() and "second" not in h.lower()), None)
             if ci is None or ni is None: continue
             # tabelas por cidade ou região repetem o total da região em cada clube: não servem
@@ -72,10 +79,10 @@ def find(title, pick=None):
             rows = []; joined = 0
             for r in g[hi + 1:]:
                 if len(r) <= max(ci, ni): continue
-                m = re.match(r"\d+", r[ni]["text"])
+                m = re.match(r"\d+", r[ni]["text"]) if not count_years else re.match(r"\d+", str(len(re.findall(r"\b(?:19|20)\d{2}\b", r[ni]["text"]))))
                 name = re.sub(r"\s*\((?!\d{4}\))[^()]*\)\s*$", "", r[ci]["text"]).strip(" *†‡")
                 name = re.sub(r"\s*\[[^\]]*\]", "", name); name = re.sub(r"[⭐★☆,]+\s*$", "", name).strip(" ,")
-                if not m or not name or int(m.group()) == 0: continue
+                if not m or not name or int(m.group()) == 0 or re.match(r"^totals?$", name, re.I): continue
                 if int(m.group()) > 150: rows = []; break                      # coluna errada (anos)
                 if re.search(r"\(\d+\)\s*,", r[ci]["text"]):                   # várias equipas na mesma célula
                     joined += 1
@@ -90,5 +97,6 @@ def find(title, pick=None):
             score = sum(x["titles"] for x in rows) + (1000 if yi is not None else 0)
             if pick == "menor": score = -score
             if rows and (best is None or score > best[0]): best = (score, t["heading"].strip(), rows)
+        if pick == "first" and best: return best
     return best
 

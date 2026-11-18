@@ -148,6 +148,21 @@ for key, extra in MANUAL_FINALS.items():
 # Jogo de cada final (resultado, marcadores, penáltis), dos artigos das finais na Wikipédia.
 from finals_merge import apply as finals_apply
 report["finais"] = finals_apply(clubs, comps, honours)
+# Treinadores campeões, depois de finals_merge ter posto as épocas que faltavam (Escócia, Croácia, Rússia, MLS…).
+from merge import apply_managers
+apply_managers(clubs, comps, honours, report)
+# Vencedores mais recentes que as tabelas por clube da Wikipédia ainda não têm, lidos do artigo da edição (harvest_latest.py).
+_lw = os.path.join(root, 'Tools/wikipedia/latest_winners.json')
+report["vencedores_recentes"] = []
+for comp, seasons in (json.load(open(_lw)) if os.path.exists(_lw) else {}).items():
+    if comp not in comps: continue
+    for season, w in seasons.items():
+        if w["club"] not in clubs or any(season in (h.get("seasons") or []) for (c2, cp), h in honours.items() if cp == comp): continue
+        h = honours.setdefault((w["club"], comp), {"club": w["club"], "competition": comp, "seasons": []})
+        h.setdefault("seasons", []).append(season)
+        if h.get("count"): h["count"] += 1
+        if w.get("date"): h.setdefault("dates", {})[season] = w["date"]
+        report["vencedores_recentes"].append(f"{comp} {season} {w['club']}")
 # Dia em que cada título recente ficou decidido, para os campeonatos e as taças sem final datada
 # (Tools/wikipedia/harvest_dates.py; a app mostra-os em "Títulos recentes"). Fica em `dates` (época -> dia).
 _td = os.path.join(root, 'Tools/wikipedia/title_dates.json')
@@ -180,6 +195,30 @@ for comp in ONLY_LEAGUE_CHAMPION:
                 (h.get(f) or {}).pop(s, None)
             report["so_campeon_de_liga"].append(f"{key[0]} {s}")
         if drop and not h.get("seasons") and not h.get("count") and not h.get("finals"): del honours[key]
+# Argentina desde 2025 (pedido do Pedro, 18 nov. 2026): o Torneo Apertura e o Torneo Clausura passam a provas à parte, e no
+# campeonato fica só o "Campeón de Liga" (tabela anual). As épocas antigas com Apertura e Clausura (1990–2015) ficam no campeonato,
+# como a AFA as conta. O torneio de cada vencedor vem de title_dates.json (harvest_dates.py lê-os todos como "ar-liga": SPLIT_INTO).
+SPLIT_TOURNAMENTS = {"ar-liga": {"Torneo Apertura": ("ar-apertura", "Torneo Apertura"), "Torneo Clausura": ("ar-clausura", "Torneo Clausura")}}
+SPLIT_FROM = 2025
+report["torneos_separados"] = []
+for comp, targets in SPLIT_TOURNAMENTS.items():
+    base = comps[comp]
+    for t, (cid, name) in targets.items():
+        comps.setdefault(cid, {"id": cid, "name": name, "level": "domestic", "kind": "league", "country": base["country"]})
+    for key in [k for k in honours if k[1] == comp]:
+        h = honours[key]
+        for season, t in list((h.get("tournaments") or {}).items()):
+            if t not in targets or int(season[:4]) < SPLIT_FROM or season not in (h.get("seasons") or []): continue
+            cid = targets[t][0]
+            new = honours.setdefault((key[0], cid), {"club": key[0], "competition": cid, "seasons": []})
+            new["seasons"].append(season)
+            new["count"] = len(new["seasons"])
+            if (h.get("dates") or {}).get(season): new.setdefault("dates", {})[season] = h["dates"].pop(season)
+            h["seasons"].remove(season)
+            if h.get("count"): h["count"] -= 1
+            h["tournaments"].pop(season)
+            report["torneos_separados"].append(f"{key[0]} {season} -> {cid}")
+        if not h.get("seasons") and not h.get("count") and not h.get("finals"): del honours[key]
 # Artigo de cada clube na Wikipédia, para Tools/crests/harvest.py (símbolos só em Debug; fora do git).
 # A pasta não existe na tarefa automática do GitHub.
 os.makedirs(os.path.join(root, 'Tools/crests'), exist_ok=True)

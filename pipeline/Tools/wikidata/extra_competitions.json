@@ -690,5 +690,289 @@
   "country": "UY",
   "confederation": "CONMEBOL",
   "kind": "leagueCup"
+ },
+ "de-supertaca": {
+  "name": "DFL-Supercup",
+  "country": "DE",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "gb-supertaca": {
+  "name": "FA Community Shield",
+  "country": "GB-ENG",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "it-supertaca": {
+  "name": "Supercoppa Italiana",
+  "country": "IT",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "fr-supertaca": {
+  "name": "Trophée des Champions",
+  "country": "FR",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "nl-supertaca": {
+  "name": "Johan Cruyff Shield",
+  "country": "NL",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "be-supertaca": {
+  "name": "Belgian Super Cup",
+  "country": "BE",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "at-supertaca": {
+  "name": "Austrian Supercup",
+  "country": "AT",
+  "confederation": "UEFA",
+  "kind": "superCup",
+  "defunct": true
+ },
+ "bg-supertaca": {
+  "name": "Bulgarian Supercup",
+  "country": "BG",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "br-supertaca": {
+  "name": "Supercopa do Brasil",
+  "country": "BR",
+  "confederation": "CONMEBOL",
+  "kind": "superCup"
+ },
+ "by-supertaca": {
+  "name": "Belarusian Super Cup",
+  "country": "BY",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "ch-supertaca": {
+  "name": "Swiss Super Cup",
+  "country": "CH",
+  "confederation": "UEFA",
+  "kind": "superCup",
+  "defunct": true
+ },
+ "cl-supertaca": {
+  "name": "Supercopa de Chile",
+  "country": "CL",
+  "confederation": "CONMEBOL",
+  "kind": "superCup"
+ },
+ "cn-supertaca": {
+  "name": "Chinese FA Super Cup",
+  "country": "CN",
+  "confederation": "AFC",
+  "kind": "superCup"
+ },
+ "co-supertaca": {
+  "name": "Superliga Colombiana",
+  "country": "CO",
+  "confederation": "CONMEBOL",
+  "kind": "superCup"
+ },
+ "cy-supertaca": {
+  "name": "Cypriot Super Cup",
+  "country": "CY",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "cz-supertaca": {
+  "name": "Czech Supercup",
+  "country": "CZ",
+  "confederation": "UEFA",
+  "kind": "superCup",
+  "defunct": true
+ },
+ "dk-supertaca": {
+  "name": "Danish Supercup",
+  "country": "DK",
+  "confederation": "UEFA",
+  "kind": "superCup",
+  "defunct": true
+ },
+ "dz-supertaca": {
+  "name": "Algerian Super Cup",
+  "country": "DZ",
+  "confederation": "CAF",
+  "kind": "superCup"
+ },
+ "ec-supertaca": {
+  "name": "Supercopa Ecuador",
+  "country": "EC",
+  "confederation": "CONMEBOL",
+  "kind": "superCup"
+ },
+ "eg-supertaca": {
+  "name": "Egyptian Super Cup",
+  "country": "EG",
+  "confederation": "CAF",
+  "kind": "superCup"
+ },
+ "ge-supertaca": {
+  "name": "Georgian Super Cup",
+  "country": "GE",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "gr-supertaca": {
+  "name": "Greek Super Cup",
+  "country": "GR",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "hu-supertaca": {
+  "name": "Hungarian Super Cup",
+  "country": "HU",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "ie-supertaca": {
+  "name": "President of Ireland's Cup",
+  "country": "IE",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "il-supertaca": {
+  "name": "Israel Super Cup",
+  "country": "IL",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "ir-supertaca": {
+  "name": "Iranian Super Cup",
+  "country": "IR",
+  "confederation": "AFC",
+  "kind": "superCup"
+ },
+ "jp-supertaca": {
+  "name": "Japanese Super Cup",
+  "country": "JP",
+  "confederation": "AFC",
+  "kind": "superCup"
+ },
+ "mx-supertaca": {
+  "name": "Campeón de Campeones",
+  "country": "MX",
+  "confederation": "CONCACAF",
+  "kind": "superCup"
+ },
+ "pl-supertaca": {
+  "name": "Polish Super Cup",
+  "country": "PL",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "py-supertaca": {
+  "name": "Supercopa Paraguay",
+  "country": "PY",
+  "confederation": "CONMEBOL",
+  "kind": "superCup"
+ },
+ "ro-supertaca": {
+  "name": "Supercupa României",
+  "country": "RO",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "ru-supertaca": {
+  "name": "Russian Super Cup",
+  "country": "RU",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "se-supertaca": {
+  "name": "Svenska Supercupen",
+  "country": "SE",
+  "confederation": "UEFA",
+  "kind": "superCup",
+  "defunct": true
+ },
+ "si-supertaca": {
+  "name": "Slovenian Supercup",
+  "country": "SI",
+  "confederation": "UEFA",
+  "kind": "superCup",
+  "defunct": true
+ },
+ "sk-supertaca": {
+  "name": "Slovak Super Cup",
+  "country": "SK",
+  "confederation": "UEFA",
+  "kind": "superCup",
+  "defunct": true
+ },
+ "th-supertaca": {
+  "name": "Thailand Champions Cup",
+  "country": "TH",
+  "confederation": "AFC",
+  "kind": "superCup"
+ },
+ "tn-supertaca": {
+  "name": "Tunisian Super Cup",
+  "country": "TN",
+  "confederation": "CAF",
+  "kind": "superCup"
+ },
+ "tr-supertaca": {
+  "name": "Turkish Super Cup",
+  "country": "TR",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "ua-supertaca": {
+  "name": "Ukrainian Super Cup",
+  "country": "UA",
+  "confederation": "UEFA",
+  "kind": "superCup"
+ },
+ "ae-supertaca": {
+  "name": "UAE Super Cup",
+  "country": "AE",
+  "confederation": "AFC",
+  "kind": "superCup"
+ },
+ "ao-supertaca": {
+  "name": "Angolan SuperCup",
+  "country": "AO",
+  "confederation": "CAF",
+  "kind": "superCup"
+ },
+ "no-supertaca": {
+  "name": "Mesterfinalen",
+  "country": "NO",
+  "confederation": "UEFA",
+  "kind": "superCup",
+  "defunct": true
+ },
+ "kr-supertaca": {
+  "name": "Korean Super Cup",
+  "country": "KR",
+  "confederation": "AFC",
+  "kind": "superCup"
+ },
+ "qa-supertaca": {
+  "name": "Qatari Super Cup",
+  "country": "QA",
+  "confederation": "AFC",
+  "kind": "superCup"
+ },
+ "gh-supertaca": {
+  "name": "Ghana Super Cup",
+  "country": "GH",
+  "confederation": "CAF",
+  "kind": "superCup"
+ },
+ "fi-tacaliga": {
+  "name": "Finnish League Cup",
+  "country": "FI",
+  "confederation": "UEFA",
+  "kind": "leagueCup"
  }
 }
