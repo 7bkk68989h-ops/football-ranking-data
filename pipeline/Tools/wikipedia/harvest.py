@@ -45,6 +45,11 @@ import harvest_canada_old
 for comp, entry in harvest_canada_old.harvest().items():
     out[comp] = entry
     print(f"{comp:14} {len(entry['rows'])} clubes {sum(r['titles'] for r in entry['rows']):4} títulos | topo: {entry['rows'][0]['club']} {entry['rows'][0]['titles']}")
+# Competições novas só com a lista de edições, sem tabela por clube (harvest_results.py)
+import harvest_results
+for comp, entry in harvest_results.harvest().items():
+    out[comp] = entry
+    print(f"{comp:14} {len(entry['rows'])} clubes {sum(r['titles'] for r in entry['rows']):4} títulos | topo: {entry['rows'][0]['club']} {entry['rows'][0]['titles']}")
 print("PROBLEMAS:", problems)
 if not problems: json.dump(out, open(os.path.join(here, "wikipedia_titles.json"), "w"), ensure_ascii=False, indent=1)
 if problems: sys.exit(1)   # a tarefa automática pára e não publica

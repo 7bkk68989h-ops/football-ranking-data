@@ -672,5 +672,23 @@
   "country": "AR",
   "confederation": "CONMEBOL",
   "kind": "superCup"
+ },
+ "uy-taca": {
+  "name": "Copa AUF Uruguay",
+  "country": "UY",
+  "confederation": "CONMEBOL",
+  "kind": "cup"
+ },
+ "uy-supertaca": {
+  "name": "Supercopa Uruguaya",
+  "country": "UY",
+  "confederation": "CONMEBOL",
+  "kind": "superCup"
+ },
+ "uy-copaliga": {
+  "name": "Copa de la Liga AUF",
+  "country": "UY",
+  "confederation": "CONMEBOL",
+  "kind": "leagueCup"
  }
 }
