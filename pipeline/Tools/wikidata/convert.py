@@ -145,13 +145,7 @@ for key, extra in MANUAL_FINALS.items():
     h = honours[key]; manual = {f["season"] for f in extra}
     h["finals"] = [f for f in h.get("finals", []) if f["season"] not in manual] + extra
 
-# Jogo de cada final (resultado, marcadores, penáltis), dos artigos das finais na Wikipédia.
-from finals_merge import apply as finals_apply
-report["finais"] = finals_apply(clubs, comps, honours)
-# Treinadores campeões, depois de finals_merge ter posto as épocas que faltavam (Escócia, Croácia, Rússia, MLS…).
-from merge import apply_managers
-apply_managers(clubs, comps, honours, report)
-# Vencedores mais recentes que as tabelas por clube da Wikipédia ainda não têm, lidos do artigo da edição (harvest_latest.py).
+# Antes das finais, para o jogo entrar também nestes títulos (Supercupa României 2026). Vencedores mais recentes que as tabelas por clube da Wikipédia ainda não têm, lidos do artigo da edição (harvest_latest.py).
 _lw = os.path.join(root, 'Tools/wikipedia/latest_winners.json')
 report["vencedores_recentes"] = []
 for comp, seasons in (json.load(open(_lw)) if os.path.exists(_lw) else {}).items():
@@ -163,6 +157,12 @@ for comp, seasons in (json.load(open(_lw)) if os.path.exists(_lw) else {}).items
         if h.get("count"): h["count"] += 1
         if w.get("date"): h.setdefault("dates", {})[season] = w["date"]
         report["vencedores_recentes"].append(f"{comp} {season} {w['club']}")
+# Jogo de cada final (resultado, marcadores, penáltis), dos artigos das finais na Wikipédia.
+from finals_merge import apply as finals_apply
+report["finais"] = finals_apply(clubs, comps, honours)
+# Treinadores campeões, depois de finals_merge ter posto as épocas que faltavam (Escócia, Croácia, Rússia, MLS…).
+from merge import apply_managers
+apply_managers(clubs, comps, honours, report)
 # Dia em que cada título recente ficou decidido, para os campeonatos e as taças sem final datada
 # (Tools/wikipedia/harvest_dates.py; a app mostra-os em "Títulos recentes"). Fica em `dates` (época -> dia).
 _td = os.path.join(root, 'Tools/wikipedia/title_dates.json')
