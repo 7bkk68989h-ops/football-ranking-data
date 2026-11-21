@@ -107,6 +107,7 @@ def apply(clubs, comps, honours):
         if h.get("finals"): h["finals"].sort(key=lambda f: end_year(f["season"]) or 0)
     wikidata(clubs, comps, honours, report)
     pt_taca(clubs, comps, honours, report)
+    fix_people_links(honours)
     return report
 
 FINAL = re.compile(r"final|finale|super|intercontinental|recopa", re.I)
@@ -326,3 +327,27 @@ def season_tables(clubs, comps, honours, report):
             extra = SEASON_EXTRA.get((comp_id, clubs[club_id]["shortName"]))
             if extra and not h.get("seasons") and not h.get("finals"): h["seasons"] = extra; filled += len(extra); rep.setdefault("so_na_tabela_por_clube", []).append(f"{clubs[club_id]['shortName']} {comp_id}: {extra}")
         rep["preenchidas"][comp_id] = filled
+
+
+def fix_people_links(honours):
+    """Links de jogadores que a página da final põe na pessoa errada ("João Lourenço", presidente de Angola, na
+    final de 1970), achados por `audit_people.py` (pedido do Pedro, 18 nov. 2026): passam ao artigo certo, ou a
+    nenhum ("") quando não se encontra. Sem `wiki` o artigo é o próprio nome."""
+    path = os.path.join(here, "people_fixes.json")
+    if not os.path.exists(path): return
+    fixes = json.load(open(path))
+    def fix(person, name_key):
+        name = person.get(name_key) or ""
+        article = person["wiki"] if "wiki" in person else name
+        if article not in fixes: return
+        new = fixes[article]
+        if new == name: person.pop("wiki", None)
+        else: person["wiki"] = new
+    for h in honours.values():
+        for f in h.get("finals") or []:
+            for m in f.get("matches") or []:
+                for side in ("own", "opponent"):
+                    sheet = (m.get("lineups") or {}).get(side) or {}
+                    for p in sheet.get("starters", []) + (sheet.get("substitutes") or []): fix(p, "name")
+                for g in m.get("goals") or []: fix(g, "player")
+                for k in m.get("shootout") or []: fix(k, "player")
