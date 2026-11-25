@@ -248,7 +248,12 @@ COUNT_FIX = {("by-liga", "Shakhtyor Soligorsk"): 4}
 # Épocas que só a tabela por clube da Wikipédia dá (a lista época a época atribui-as a outro clube):
 # Donmoon, Taça da Tailândia de 1981 (a lista dá 1981 ao Bangkok Bank, que já tem os seus 3 anos).
 SEASON_EXTRA = {("th-taca", "Donmoon"): ["1981"]}
-SEASON_FIX = {("si-taca", "1994–95", "Mura"): "NK Mura", ("si-taca", "2019–20", "Mura"): "NŠ Mura"}
+SEASON_FIX = {("si-taca", "1994–95", "Mura"): "NK Mura", ("si-taca", "2019–20", "Mura"): "NŠ Mura",
+ # Taça do Gana (pedido do Pedro, 25 nov. 2026): a lista da Wikipédia dá 1986 ao "Okwahu United" e 1994 ao Okwawu United, mas a tabela
+ # por clube (1 título, o último em 1986), o artigo do Hearts (12 taças, com "1993–94") e o zerozero dão 1986 ao Okwawu e 1994 ao Hearts.
+ ("gh-taca", "1986", "Okwahu United"): "Okwawu United", ("gh-taca", "1994", "Okwawu United"): "Hearts of Oak"}
+# Épocas em que o resultado e o finalista da lista não são de confiança (o vencedor estava trocado): fica só a época.
+SEASON_NO_FINAL = {("gh-taca", "1994")}
 # Vencedores que só a tabela época a época dá, porque a tabela por clube da Wikipédia ainda não foi atualizada: o clube
 # cria-se aqui (pedido do Pedro, 25 nov. 2026). Taça do Gana: Dreams FC 2022–23 e Nations FC 2025–26 (confirmados nos
 # artigos das edições; o Wikidata não tem o vencedor). Os títulos destas épocas passam a contar.
@@ -320,7 +325,7 @@ def season_tables(clubs, comps, honours, report):
             if comp["kind"] == "league": continue
             finals = []
             for r, solo in seen.values():
-                if "score" not in r and not r.get("runnerUp"): continue
+                if "score" not in r and not r.get("runnerUp") or (comp_id, r["season"]) in SEASON_NO_FINAL: continue
                 opp = r.get("runnerUp"); oc = find(opp, r.get("runnerUpLink")) if opp else None
                 f = {"season": r["season"], "opponent": (oc["shortName"] if oc else opp) or "", "score": ""}
                 if "score" in r:
