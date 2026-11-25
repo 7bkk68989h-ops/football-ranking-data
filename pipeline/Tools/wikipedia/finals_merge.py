@@ -2,7 +2,7 @@
 # adversário, resultado, data, estádio, marcadores e desempate por penáltis, do lado do clube vencedor.
 # Chamado por Tools/wikidata/convert.py depois do merge da Wikipédia.
 import json, os, re
-from merge import norm, core, end_year, ALIASES
+from merge import norm, core, end_year, ALIASES, slug, NEUTRAL
 here = os.path.dirname(os.path.abspath(__file__))
 
 def apply(clubs, comps, honours):
@@ -249,6 +249,10 @@ COUNT_FIX = {("by-liga", "Shakhtyor Soligorsk"): 4}
 # Donmoon, Taça da Tailândia de 1981 (a lista dá 1981 ao Bangkok Bank, que já tem os seus 3 anos).
 SEASON_EXTRA = {("th-taca", "Donmoon"): ["1981"]}
 SEASON_FIX = {("si-taca", "1994–95", "Mura"): "NK Mura", ("si-taca", "2019–20", "Mura"): "NŠ Mura"}
+# Vencedores que só a tabela época a época dá, porque a tabela por clube da Wikipédia ainda não foi atualizada: o clube
+# cria-se aqui (pedido do Pedro, 25 nov. 2026). Taça do Gana: Dreams FC 2022–23 e Nations FC 2025–26 (confirmados nos
+# artigos das edições; o Wikidata não tem o vencedor). Os títulos destas épocas passam a contar.
+NEW_WINNERS = {("gh-taca", "Dreams FC"), ("gh-taca", "Nations FC")}
 
 def season_tables(clubs, comps, honours, report):
     """Épocas (e, nas taças, adversário, resultado, penáltis e local) de season_tables.json, lidas por
@@ -260,6 +264,17 @@ def season_tables(clubs, comps, honours, report):
     for comp_id, rows in json.load(open(path)).items():
         comp = comps.get(comp_id)
         if comp is None: continue
+        for r in rows:
+            for w, link in zip(r["winners"], r["winnerLinks"]):
+                if (comp_id, w) not in NEW_WINNERS or any(h for (c, cp), h in honours.items() if cp == comp_id and clubs[c]["shortName"] == w): continue
+                cid = slug(w)
+                club = clubs.get(cid) if cid in clubs and clubs[cid]["country"] == comp["country"] else None
+                if club is None:
+                    if cid in clubs: cid = f"{cid}-{comp['country'].lower()}"
+                    club = clubs[cid] = {"id": cid, "name": w, "shortName": w, "country": comp["country"], "colors": list(NEUTRAL), "kit": "plain",
+                                         "abbreviation": re.sub(r"[^A-Za-z0-9]", "", w)[:3].upper(), **({"_wiki": link} if link else {})}
+                honours[(cid, comp_id)] = {"club": cid, "competition": comp_id, "count": sum(1 for x in rows if w in x["winners"])}
+                rep.setdefault("clubes_novos", []).append(f"{w} {comp_id}")
         mine = {k[0]: h for k, h in honours.items() if k[1] == comp_id}
         cands = [clubs[c] for c in mine]
         def find(name, link):

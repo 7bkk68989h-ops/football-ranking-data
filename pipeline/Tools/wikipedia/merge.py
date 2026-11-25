@@ -68,7 +68,9 @@ RENAMED = {"Monarcas Morelia": "Morelia", "Real Club España": "Real España", "
  # o artigo "FC Ilves" passou a "Ilves (football)" e as tabelas escrevem "Ilves"; mesmo item do Wikidata (Q2608062), 9 nov. 2026
  "Ilves": "FC Ilves",
  # a tabela por clube da Taça KNVB passou a usar os nomes curtos (issue #8, 16 nov. 2026); ficam os nomes e ids que já tinham
- "HVV": "HVV Den Haag", "NAC": "NAC Breda", "VOC": "VOC Rotterdam", "VSV": "VSV Velsen"}
+ "HVV": "HVV Den Haag", "NAC": "NAC Breda", "VOC": "VOC Rotterdam", "VSV": "VSV Velsen",
+ # o campeonato chama-lhe "Ashantigold SC 04" e a taça "Ashanti Gold": o mesmo artigo e o mesmo clube (pedido do Pedro, 25 nov. 2026)
+ "Ashantigold SC 04": "Ashanti Gold"}
 ALIASES.update(RENAMED)
 # Nomes parecidos que são mesmo o mesmo clube ("Red Star" = "Red Star Belgrade"). Só estes se ligam
 # por aproximação; qualquer outro nome parecido fica como clube à parte e vai para o relatório

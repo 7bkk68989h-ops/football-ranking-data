@@ -4415,7 +4415,7 @@
  "uy-liga": {
   "lang": "en",
   "page": "Liga AUF Uruguaya",
-  "revid": 1385898168,
+  "revid": 1387162966,
   "rows": [
    {
     "season": "1932",
@@ -12774,7 +12774,7 @@
  "ch-liga": {
   "lang": "es",
   "page": "Anexo:Entrenadores campeones de la Superliga de Suiza",
-  "revid": 173411096,
+  "revid": 176387340,
   "rows": [
    {
     "season": "1926–27",
@@ -13255,14 +13255,18 @@
     "club": "Neuchâtel Xamax FC",
     "manager": "Gilbert Gress",
     "link": "Neuchâtel Xamax FC",
-    "en": "Neuchâtel Xamax FCS"
+    "manager_link": "Gilbert Gress",
+    "en": "Neuchâtel Xamax FCS",
+    "manager_es": "Gilbert Gress"
    },
    {
     "season": "1987–88",
     "club": "Neuchâtel Xamax FC",
     "manager": "Gilbert Gress",
     "link": "Neuchâtel Xamax FC",
-    "en": "Neuchâtel Xamax FCS"
+    "manager_link": "Gilbert Gress",
+    "en": "Neuchâtel Xamax FCS",
+    "manager_es": "Gilbert Gress"
    },
    {
     "season": "1988–89",

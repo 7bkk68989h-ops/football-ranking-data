@@ -178,23 +178,6 @@
    "source": "Wikipedia"
   }
  },
- "be-supertaca": {
-  "2024": {
-   "article": "2024 Belgian Super Cup",
-   "date": "2024-07-20",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Belgian Super Cup",
-   "date": "2025-07-20",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Belgian Super Cup",
-   "date": "2026-07-31",
-   "source": "Wikipedia"
-  }
- },
  "be-taca": {
   "2023–24": {
    "article": "2023–24 Belgian Cup",
@@ -226,23 +209,6 @@
   "2025–26": {
    "article": "2025–26 First Professional Football League (Bulgaria)",
    "date": "2026-05-29",
-   "source": "Wikipedia"
-  }
- },
- "bg-supertaca": {
-  "2024": {
-   "article": "2024 Bulgarian Supercup",
-   "date": "2025-02-04",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Bulgarian Supercup",
-   "date": "2026-02-03",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Bulgarian Supercup",
-   "date": "2026-09-09",
    "source": "Wikipedia"
   }
  },
@@ -292,22 +258,10 @@
    "article": "2025 Campeonato Brasileiro Série A",
    "date": "2025-12-03",
    "source": "Wikipedia"
-  }
- },
- "br-supertaca": {
-  "2024": {
-   "article": "2024 Supercopa do Brasil",
-   "date": "2024-02-04",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Supercopa do Brasil",
-   "date": "2025-02-02",
-   "source": "Wikipedia"
   },
   "2026": {
-   "article": "2026 Supercopa do Brasil",
-   "date": "2026-02-01",
+   "article": "2026 Campeonato Brasileiro Série A",
+   "date": "2026-11-21",
    "source": "Wikipedia"
   }
  },
@@ -320,18 +274,6 @@
   "2025": {
    "article": "2025 Belarusian Premier League",
    "date": "2025-11-30",
-   "source": "Wikipedia"
-  }
- },
- "by-supertaca": {
-  "2024": {
-   "article": "2024 Belarusian Super Cup",
-   "date": "2024-03-02",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Belarusian Super Cup",
-   "date": "2025-02-22",
    "source": "Wikipedia"
   }
  },
@@ -349,13 +291,6 @@
   "2026": {
    "article": "2025–26 Belarusian Cup",
    "date": "2026-05-16",
-   "source": "Wikipedia"
-  }
- },
- "ca-liga": {
-  "2025": {
-   "article": "2025 Canadian Premier League season",
-   "date": "2025-10-18",
    "source": "Wikipedia"
   }
  },
@@ -418,11 +353,6 @@
   }
  },
  "cl-supertaca": {
-  "2025": {
-   "article": "2025 Supercopa de Chile",
-   "date": "2025-09-14",
-   "source": "Wikipedia"
-  },
   "2026": {
    "article": "2026 Supercopa de Chile",
    "date": "2026-01-25",
@@ -458,23 +388,6 @@
    "source": "Wikipedia"
   }
  },
- "cn-supertaca": {
-  "2024": {
-   "article": "2024 Chinese FA Super Cup",
-   "date": "2024-02-25",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Chinese FA Super Cup",
-   "date": "2025-02-07",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Chinese FA Super Cup",
-   "date": "2026-03-01",
-   "source": "Wikipedia"
-  }
- },
  "cn-taca": {
   "2024": {
    "article": "2024 Chinese FA Cup",
@@ -505,14 +418,6 @@
     "junior": "Torneo Finalización",
     "santa-fe": "Torneo Apertura"
    }
-  },
-  "2026": {
-   "article": "2026 Liga DIMAYOR",
-   "clubs": {},
-   "source": "Wikipedia",
-   "tournaments": {
-    "junior": "Torneo Apertura"
-   }
   }
  },
  "co-taca": {
@@ -524,6 +429,13 @@
   "2025": {
    "article": "2025 Copa Colombia",
    "date": "2025-12-17",
+   "source": "Wikipedia"
+  }
+ },
+ "conmebol-sud": {
+  "2026": {
+   "article": "2026 Copa Sudamericana",
+   "date": "2026-11-21",
    "source": "Wikipedia"
   }
  },
@@ -612,23 +524,6 @@
    "source": "Wikipedia"
   }
  },
- "de-supertaca": {
-  "2024": {
-   "article": "2024 DFL-Supercup",
-   "date": "2024-08-17",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Franz Beckenbauer Supercup",
-   "date": "2025-08-16",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Franz Beckenbauer Supercup",
-   "date": "2026-08-22",
-   "source": "Wikipedia"
-  }
- },
  "dk-liga": {
   "2023–24": {
    "article": "2023–24 Danish Superliga",
@@ -663,18 +558,6 @@
    "source": "Wikipedia"
   }
  },
- "dz-supertaca": {
-  "2024": {
-   "article": "2024 Algerian Super Cup",
-   "date": "2025-02-08",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Algerian Super Cup",
-   "date": "2026-01-17",
-   "source": "Wikipedia"
-  }
- },
  "dz-taca": {
   "2024": {
    "article": "2023–24 Algerian Cup",
@@ -706,18 +589,6 @@
   "2026": {
    "article": "2026 LigaPro Serie A",
    "date": "2026-11-08",
-   "source": "Wikipedia"
-  }
- },
- "ec-supertaca": {
-  "2025": {
-   "article": "2025 Supercopa Ecuador",
-   "date": "2025-02-01",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Supercopa Ecuador",
-   "date": "2026-05-13",
    "source": "Wikipedia"
   }
  },
@@ -801,23 +672,6 @@
    "source": "Wikipedia"
   }
  },
- "fr-supertaca": {
-  "2024": {
-   "article": "2024 Trophée des Champions",
-   "date": "2025-01-05",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Trophée des Champions",
-   "date": "2026-01-08",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Trophée des Champions",
-   "date": "2026-08-16",
-   "source": "Wikipedia"
-  }
- },
  "gb-liga": {
   "2023–24": {
    "article": "2023–24 Premier League",
@@ -832,23 +686,6 @@
   "2025–26": {
    "article": "2025–26 Premier League",
    "date": "2026-05-24",
-   "source": "Wikipedia"
-  }
- },
- "gb-supertaca": {
-  "2024": {
-   "article": "2024 FA Community Shield",
-   "date": "2024-08-10",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 FA Community Shield",
-   "date": "2025-08-10",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 FA Community Shield",
-   "date": "2026-08-16",
    "source": "Wikipedia"
   }
  },
@@ -910,13 +747,6 @@
    "source": "Wikipedia"
   }
  },
- "gh-taca": {
-  "2024–25": {
-   "article": "2024–25 Ghana FA Cup",
-   "date": "2025-06-15",
-   "source": "Wikipedia"
-  }
- },
  "gr-liga": {
   "2024": {
    "article": "2023–24 Super League Greece",
@@ -931,13 +761,6 @@
   "2026": {
    "article": "2025–26 Super League Greece",
    "date": "2026-05-21",
-   "source": "Wikipedia"
-  }
- },
- "gr-supertaca": {
-  "2026": {
-   "article": "2026 Greek Super Cup",
-   "date": "2026-08-12",
    "source": "Wikipedia"
   }
  },
@@ -1038,23 +861,6 @@
    "source": "Wikipedia"
   }
  },
- "ie-supertaca": {
-  "2024": {
-   "article": "2024 President of Ireland's Cup",
-   "date": "2024-02-09",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 President of Ireland's Cup",
-   "date": "2025-02-07",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 President of Ireland's Cup",
-   "date": "2026-01-31",
-   "source": "Wikipedia"
-  }
- },
  "ie-taca": {
   "2024": {
    "article": "2024 FAI Cup",
@@ -1149,18 +955,6 @@
    "source": "Wikipedia"
   }
  },
- "jp-supertaca": {
-  "2024": {
-   "article": "2024 Japanese Super Cup",
-   "date": "2024-02-17",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Japanese Super Cup",
-   "date": "2025-02-08",
-   "source": "Wikipedia"
-  }
- },
  "kr-liga": {
   "2024": {
    "article": "2024 K League 1",
@@ -1224,18 +1018,6 @@
    "source": "Wikipedia"
   }
  },
- "mx-supertaca": {
-  "2025": {
-   "article": "2025 Campeón de Campeones",
-   "date": "2025-07-20",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Campeón de Campeones",
-   "date": "2026-07-25",
-   "source": "Wikipedia"
-  }
- },
  "ng-liga": {
   "2023–24": {
    "article": "2023–24 Nigeria Premier Football League",
@@ -1267,23 +1049,6 @@
   "2025–26": {
    "article": "2025–26 Eredivisie",
    "date": "2026-04-05",
-   "source": "Wikipedia"
-  }
- },
- "nl-supertaca": {
-  "2024": {
-   "article": "2024 Johan Cruyff Shield",
-   "date": "2024-08-04",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Johan Cruyff Shield",
-   "date": "2025-08-03",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Johan Cruyff Shield",
-   "date": "2026-08-02",
    "source": "Wikipedia"
   }
  },
@@ -1330,23 +1095,6 @@
   "2025–26": {
    "article": "2025–26 Ekstraklasa",
    "date": "2026-05-23",
-   "source": "Wikipedia"
-  }
- },
- "pl-supertaca": {
-  "2024": {
-   "article": "2024 Polish Super Cup",
-   "date": "2025-04-02",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Polish Super Cup",
-   "date": "2025-07-13",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Polish Super Cup",
-   "date": "2026-07-16",
    "source": "Wikipedia"
   }
  },
@@ -1405,18 +1153,6 @@
    }
   }
  },
- "py-supertaca": {
-  "2024": {
-   "article": "2024 Supercopa Paraguay",
-   "date": "2025-01-22",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Supercopa Paraguay",
-   "date": "2025-12-06",
-   "source": "Wikipedia"
-  }
- },
  "qa-liga": {
   "2024–25": {
    "article": "2024–25 Qatar Stars League",
@@ -1443,23 +1179,6 @@
   "2025–26": {
    "article": "2025–26 Liga I",
    "date": "2026-05-25",
-   "source": "Wikipedia"
-  }
- },
- "ro-supertaca": {
-  "2024": {
-   "article": "2024 Supercupa României",
-   "date": "2024-07-04",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Supercupa României",
-   "date": "2025-07-05",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Supercupa României",
-   "date": "2026-07-12",
    "source": "Wikipedia"
   }
  },
@@ -1528,23 +1247,6 @@
   "2025–26": {
    "article": "2025–26 Russian Premier League",
    "date": "2026-05-23",
-   "source": "Wikipedia"
-  }
- },
- "ru-supertaca": {
-  "2024": {
-   "article": "2024 Russian Super Cup",
-   "date": "2024-07-13",
-   "source": "Wikipedia"
-  },
-  "2025": {
-   "article": "2025 Russian Super Cup",
-   "date": "2025-07-12",
-   "source": "Wikipedia"
-  },
-  "2026": {
-   "article": "2026 Russian Super Cup",
-   "date": "2026-07-18",
    "source": "Wikipedia"
   }
  },
@@ -1721,11 +1423,6 @@
   }
  },
  "tr-supertaca": {
-  "2024": {
-   "article": "2024 Turkish Super Cup",
-   "date": "2024-08-03",
-   "source": "Wikipedia"
-  },
   "2025": {
    "article": "2025 Turkish Super Cup",
    "date": "2026-01-10",
